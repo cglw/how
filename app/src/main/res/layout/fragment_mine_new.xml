@@ -1,0 +1,369 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroundWhit"
+              android:orientation="vertical"
+              tools:context="com.prettyyes.user.app.fragments.mianpage.MineFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/rel_Status_height"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="@color/white"/>
+
+        <RelativeLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_title"
+            android:layout_below="@id/rel_Status_height"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="top"
+                android:text="更 多"
+                android:textColor="@color/title_app"
+                android:textSize="@dimen/font_big_more"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="204dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginRight="-5dp"
+                android:layout_marginTop="-5dp"
+                android:background="@mipmap/kol_session_desc_container"
+                android:orientation="horizontal"
+                android:paddingBottom="22dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="41dp"
+
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/view_mine_lookinfo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="6"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <com.prettyyes.user.app.view.imageview.RoundImageView
+                        android:id="@+id/img_mine_headimg"
+                        android:layout_width="66dp"
+                        android:layout_height="66dp"
+                        android:src="@mipmap/myhead"
+                        app:borderRadius="33dp"/>
+
+
+                    <com.prettyyes.user.app.view.app.TypefaceTextView
+                        android:id="@+id/tv_mine_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text=""
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_big_more"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tv_mineItem_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="查看或编辑个人资料"
+                        android:textColor="@color/grey_tv_main"
+                        android:textSize="@dimen/font_big"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="141dp"
+                    android:layout_weight="4.5"
+                    android:background="@drawable/bg_retange_grey"
+                    android:padding="1.5dp">
+
+                    <RelativeLayout
+                        android:id="@+id/view_mine_tobekol"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/select_layout"
+                        android:gravity="center_vertical"
+                        android:padding="8dp">
+
+                        <com.prettyyes.user.app.view.app.TypefaceTextView
+                            android:id="@+id/tv_tobe_kol"
+                            android:clickable="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="申请成为\nHow的好手"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <View
+                            android:layout_width="77dp"
+                            android:layout_height="3dp"
+                            android:layout_below="@id/tv_tobe_kol"
+                            android:layout_marginTop="3dp"
+                            android:background="@color/theme_red"></View>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:gravity="right"
+                            android:text="查\n看"
+                            android:textColor="@color/black_main"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_order_info"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/view_mine_collect"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/select_layout"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_kol_title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_big"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="喜欢的，讨厌的，想记得的问题和人"
+                        android:textColor="@color/grey_tv_main"/>
+
+                </LinearLayout>
+
+                <View style="@style/line_grey"></View>
+
+                <LinearLayout
+                    android:id="@+id/view_mine_wishlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/select_layout"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_wishlist_title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_big"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/mine_wishlist_desc"
+                        android:textColor="@color/grey_tv_main"/>
+
+                </LinearLayout>
+
+                <View style="@style/line_grey"></View>
+
+                <LinearLayout
+                    android:id="@+id/view_mine_coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/select_layout"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_coupon_title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_big"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/mine_coupon_desc"
+                        android:textColor="@color/grey_tv_main"/>
+
+                </LinearLayout>
+
+                <View style="@style/line_grey"></View>
+
+                <LinearLayout
+                    android:id="@+id/view_mine_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/select_layout"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mine_order_title"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_big"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:text="@string/mine_order_desc"
+                        android:textColor="@color/grey_tv_main"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_line_content"
+                    style="@style/line_grey"/>
+
+                <com.prettyyes.user.app.view.app.MineItemView
+                    android:layout_width="match_parent"
+                    android:id="@+id/view_mine_content"
+                    android:layout_height="wrap_content"
+                    app:itemdesc="上传新的内容查看新的内容"
+                    app:itemtitle="我的内容">
+
+                </com.prettyyes.user.app.view.app.MineItemView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_order_info"
+                android:orientation="vertical"
+
+                >
+
+                <RelativeLayout
+                    android:id="@+id/view_mine_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/select_layout"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设置"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_big"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_right_arrow"
+                        android:tint="@color/black"/>
+                </RelativeLayout>
+
+                <View style="@style/line_grey"></View>
+
+                <RelativeLayout
+                    android:id="@+id/view_mine_callkf"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@drawable/select_layout"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系客服"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_big"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_right_arrow"
+                        android:tint="@color/black"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

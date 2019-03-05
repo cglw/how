@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:id="@+id/coordinatorLayout"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:elevation="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_normal"
+            android:clipChildren="false"
+            android:minHeight="0dp"
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            tools:context="com.prettyyes.user.app.ui.spu.BrandInfoActivity">
+
+
+            <com.prettyyes.user.app.view.ClipViewPager
+                android:id="@+id/vp_suitdelAct_suit"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:visibility="visible">
+
+            </com.prettyyes.user.app.view.ClipViewPager>
+
+            <LinearLayout
+                android:id="@+id/lin_suitdelAct_topindex"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/distance_normal">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    style="@style/tv_title"
+                    android:layout_height="wrap_content"
+                    android:text="这个是商品名字"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    style="@style/tv_content"
+                    android:layout_marginTop="@dimen/distance_small"
+                    android:text="￥14.00"/>
+
+                <TextView
+                    android:id="@+id/tv_express_price"
+                    style="@style/tv_content"
+                    android:layout_marginTop="@dimen/distance_small"
+                    android:text="运费：免运费"
+                    android:textColor="@color/secondaryTextBlack"
+                    android:textSize="@dimen/font_hint"/>
+
+
+            </LinearLayout>
+
+            <View
+                style="@style/line_grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/distance_small"
+                android:paddingLeft="@dimen/distance_normal"
+                android:paddingTop="@dimen/distance_small">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/cart_unchecked_icon"/>
+
+                <TextView
+                    style="@style/tv_content"
+                    android:layout_marginLeft="@dimen/distance_small"
+                    android:text="@string/brand_authentication"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_big"
+                    android:src="@mipmap/cart_unchecked_icon"/>
+
+                <TextView
+                    style="@style/tv_content"
+
+                    android:layout_marginLeft="@dimen/distance_small"
+                    android:text="@string/brand_guarantee"/>
+
+            </LinearLayout>
+
+            <View
+                style="@style/line_grey"/>
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_brand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabBackground="@color/white"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/theme_red"
+            app:tabIndicatorHeight="4dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/textBlack"
+            app:tabTextColor="@color/secondaryTextBlack">
+        </android.support.design.widget.TabLayout>
+
+        <View
+            style="@style/line_grey"
+            android:layout_marginTop="-1dp"/>
+
+
+        <com.prettyyes.user.app.view.app.AppWebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+        </com.prettyyes.user.app.view.app.AppWebView>
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.prettyyes.user.app.view.ClipViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    </com.prettyyes.user.app.view.ClipViewPager>
+
+
+</android.support.design.widget.CoordinatorLayout>
+

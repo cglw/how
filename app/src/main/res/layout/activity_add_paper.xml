@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="com.prettyyes.user.app.ui.template.AddPaperActivity">
+
+        <EditText
+            android:id="@+id/edit_title"
+            style="@style/template_edit"
+            android:height="64dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入标题"
+            android:maxLength="30"
+            android:maxLines="1"/>
+
+        <View
+            android:id="@+id/view"
+            style="@style/line_grey"
+            android:layout_below="@id/edit_title"/>
+
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                style="@style/line_grey"/>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/ibn_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/image"
+                        />
+
+
+                    <ImageButton
+                        android:id="@+id/ibn_bold"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/how_richeditor_unbold"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/ibn_buttle"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/bullet"
+                        />
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_check_bold"-->
+
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<CheckBox-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/selector_font_bold"-->
+                    <!--android:button="@null"-->
+                    <!--android:contentDescription="@null"-->
+                    <!--android:src="@mipmap/font_bold"/>-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<ImageButton-->
+                    <!--android:id="@+id/ll_check_bullet"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:gravity="center">-->
+
+                    <!--<CheckBox-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/selector_bullet"-->
+                    <!--android:button="@null"-->
+                    <!--android:contentDescription="@null"-->
+                    <!--/>-->
+
+                    <!--</ImageButton>-->
+
+                    <ImageButton
+                        android:id="@+id/ibn_link"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/link"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/ibn_seperator"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:contentDescription="@null"
+                        android:src="@mipmap/seperator"
+                        />
+                    ¬
+
+                    <ImageButton
+                        android:id="@+id/ibn_undo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:contentDescription="@null"
+                        android:src="@drawable/undo"
+                        android:tint="@color/hintBlack"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/ibn_redo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@null"
+                        android:contentDescription="@null"
+                        android:src="@drawable/redo"
+                        android:tint="@color/hintBlack"
+                        />
+
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+        </LinearLayout>
+
+        <jp.wasabeef.richeditor.RichEditor
+            android:id="@+id/editor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom"
+            android:layout_below="@id/view"
+            />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingItemView">
+        <!-- 自定义的属性名称 和对应的单位 -->
+        <attr name="leftTitle" format="string"/>
+        <attr name="rightContent" format="string"/>
+        <attr name="hideicon" format="integer"></attr>
+
+    </declare-styleable>
+    <declare-styleable name="TemplateItemView">
+        <!-- 自定义的属性名称 和对应的单位 -->
+        <attr name="template_icon" format="reference"/>
+        <attr name="template_type" format="string"/>
+        <attr name="template_desc" format="string"/>
+        <attr name="template_range" format="string"/>
+        <attr name="template_bottom_line_show" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="mineItem">
+        <!-- 自定义的属性名称 和对应的单位 -->
+        <attr name="itemtitle" format="string"/>
+        <attr name="itemdesc" format="string"/>
+        <attr name="itemicon" format="reference"></attr>
+        <attr name="itembg" format="reference"></attr>
+        <attr name="itemHeight" format="dimension"></attr>
+        <attr name="itemDescVisiable">
+            <enum name="visiable" value="0"/>
+            <enum name="invisible" value="1"/>
+            <enum name="gone" value="2"/>
+
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="divider_row" format="reference|dimension"/>
+        <attr name="divider_column" format="reference|dimension"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="ChangeColorIconView">
+        <attr name="icon_new" format="reference"/>
+        <attr name="color_new" format="color"/>
+        <attr name="text" format="string"/>
+        <attr name="text_size" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_radius" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_background" format="color|integer"/>
+        <attr name="ci_selected_background" format="color|integer"/>
+        <attr name="ci_gravity">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="ci_mode">
+            <enum name="inside" value="0"/>
+            <enum name="outside" value="1"/>
+            <enum name="solo" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RatingBar">
+        <!--星星间距-->
+        <attr name="starDistance" format="dimension"/>
+        <!--星星大小-->
+        <attr name="starSize" format="dimension"/>
+        <!--星星个数-->
+        <attr name="starCount" format="integer"/>
+        <!--星星空图-->
+        <attr name="starEmpty" format="reference"/>
+        <!--星星满图-->
+        <attr name="starFill" format="reference"/>
+        <!--星星是否可以点击-->
+        <attr name="startOntouch" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="StaggeredGridView">
+        <attr name="column_count" format="integer"/>
+        <attr name="column_count_portrait" format="integer"/>
+        <attr name="column_count_landscape" format="integer"/>
+        <attr name="item_margin" format="dimension"/>
+        <attr name="grid_paddingLeft" format="dimension"/>
+        <attr name="grid_paddingRight" format="dimension"/>
+        <attr name="grid_paddingTop" format="dimension"/>
+        <attr name="grid_paddingBottom" format="dimension"/>
+    </declare-styleable>
+
+
+    <attr name="borderRadius" format="dimension"/>
+    <attr name="type">
+        <enum name="circle" value="0"/>
+        <enum name="round" value="1"/>
+    </attr>
+    <declare-styleable name="RoundImageView">
+        <attr name="borderRadius"/>
+        <attr name="topLeftRadius"/>
+        <attr name="topRightRadius"/>
+        <attr name="bottomLeftRadius"/>
+        <attr name="bottomRightRadius"/>
+        <attr name="type"/>
+    </declare-styleable>
+    <declare-styleable name="BgView">
+        <attr name="bgcolor" format="color"/>
+        <attr name="triangelcolor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="BgCoffeeLinearView">
+        <attr name="ll_bgcolor" format="color"/>
+        <attr name="ll_triangelcolor" format="color"/>
+    </declare-styleable>
+
+    <!--三角形-->
+    <declare-styleable name="TriangleView">
+        <attr name="draw_color" format="color"/>
+        <attr name="direction">
+            <enum name="left" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+            <enum name="rightbottom" value="4"/>
+            <enum name="leftbottom" value="5"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AmountView">
+        <!--  左右2边+-按钮的宽度  -->
+        <attr name="btnWidth" format="dimension"/>
+        <!--  中间TextView的宽度  -->
+        <attr name="tvWidth" format="dimension"/>
+        <!-- <attr name="tvColor" format="color"/> -->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="SegmentControlView">
+        <attr name="scv_BackgroundSelectedColor" format="reference|color"/>
+        <attr name="scv_BackgroundNormalColor" format="reference|color"/>
+        <attr name="scv_TextSelectedColor" format="reference|color"/>
+        <attr name="scv_TextNormalColor" format="reference|color"/>
+        <attr name="scv_FrameColor" format="reference|color"/>
+        <attr name="scv_FrameWidth" format="reference|dimension"/>
+        <attr name="scv_FrameCornerRadius" format="reference|dimension"/>
+        <attr name="scv_TextSize" format="reference|dimension"/>
+        <attr name="scv_TextArray" format="reference"/>
+        <attr name="scv_SelectedIndex" format="reference|integer"/>
+        <attr name="scv_SegmentPaddingHorizontal" format="reference|dimension"/>
+        <attr name="scv_SegmentPaddingVertical" format="reference|dimension"/>
+        <attr name="scv_Gradient" format="reference|boolean"/>
+    </declare-styleable>
+    <declare-styleable name="SelectView">
+        <attr name="select_color" format="reference|color"/>
+        <attr name="edge_color" format="reference|color"/>
+    </declare-styleable>
+    <declare-styleable name="RoundView">
+        <attr name="bg_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="SpacingTextView">
+        <attr name="letterSpacing" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="TypefaceTextView">
+        <attr name="type_face">
+            <enum name="songti_sc_black" value="0"/>
+            <enum name="songti_sc_regular" value="1"/>
+            <enum name="athelas_w01_italic" value="2"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SearchView">
+        <attr name="search_hint" format="string">
+        </attr>
+    </declare-styleable>
+
+
+</resources>

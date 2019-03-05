@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_comme_typepaper"
+    android:layout_width="match_parent"
+    android:layout_height="168dp"
+    android:orientation="horizontal"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/img_covery"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_defaultimg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_grey"></View>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_paper_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="paper_desc"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_small" />
+    <TextView
+        android:layout_above="@id/tv_paper_desc"
+        android:id="@+id/tv_paper_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="paper_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_big" />
+
+    <TextView
+        android:id="@+id/tv_paper_iscanread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_round_translate_5"
+        android:clickable="true"
+        android:padding="5dp"
+        android:text="可阅读"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_small"
+        android:visibility="visible" />
+
+</RelativeLayout>

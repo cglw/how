@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_kol_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/check_kol"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/checkbox_wishlist"
+            android:button="@null"
+            android:checked="true"/>
+
+        <com.prettyyes.user.app.ui.appview.KolSmallView
+            android:id="@+id/kol_samllview"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/check_kol"
+            android:src="@mipmap/myhead"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_nickname"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_toRightOf="@id/img_kol_head"-->
+            <!--android:clickable="true"-->
+            <!--android:lines="1"-->
+            <!--android:text="Kimi"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="13sp"/>-->
+
+        <View
+            style="@style/line_grey"
+            android:layout_height="0.3dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:background="@color/white_grey"></View>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/view_suit"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:background="@color/white"
+
+        >
+
+        <CheckBox
+            android:id="@+id/check_unit"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/checkbox_wishlist"
+            android:button="@null"
+            android:checked="true"/>
+
+        <ImageView
+            android:id="@+id/img_unit"
+            android:layout_width="132dp"
+            android:layout_height="118dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/check_unit"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_defaultimg"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/img_unit"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img_unit"
+            android:paddingRight="15dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_uintname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="POKER家秋新品 简约风手镯"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_attr_str"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_uintname"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:text="黑色"
+                android:textColor="@color/secondaryTextBlack"
+                android:textSize="@dimen/font_hint"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/img_minus"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/cart_minus_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="1"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/img_plus"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@mipmap/cart_plus_icon"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginBottom="6dp"
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="￥100"
+                android:textColor="@color/theme_red"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:src="@mipmap/cart_delete_icon"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_orderinfochildAdp"
+        style="@style/line_grey"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="40dp"
+        android:background="@color/white_grey"></View>
+
+</LinearLayout>

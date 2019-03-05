@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_pupoppaper"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/lin_pupoppaper_pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/select_layout_yellow"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="打赏"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big" />
+
+        <TextView
+            android:id="@+id/tv_rewardpupop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:textColor="@color/theme_red"
+            android:textSize="@dimen/font_big" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lin_pupoppaper_pay"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/lin_rewardpupop_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+
+                style="@style/radiobtn_select_red_oval"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:checked="false"
+                android:text="￥5"
+              />
+
+            <RadioButton
+                style="@style/radiobtn_select_red_oval"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:text="￥10" />
+
+            <RadioButton
+                style="@style/radiobtn_select_red_oval"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:text="￥15" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_rewardpupop_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                style="@style/radiobtn_select_red_oval"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:button="@null"
+                android:text="￥20"
+                android:id="@+id/radioButton" />
+
+            <RadioButton
+                style="@style/radiobtn_select_red_oval"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:text="￥25" />
+
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="@color/theme_red" />
+
+                <EditText
+                    android:id="@+id/edit_rewardpupop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

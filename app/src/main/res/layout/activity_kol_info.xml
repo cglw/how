@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/scrollView_kolinfoAct_base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_white"
+
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="14dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_kolinfoAct_head"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/myhead"/>
+
+                <ImageView
+                    android:id="@+id/img_kolinfoAct_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="64dp"
+                    android:src="@mipmap/ic_chat"/>
+
+                <ImageView
+
+                    android:id="@+id/img_grade_title"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="50dp"
+                 />
+
+                <Button
+                    android:id="@+id/btn_kolinfoAct_ask"
+                    style="@style/btn_select_red_round"
+                    android:layout_width="62dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/kol_ask_other"/>
+            </RelativeLayout>
+
+            <com.prettyyes.user.app.view.app.TypefaceTextView
+                android:id="@+id/tv_kolinfoAct_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_kolinfoAct_head"
+                android:layout_marginTop="10dp"
+                android:text="昵称"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:type_face="songti_sc_black"/>
+
+
+            <TextView
+                android:id="@+id/tv_kolinfoAct_act"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_kolinfoAct_nickname"
+                android:layout_marginTop="10dp"
+                android:text="一句话介绍"
+                android:textColor="@color/grey_tv_main"
+                android:textSize="@dimen/font_small"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lin_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <com.prettyyes.user.app.view.app.TypefaceTextView
+                        android:id="@+id/tv_kolinfoAct_collectnumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_big_more"
+                        app:type_face="songti_sc_black"/>
+
+                    <TextView
+                        android:id="@+id/tv_kolinfoAct_collectkol"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/selector_oval_red"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="收藏"
+                        android:textColor="@color/theme_red"
+                        android:textSize="@dimen/font_small"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/lin_1"
+                    android:layout_toLeftOf="@id/lin_1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.prettyyes.user.app.view.app.TypefaceTextView
+                            android:id="@+id/tv_kolinfoAct_zezenumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_big_more"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/zeze"
+                            android:textColor="@color/grey_tv_main"
+                            android:textSize="@dimen/font_small"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="17dp"
+                        android:background="@color/grey_tv_main"></View>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.prettyyes.user.app.view.app.TypefaceTextView
+                            android:id="@+id/tv_kolinfoAct_peinumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_big_more"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/pei"
+                            android:textColor="@color/grey_tv_main"
+                            android:textSize="@dimen/font_small"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="17dp"
+                        android:background="@color/grey_tv_main"></View>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.prettyyes.user.app.view.app.TypefaceTextView
+                            android:id="@+id/tv_kolinfoAct_shareumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/font_big_more"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/share"
+                            android:textColor="@color/grey_tv_main"
+                            android:textSize="@dimen/font_small"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view1"
+                style="@style/line_donate"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/lin_1"
+                android:layout_marginTop="15dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view1"
+                    android:text="说明"
+                    android:textColor="@color/grey_tv_main"
+                    android:textSize="@dimen/font_mid"/>
+
+                <com.prettyyes.user.app.view.tvbtnetv.ExpandableTextView
+                    android:id="@+id/etv_kolinfoAct_security"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/textView"
+                    android:layout_marginLeft="36dp"
+                    android:layout_toRightOf="@id/textView"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_big"
+                    app:etv_MaxLinesOnShrink="3"
+                    app:etv_ToExpandHint="「展开」"
+                    app:etv_ToExpandHintColor="@color/theme_lightgray"
+                    app:etv_ToShrinkHint="「收起」"
+                    app:etv_ToShrinkHintColor="@color/theme_lightgray"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                style="@style/line_donate"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_below="@id/etv_kolinfoAct_security"
+                android:layout_marginTop="15dp"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@id/view2"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/view1"
+                    android:layout_marginRight="36dp"
+                    android:text="成分"
+                    android:textColor="@color/grey_tv_main"
+                    android:textSize="@dimen/font_mid"/>
+
+                <include
+                    layout="@layout/layout_kol_tags"></include>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_round_white"
+            android:padding="20dp">
+
+            <com.prettyyes.user.app.view.progress.CircleKolView
+                android:id="@+id/circle_kolinfoAct"
+                android:layout_width="200dp"
+                android:layout_height="200dp"></com.prettyyes.user.app.view.progress.CircleKolView>
+
+
+            <LinearLayout
+                android:id="@+id/lin_kolinfoAct_numbers"
+                android:layout_width="134dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="共上传套系"
+                        android:textColor="@color/grey_tv_main"
+                        android:textSize="@dimen/font_small"/>
+
+                    <TextView
+                        android:id="@+id/tv_kolinfoAct_total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0套"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_mid"/>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@id/view1"
+                    style="@style/line_donate"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/lin_1"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.prettyyes.user.app.view.app.RoundView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        app:bg_color="@color/blue_pale"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="优质内容"
+                        android:textColor="@color/grey_tv_main"
+                        android:textSize="@dimen/font_mid"/>
+
+                    <TextView
+                        android:id="@+id/tv_kolinfoAct_goodcontentnum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_mid"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.prettyyes.user.app.view.app.RoundView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        app:bg_color="@color/yellow_dark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="上首页内容"
+                        android:textColor="@color/grey_tv_main"
+                        android:textSize="@dimen/font_mid"/>
+
+                    <TextView
+                        android:id="@+id/tv_kolinfoAct_homenum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_mid"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_kolinfoAct_imgs"
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:layout_below="@id/lin_kolinfoAct_numbers"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <com.prettyyes.user.app.view.imageview.RoundImageView
+                    android:layout_width="0dp"
+                    android:layout_height="194dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    app:borderRadius="5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <com.prettyyes.user.app.view.imageview.RoundImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="93dp"
+                        android:layout_marginBottom="93dp"
+
+                        app:borderRadius="5dp"/>
+
+                    <com.prettyyes.user.app.view.imageview.RoundImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="93dp"
+                        android:layout_alignParentBottom="true"
+                        app:borderRadius="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_kolinfoAct_morenum"
+                        android:layout_width="match_parent"
+                        android:layout_height="93dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/bg_round_translate_5"
+                        android:gravity="center"
+                        android:text="更多"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_mid"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

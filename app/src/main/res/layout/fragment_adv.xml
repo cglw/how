@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prettyyes.user.app.fragments.splash.AdvFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel_splash_oneimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_advfragment_adv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+          />
+
+        <Button
+            android:id="@+id/btn_advfragment_jump"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/bg_round_translate_10"
+            android:text="跳过 5s"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</FrameLayout>

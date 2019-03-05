@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/img_wishlistInnerLvAdp_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_defaultimg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/img_wishlistInnerLvAdp_head"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/tv_wishlistInnerLvAdp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="POKER家秋新品 简约COS风手镯"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:id="@+id/lin_wishlistLvinnerAdp_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_wishlistLvinnerAdp_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="删除"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:clickable="true"
+                android:id="@+id/tv_wishlistLvinnerAdp_addbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="添加到购买"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/lin_wishlistLvinnerAdp_bottom"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_wishlistInnerLvAdp_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥169.00"
+                android:textColor="@color/theme_yellow"
+                android:textSize="@dimen/font_small" />
+
+            <com.prettyyes.user.app.view.AmountView
+                android:id="@+id/amount_wishlistInnerLvAdp_num"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                app:btnTextSize="10sp"
+                app:btnWidth="20dp"
+                app:tvWidth="20dp"></com.prettyyes.user.app.view.AmountView>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:clickable="true"
+        android:visibility="gone"
+        android:id="@+id/rel_wishlistInnerLvAdp_select"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/transparent_grey">
+
+    </RelativeLayout>
+
+</RelativeLayout>

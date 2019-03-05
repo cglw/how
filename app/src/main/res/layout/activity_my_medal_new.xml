@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prettyyes.user.app.view.CustomScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/view_go_score_detail"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@drawable/bg_gradient_score"
+            android:paddingTop="12dp">
+
+            <com.prettyyes.user.app.view.app.BezierScoreView
+                android:id="@+id/bezier"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/distance_normal"
+                android:layout_marginLeft="@dimen/distance_normal"
+                android:layout_marginRight="@dimen/distance_normal"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+
+                android:background="@color/score_how"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:paddingLeft="@dimen/distance_6"
+                android:paddingRight="@dimen/distance_6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="How总值"
+                    android:layout_marginRight="@dimen/distance_6"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="@dimen/distance_6"
+                    android:layout_marginRight="@dimen/distance_6"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:id="@+id/tv_total_score"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_6"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/score_start"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:background="@color/score_this_month"
+                android:gravity="center"
+                android:minWidth="100dp"
+                android:paddingLeft="@dimen/distance_6"
+                android:paddingRight="@dimen/distance_6">
+
+                <TextView
+                    android:layout_marginRight="@dimen/distance_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本月How值"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"/>
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="@dimen/distance_6"
+                    android:layout_marginRight="@dimen/distance_6"
+                    android:background="@color/white"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/distance_6"
+                    android:id="@+id/tv_this_month_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/score_start"
+                    android:textSize="17sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_score_do_something"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:clickable="true"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_small"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/score_item_title">
+
+            <TextView
+                style="@style/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="22dp"
+                android:text="我的权益"/>
+
+            <TextView
+
+                android:id="@+id/tv_more"
+                style="@style/tv_title"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:gravity="right|center"
+                android:paddingRight="@dimen/distance_normal"
+                android:text="更多"
+                android:textColor="@color/hintBlack"
+                android:textSize="13sp"/>
+
+
+        </RelativeLayout>
+
+
+        <com.prettyyes.user.app.view.AutoViewPager
+            android:id="@+id/auto_vp"
+            android:layout_width="match_parent"
+            android:layout_height="189dp"
+            android:clipChildren="false"
+            android:paddingTop="@dimen/distance_normal">
+
+        </com.prettyyes.user.app.view.AutoViewPager>
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@color/score_item_title"
+            android:gravity="center_vertical"
+            android:paddingLeft="22dp"
+            android:text="如何升级"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/score_ask"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score_ask"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/score_reply"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score_reply"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/score_buy"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score_buy"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/score_hd"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score_hd"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@color/score_item_title"
+            android:gravity="center_vertical"
+            android:paddingLeft="22dp"
+            android:text="等级权益说明"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_normal"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/score_medal"/>
+
+
+    </LinearLayout>
+</com.prettyyes.user.app.view.CustomScrollView>

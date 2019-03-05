@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/view_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+    <com.prettyyes.user.app.ui.appview.CommentInputView
+        android:id="@+id/commentInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+    </com.prettyyes.user.app.ui.appview.CommentInputView>
+
+    <io.rong.imkit.widget.AutoRefreshListView
+        android:id="@id/rc_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/commentInput"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        />
+
+
+    <com.prettyyes.user.app.view.lvandgrid.SwipeRecycleView
+        android:id="@id/swipe_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/commentInput"
+        >
+    </com.prettyyes.user.app.view.lvandgrid.SwipeRecycleView>
+    <!--<include-->
+        <!--layout="@layout/layout_comment_head"-->
+        <!--android:visibility="gone"/>-->
+
+</RelativeLayout>

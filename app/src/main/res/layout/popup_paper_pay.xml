@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_pupoppaper"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <LinearLayout
+        android:id="@+id/lin_pupoppaper_pay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/select_layout_yellow"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/main_price_icon" />
+
+        <TextView
+            android:id="@+id/tv_pupoppaper_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="10.00元"
+            android:textColor="@color/theme_red"
+            android:textSize="@dimen/font_big" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="阅读此文需要打赏"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_mid" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_pupoppaper_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="这篇文章总共18字，大约需要1分钟阅读"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_mid" />
+
+        <TextView
+            android:lines="2"
+            android:ellipsize="end"
+            android:id="@+id/tv_pupoppaper_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="sdassssssssssdadsdasd"
+            android:textColor="@color/grey_tv_main"
+            android:textSize="@dimen/font_mid" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/backgroundWhit"
+             tools:context="com.prettyyes.user.app.fragments.mianpage.MyQuestionFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.prettyyes.user.app.fragments.MessageFragment">
+
+        <RelativeLayout
+            android:id="@+id/rel_Status_height"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"
+            android:background="@color/white">
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_title"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/ll_change_moment_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="top"
+                    android:text="我的动态"
+                    android:textColor="@color/title_app"
+                    android:textSize="@dimen/font_big_more"
+                    android:textStyle="bold"/>
+
+                <ImageView
+                    android:id="@+id/img_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_small"
+                    android:tint="@color/theme_red"
+                    android:src="@mipmap/link_detail_arrowdown_icon"
+                   />
+                <com.prettyyes.user.app.view.app.RoundView
+                    android:visibility="gone"
+                    android:id="@+id/roundview_unread"
+                    app:bg_color="@color/theme_red"
+                    android:layout_marginLeft="@dimen/distance_normal"
+                    android:layout_centerVertical="true"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/img_myquestionFmt_towishlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/how_shoopingcart_icon_black"
+                android:visibility="gone"/>
+
+            <include layout="@layout/layout_base_head_line"/>
+
+        </RelativeLayout>
+
+
+       <include layout="@layout/fragment_simple_list"></include>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

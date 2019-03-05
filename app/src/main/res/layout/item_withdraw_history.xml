@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/distance_normal"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_title"
+            android:layout_marginBottom="@dimen/distance_small"
+            android:text="当前可提现金额"
+            android:textColor="@color/textNormal"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+
+            style="@style/tv_title"
+            android:layout_marginBottom="@dimen/distance_small"
+            android:text="￥1999"
+            android:textColor="@color/textNormal"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/tv_content"
+            android:text="2017-01-05 21：30：21"
+            android:textColor="@color/hintBlack"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_withdraw"
+        style="@style/tv_content"
+        android:layout_width="79dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/distance_normal"
+        android:background="@drawable/bg_round_red_round100"
+        android:gravity="center"
+        android:text="申请提现"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_small"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:textColor="@color/theme_red"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/distance_normal"
+        android:text="正在提现"
+        android:textSize="17sp"/>
+
+</RelativeLayout>

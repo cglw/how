@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/backgroundWhit">
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lin_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            style="@style/line_grey"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"/>
+
+        <com.prettyyes.user.app.ui.appview.BottomDoView2
+            android:id="@+id/bottomView2_comment"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"/>
+
+    </LinearLayout>
+    <com.prettyyes.user.app.ui.appview.CommentNumView
+        android:id="@+id/CommentNumView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+
+        android:padding="8dp"
+        android:id="@+id/rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="47dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_244_244_244">
+        <EditText
+            android:inputType="text"
+            android:drawablePadding="10dp"
+            android:id="@+id/edit_commentInfo"
+            android:imeOptions="actionSend"
+            android:paddingLeft="10dp"
+            android:maxLines="1"
+            android:minHeight="35dp"
+            android:drawableLeft="@mipmap/comment_icon"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <com.prettyyes.user.app.view.lvandgrid.SwipeListView
+        android:layout_below="@id/CommentNumView"
+        android:layout_above="@id/rel_bottom"
+        android:id="@+id/swipelist_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+
+
+
+</RelativeLayout>

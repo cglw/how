@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_kol_reply_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/distance_small"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_select_sku"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/distance_small"
+                android:layout_marginRight="@dimen/distance_small"
+                android:background="@drawable/bg_retange_dotted_reply"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="想让用户直接购买你的商品或为你的好文打赏  >"
+                android:textColor="@color/reply_select_bg"
+                android:textSize="@dimen/font_content"/>
+
+            <Button
+                android:id="@+id/btn_release"
+                android:layout_width="134dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/distance_small"
+                android:layout_marginRight="@dimen/distance_small"
+                android:layout_marginTop="@dimen/distance_small"
+                android:background="@drawable/bg_round_red_round100"
+                android:text="发  布"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_title"/>
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_bottom"
+            android:paddingBottom="@dimen/distance_small">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/distance_small"
+                >
+
+
+                <LinearLayout
+
+                    android:id="@+id/ll_reply_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginLeft="@dimen/distance_normal"
+                    android:layout_marginRight="@dimen/distance_normal"
+                    android:background="@color/home_reply_bg"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/edit"
+                        style="@style/template_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="@dimen/distance_small"
+                        android:layout_marginRight="@dimen/distance_small"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:hint="@string/reply_hint"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="@dimen/distance_small"
+                        android:layout_marginRight="@dimen/distance_small"
+                        android:text="已经输入0字"
+                        android:textColor="@color/hintBlack"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_que"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="28dp"
+                    android:background="@drawable/bg_question_container"
+                    android:text=""
+                    android:textColor="@color/textNormal"
+                    android:textSize="@dimen/font_content"
+                    android:visibility="visible"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_reply_desc"
+                    android:orientation="vertical">
+
+                    <com.prettyyes.user.app.ui.appview.SelectMediaView
+                        android:id="@+id/selectMedaiView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/distance_small"
+                        android:layout_marginLeft="@dimen/distance_normal"
+                        android:layout_marginRight="@dimen/distance_normal"
+                        android:layout_marginTop="@dimen/distance_small"/>
+
+                    <include
+                        layout="@layout/layout_select_extra_video"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_spu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/selectMedaiView"
+                        android:layout_marginTop="@dimen/distance_small"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/distance_small"
+                            android:layout_marginLeft="@dimen/distance_normal"
+                            android:layout_marginRight="@dimen/distance_normal"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                style="@style/tv_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="已添加"/>
+
+                            <TextView
+                                android:id="@+id/tv_delete"
+                                style="@style/tv_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:gravity="right"
+                                android:text="删除"
+                                android:textColor="@color/hintBlack"/>
+
+                        </LinearLayout>
+
+
+                        <include layout="@layout/layout_muti_spu"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--<com.prettyyes.user.app.ui.appview.MutiSpuView-->
+                <!--android:id="@+id/mutispuview"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="@dimen/distance_normal"/>-->
+
+                <include
+                    layout="@layout/popup_reply_select"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+

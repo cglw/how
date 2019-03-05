@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:id="@+id/view_name"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        >
+
+        <View
+            android:layout_gravity="center_vertical"
+            android:layout_width="4dp"
+            android:layout_height="12dp"
+            android:background="@color/theme_red">
+        </View>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/distance_small"
+            android:lines="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/theme_lightgray"
+            android:textSize="@dimen/font_mid"/>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/view_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_small">
+
+        <ImageView
+            android:id="@+id/img_que"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="@dimen/distance_small"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_defaultimg"
+            />
+
+        <TextView
+            android:id="@+id/tv_more"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/transparent_0.2"
+            android:gravity="center"
+            android:text="@string/more"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small"
+            android:visibility="visible"/>
+
+        <com.prettyyes.user.app.ui.appview.QuestionTextView
+            android:id="@+id/tv_que"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_que"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5dp"
+            android:lines="2"
+            android:textColor="@color/theme_darkgreen"
+            android:textSize="@dimen/font_mid"/>
+
+
+    </RelativeLayout>
+
+
+</merge>

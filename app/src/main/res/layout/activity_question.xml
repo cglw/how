@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rel_question_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F0F4F7"
+                tools:context="com.prettyyes.user.app.ui.ToastActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:background="@drawable/bg_order_info"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_retange_grey_half"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专题"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#7F9B9B9B">
+
+
+
+            </View>
+
+            <TextView
+                android:id="@+id/tv_topic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="##"
+                android:textColor="@color/pink_topic"
+                android:textSize="@dimen/font_small"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_ask"
+            android:layout_width="96dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            >
+
+            <com.prettyyes.user.app.view.app.TriangleView
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                app:direction="rightbottom"
+                app:draw_color="@color/tv_kolact_lookmore"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/tv_kolact_lookmore"
+                android:gravity="center_vertical|left"
+                android:paddingLeft="8dp"
+                android:text="我也要问"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_mid"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.prettyyes.user.app.view.lvandgrid.SwipeRecycleView
+        android:layout_above="@id/rel_bottom"
+        android:id="@+id/swipeRecycle_questionAct"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"></RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_title"
+            android:padding="10dp">
+
+
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/general_share_top_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:alpha="0"
+        android:background="@color/white"
+        android:id="@+id/ll_questionAct_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_Status_height"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_title"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img_questionAct_back"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_back"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/tv_questionAct_title"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="top"
+                android:text="专题"
+                android:textColor="@color/black_main"
+                android:textSize="@dimen/font_big_more"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_share"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/general_share_top_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

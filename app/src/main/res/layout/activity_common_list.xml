@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_common_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.prettyyes.user.app.ui.comment.CommonInfoListActivity">
+
+    <RelativeLayout
+
+        android:padding="8dp"
+        android:id="@+id/rel_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="47dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/grey_244_244_244">
+        <EditText
+            android:inputType="text"
+            android:drawablePadding="10dp"
+            android:id="@+id/edit_commentInfo"
+            android:imeOptions="actionSend"
+            android:paddingLeft="10dp"
+            android:maxLines="1"
+            android:minHeight="35dp"
+            android:drawableLeft="@mipmap/comment_icon"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <com.prettyyes.user.app.view.lvandgrid.SwipeRecycleView
+        android:id="@+id/swipe_commentInfo"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rel_bottom">
+
+
+    </com.prettyyes.user.app.view.lvandgrid.SwipeRecycleView>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".app.ui.CouponShareActivity">
+
+    <TextView
+        android:id="@+id/tv_couponshare_title"
+        android:layout_width="wrap_content"
+        android:gravity="left"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="• 点击右上角生成个性邀请码\n• 分享好友获取 50元 优惠券"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp"
+        android:background="@mipmap/bg_coupon_share"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+   >
+        <TextView
+            android:layout_marginTop="85dp"
+            android:id="@+id/tv_couponshare_code"
+          android:layout_centerHorizontal="true"
+            android:text=""
+            android:gravity="center"
+            android:textSize="@dimen/font_big"
+            android:textColor="@color/theme_yellow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:minHeight="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:id="@+id/lin_couponshare_weibo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/general_weibo_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新浪微博"
+                android:textColor="@color/black_mid" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_couponshare_wechat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/general_wechat_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信"
+                android:textColor="@color/black_mid" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_couponshare_friends"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/general_friends_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="微信朋友圈"
+                android:textColor="@color/black_mid" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

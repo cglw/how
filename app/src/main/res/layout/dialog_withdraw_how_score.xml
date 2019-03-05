@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_round_white_10"
+    android:orientation="vertical"
+    android:padding="@dimen/distance_normal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/tv_content"
+            android:text="到账银行卡"
+            android:textColor="@color/textNormal"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_go_bank"
+                style="@style/tv_content"
+                android:clickable="true"
+                android:text="点击设置银行卡"
+                android:textColor="@color/theme_red"/>
+
+            <TextView
+                style="@style/tv_content"
+                android:layout_marginTop="@dimen/distance_small"
+                android:text="费率0.3%"
+                android:textColor="@color/textNormal"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/tv_content"
+        android:layout_marginTop="@dimen/distance_small"
+        android:text="兑换金额"
+        android:textColor="@color/textNormal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_small">
+
+        <TextView
+            style="@style/tv_content"
+            android:layout_marginTop="@dimen/distance_small"
+            android:text="￥ "
+            android:textColor="@color/textNormal"
+            android:textSize="26sp"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/tv_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/distance_small"
+            android:background="@null"
+            android:text=""
+            android:textColor="@color/textNormal"
+            android:textSize="48sp"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/distance_normal"
+        android:background="@color/textNormal"/>
+
+
+    <TextView
+android:id="@+id/tv_extra"
+        style="@style/tv_content"
+        android:layout_marginTop="10dp"
+        android:text="额外扣除手续费"
+        android:textColor="@color/hintBlack"/>
+
+    <com.prettyyes.user.app.view.tvbtnetv.CustumBgTextView
+        android:id="@+id/tv_withdraw"
+        android:layout_width="183dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="26dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/mine_item_info_withdraw"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:radius="8dp"
+        app:shapeTpe="rectangle"
+        app:solidColor="@color/withdraw_account"
+        app:strokeWith="1"/>
+
+</LinearLayout>
+

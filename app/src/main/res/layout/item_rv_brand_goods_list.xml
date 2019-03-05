@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="132dp"
+    >
+
+    <com.prettyyes.user.app.view.imageview.RoundImageView
+        android:id="@+id/img_covery"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/distance_small"
+
+        android:src="@mipmap/ic_defaultimg"
+        app:borderRadius="2dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img_covery"
+        android:layout_marginRight="@dimen/distance_small"
+        android:layout_toRightOf="@id/img_covery"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="简约几何感觉套装"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_big"/>
+
+
+    <TextView
+        android:id="@+id/tv_suitlistAdp_goodsdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img_covery"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/img_covery"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="SKU介绍SKU介绍SKU介绍SKU介SKU介绍SKU介绍SKU介绍SKU介绍"
+        android:textColor="@color/black_main"
+        android:textSize="@dimen/font_big"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tv_brand_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_covery"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/distance_small"
+        android:background="@drawable/bg_rang_origin_radius_5"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:padding="4dp"
+        android:text="weqwe"
+        android:textColor="@color/yellow_normal"/>
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/img_covery"
+        android:layout_marginBottom="4dp"
+        android:layout_toLeftOf="@id/tv_brand_name"
+        android:layout_toRightOf="@id/img_covery"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="￥566.00"
+        android:textColor="@color/theme_red"
+        android:textSize="14sp"/>
+
+
+</RelativeLayout>
+
+    

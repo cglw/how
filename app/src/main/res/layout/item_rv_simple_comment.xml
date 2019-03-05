@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/comment_icon" />
+
+        <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+            android:id="@+id/KolSimpleInfoView"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_toLeftOf="@id/img_chat"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:paddingLeft="53dp"
+        android:id="@+id/tv_extra_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="这个问题其实我觉得有些难度。但是完全不影响其他的进度因为总归很难说服他"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="53dp"
+        android:id="@+id/ll_inner_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="#EEEEEE"
+        android:padding="8dp">
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_inner_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="木壳人："-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="13sp" />-->
+
+        <TextView
+            android:id="@+id/tv_inner_comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="这个问题其实我觉得有些难度。但是完全不影响其他的进度因为总归很难说服他"
+            android:textColor="#4A4A4A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_gravity="right"
+            android:id="@+id/tv_inner_comment_totalnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共 XX 个回复>"
+            android:maxLines="1"
+            android:textColor="@color/theme_red"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/line_grey"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="26dp"></View>
+
+</LinearLayout>

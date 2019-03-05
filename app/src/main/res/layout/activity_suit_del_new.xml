@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--&gt;-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_suitdelAct_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_247_247_247"
+  >
+
+    <com.prettyyes.user.app.view.CustomScrollView
+        android:id="@+id/custScrollview_suitdel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+     android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:orientation="vertical">
+
+
+            <com.prettyyes.user.app.view.ClipViewPager
+                android:id="@+id/vp_suitdelAct_suit"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="12dp"
+                android:clipChildren="false"
+                android:visibility="visible">
+
+           </com.prettyyes.user.app.view.ClipViewPager>
+
+            <LinearLayout
+                android:id="@+id/lin_suitdelAct_topindex"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_suitdelAct_suitname"
+                        android:layout_width="178dp"
+                        android:layout_height="wrap_content"
+                        android:text="名称"
+                        android:textColor="@color/main_black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_suitdelAct_totalprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_suitdelAct_suitname"
+
+                        android:layout_marginTop="5dp"
+                        android:text="￥566.00"
+                        android:textColor="#4A4A4A"
+                        android:textSize="@dimen/font_big" />
+
+
+
+                    <ImageView
+                        android:id="@+id/img_suitdelAct_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/suit_share"
+                        android:tint="@color/black"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                    <CheckBox
+                        android:button="@null"
+                        android:id="@+id/checkbox_suitdelAct_collect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_toLeftOf="@id/img_suitdelAct_share"
+                        android:layout_toStartOf="@id/img_suitdelAct_share"
+                        android:background="@drawable/checkbox_collect_suit"
+                        />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rel_suitdelAct_headimg"
+                        android:layout_width="54dp"
+                        android:layout_height="44dp"
+                        android:layout_marginRight="18dp">
+
+                        <com.prettyyes.user.app.view.imageview.RoundImageView
+                            android:id="@+id/img_suitdelAct_headimg"
+                            android:layout_width="44dp"
+                            android:layout_height="44dp"
+                            android:src="@mipmap/myhead"
+                            app:borderRadius="22dp" />
+
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/ic_chat" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/img_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/ic_right_arrow"
+                        android:tint="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/tv_suitdelAct_nickname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/rel_suitdelAct_headimg"
+                        android:layout_marginBottom="2dp"
+                        android:layout_toLeftOf="@id/img_right"
+                        android:layout_toRightOf="@id/rel_suitdelAct_headimg"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="kimi"
+                        android:textColor="@color/main_black"
+                        android:textSize="@dimen/font_big" />
+
+
+                </RelativeLayout>
+
+                <View
+                    style="@style/line_grey"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="18dp"></View>
+
+
+                <com.prettyyes.user.app.view.tvbtnetv.ExpandableTextView
+                    android:id="@+id/tv_suitdelAct_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/theme_lightgray"
+                    android:textSize="@dimen/font_mid"
+                    app:etv_MaxLinesOnShrink="3"
+                    app:etv_ToExpandHint="「展开」"
+                    app:etv_ToExpandHintColor="@color/theme_lightgray"
+                    app:etv_ToShrinkHint="「收起」"
+                    app:etv_ToShrinkHintColor="@color/theme_lightgray"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                    android:src="@mipmap/suit_logo1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="优点"
+                        android:textColor="@color/main_black"
+                        android:textSize="@dimen/font_big"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <com.prettyyes.user.app.view.tvbtnetv.ExpandableTextView
+                    android:id="@+id/tv_suitdelAct_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textColor="@color/theme_lightgray"
+                    android:textSize="@dimen/font_mid"
+                    app:etv_MaxLinesOnShrink="3"
+                    app:etv_ToExpandHint="「展开」"
+                    app:etv_ToExpandHintColor="@color/theme_lightgray"
+                    app:etv_ToShrinkHint="「收起」"
+                    app:etv_ToShrinkHintColor="@color/theme_lightgray"
+
+                    />
+
+                <View
+                    style="@style/line_grey"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"></View>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/suit_logo2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:text="缺点"
+                        android:textColor="@color/main_black"
+                        android:textSize="@dimen/font_big"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <com.prettyyes.user.app.view.tvbtnetv.ExpandableTextView
+                    android:id="@+id/tv_suitdelAct_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textColor="@color/theme_lightgray"
+                    android:textSize="@dimen/font_mid"
+                    app:etv_MaxLinesOnShrink="3"
+                    app:etv_ToExpandHint="「展开」"
+                    app:etv_ToExpandHintColor="@color/theme_lightgray"
+                    app:etv_ToShrinkHint="「收起」"
+                    app:etv_ToShrinkHintColor="@color/theme_lightgray"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="33dp"
+                    android:gravity="center_vertical"
+                    android:text="单品"
+                    android:textColor="@color/main_black"
+                    android:textSize="@dimen/font_big"
+                    android:textStyle="bold" />
+
+                <com.prettyyes.user.app.view.lvandgrid.MyGridView
+                    android:id="@+id/grid_suitdelAct_suitdel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="1"
+                   >
+
+                </com.prettyyes.user.app.view.lvandgrid.MyGridView>
+            </LinearLayout>
+
+            <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/tv_suitdelAct_totalprice"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="right"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginRight="20dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="RMB:1200"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:visibility="gone" />&ndash;&gt;-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="2dp"-->
+            <!--android:layout_marginBottom="30dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:background="@drawable/dotted_line"-->
+            <!--android:layerType="software"-->
+            <!--android:visibility="gone"></View>-->
+
+            <LinearLayout
+                android:id="@+id/lin_suitdelAct_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <View
+
+                        style="@style/line_grey"
+                        android:layout_width="67dp"></View>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="13dp"
+                        android:gravity="center_vertical"
+                        android:text="相关推荐"
+                        android:textColor="@color/main_black"
+                        android:textSize="@dimen/font_big"
+                        android:textStyle="bold" />
+
+                    <View
+                        style="@style/line_grey"
+                        android:layout_width="67dp"></View>
+
+                </LinearLayout><include layout="@layout/layout_recommend"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </com.prettyyes.user.app.view.CustomScrollView>
+</RelativeLayout><!--</ScrollView>-->

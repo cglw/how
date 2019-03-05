@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+    <TextView
+        android:id="@+id/tv_splitview_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="100个How问题中精选了10个"
+        android:textColor="@color/tv_dark_grey"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tv_splitview_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_splitview_desc"
+        android:layout_alignLeft="@id/tv_splitview_desc"
+        android:text="3/20/2017"
+        android:textColor="@color/tv_dark_grey"
+        android:textSize="10sp"/>
+
+
+    <View
+        android:id="@+id/view_leftline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/tv_splitview_time"
+        android:layout_marginBottom="6dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/tv_splitview_time"
+        android:background="@color/tv_dark_grey"></View>
+
+    <View
+        android:id="@+id/view_rightline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/tv_splitview_desc"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_splitview_desc"
+        android:background="@color/tv_dark_grey"></View>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/view_suit_question_bg"
+                android:layout_width="match_parent"
+                android:layout_height="134dp"
+                android:layout_marginLeft="@dimen/distance_normal"
+                android:layout_marginRight="@dimen/distance_normal"
+                android:background="@drawable/how_question_container1"
+                android:orientation="vertical">
+
+    <com.prettyyes.user.app.ui.appview.QuestionTextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="14dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_title"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_question"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/grey_bg"/>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/black_main"
+        android:textSize="@dimen/font_content"/>
+
+
+</RelativeLayout>

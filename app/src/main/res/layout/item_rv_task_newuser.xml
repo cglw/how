@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginLeft="@dimen/distance_normal"
+                android:layout_marginRight="@dimen/distance_normal"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_round_white_8">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:text="分享喜欢的问题/回复"
+            android:textColor="@color/textNormal"
+            />
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/distance_small"
+            android:src="@mipmap/ic_right_arrow"
+            android:tint="@color/textNormal"/>
+
+        <TextView
+            android:id="@+id/tv_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_right"
+            android:gravity="right"
+            android:text="未完成"
+            android:textColor="@color/hintBlack"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/distance_small"
+            android:layout_toLeftOf="@id/tv_complete"
+            android:layout_toRightOf="@id/tv_title"
+            android:gravity="right"
+            android:text="1分"
+            android:id="@+id/tv_score"
+            android:textColor="@color/theme_red"
+            android:textSize="13sp"
+            android:visibility="visible"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

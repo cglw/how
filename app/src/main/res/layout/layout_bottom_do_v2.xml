@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+             >
+
+
+    <LinearLayout
+        android:id="@+id/lin_zeze"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/select_layout"
+        android:clipChildren="false"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_bottomv2_zeze"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/how_zan_icon"/>
+
+        <TextView
+            android:id="@+id/tv_bottomv2_zeze"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_vertical"
+            android:text="啧啧0"
+            android:textColor="@color/grey_555555"
+            android:textSize="10sp"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="17dp"
+        android:background="@color/white_grey"/>
+
+    <LinearLayout
+        android:id="@+id/lin_pei"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/select_layout"
+        android:clipChildren="false"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_bottomv2_pei"
+
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/how_pei_icon"/>
+
+        <TextView
+            android:id="@+id/tv_bottomv2_pei"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2dp"
+            android:text="呸0"
+            android:textColor="@color/grey_555555"
+            android:textSize="@dimen/font_small"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="17dp"
+        android:background="@color/white_grey"/>
+
+
+    <LinearLayout
+        android:id="@+id/lin_share"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/select_layout"
+        android:clipChildren="false"
+        android:gravity="center"
+       >
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/home_share_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:gravity="center_vertical"
+            android:text="分享"
+            android:textColor="@color/grey_555555"
+            android:textSize="@dimen/font_small"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_share_right"
+        android:layout_width="1dp"
+        android:layout_height="17dp"
+        android:background="@color/white_grey"/>
+
+    <LinearLayout
+        android:id="@+id/lin_comment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/select_layout"
+        android:clipChildren="false"
+        android:gravity="center"
+       >
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="@dimen/distance_4"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/comment_icon"/>
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="评论"
+            android:textColor="@color/grey_555555"
+            android:textSize="@dimen/font_small"/>
+
+    </LinearLayout>
+
+</merge>

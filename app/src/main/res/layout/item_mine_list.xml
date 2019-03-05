@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/lin_mineItem_click"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mine_item_height_normal"
+                android:clickable="true"
+                android:background="@drawable/select_layout"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp">
+
+
+    <ImageView
+        android:id="@+id/img_mineItem_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/myinfo_kol_icon"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/img_mineItem_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_right_arrow"
+        android:tint="@color/black"
+        android:visibility="gone"/>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/img_mineItem_right"
+        android:layout_toRightOf="@id/img_mineItem_icon"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_mineItem_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的KOL"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big"/>
+
+        <TextView
+            android:textSize="@dimen/font_mid"
+            android:id="@+id/tv_mineItem_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="里面有很多KOL"
+            android:textColor="@color/theme_lightgray"
+           />
+
+    </LinearLayout>
+</RelativeLayout>

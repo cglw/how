@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             tools:context="com.prettyyes.user.app.fragments.TaobaoTopFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_taobaodel_bigimg"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_defaultimg"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/distance_normal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+
+                <com.prettyyes.user.app.view.tvbtnetv.DrawableCenterTextView
+                    android:id="@+id/tv_taobaodelAct_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:drawableLeft="@mipmap/ic_share"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="@string/share"
+                    android:textSize="@dimen/font_small"/>
+
+                <TextView
+                    android:id="@+id/tv_taobaodelAct_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@id/tv_taobaodelAct_share"
+                    android:ellipsize="end"
+                    android:text="腰带饰中长款风衣"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_big_more"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv_taobaodelAct_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RMB 0"
+                android:textColor="@color/theme_red"
+                android:textSize="@dimen/font_big"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_taobaodel_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:clipChildren="false"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        >
+
+        <com.prettyyes.user.app.view.ClipViewPager
+            android:id="@+id/vp_taobaodel_showimg"
+            android:layout_width="215dp"
+            android:layout_height="290dp"
+            android:layout_marginBottom="18dp"
+            android:clipChildren="false"/>
+    </LinearLayout>
+</FrameLayout>

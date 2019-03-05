@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@id/framelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--去掉item按下背景
+                     android:listSelector="@android:color/transparent"
+    -->
+    <com.prettyyes.user.app.view.recycle.EmptyRecyclerView
+        android:id="@+id/lv_swiperecycle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/netscrollView_emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:id="@+id/ll_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundWhit"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="我们无法预知未来很有挑逗意味。"
+                android:textColor="@color/theme_red"
+                android:textSize="@dimen/font_big"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="——霍金"
+                android:textColor="@color/theme_red"
+                android:textSize="@dimen/font_big"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="当前网络信号出错，刷新后的页面会让您更加惊喜。"
+                android:textColor="@color/grey_tv_main"
+                android:textSize="@dimen/font_big"/>
+
+            <Button
+                android:id="@+id/btn_reload"
+                style="@style/btn_select_red_round"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="刷新"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>
+

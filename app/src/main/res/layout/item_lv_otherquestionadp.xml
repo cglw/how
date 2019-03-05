@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:id="@+id/rel_otherquestionAdp_base"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="18dp">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/bg_question">
+
+        <TextView
+            android:id="@+id/tv_otherqueAdp_bottomdesc"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="有0个知名人士回复了这个问题, 有0个优秀内容"
+            android:textColor="@color/theme_lightgray"
+            android:textSize="@dimen/font_small" />
+
+        <LinearLayout
+            android:id="@+id/lin_otherqueAdp_showComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="53dp"
+            android:paddingTop="55dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:id="@+id/rel_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/img_otherqueAdp_commentHeader"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/myhead" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_otherqueAdp_commentNickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/rel_img"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="狂野的小猫咪"
+                        android:textColor="@color/theme_darkgreen"
+                        android:textSize="@dimen/font_mid"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_otherqueAdp_commentPersonDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_toRightOf="@id/rel_img"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="我是一味包治百病的板蓝根"
+                        android:textColor="@color/theme_lightgray"
+                        android:textSize="@dimen/font_small" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_otherqueAdp_commentContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="25dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="我有一件这样的衣服，想穿出不一样的感觉，，类似出游我有一件这"
+                    android:textColor="@color/theme_darkgreen"
+                    android:textSize="@dimen/font_mid" />
+
+                <include layout="@layout/item_mianlayout_typeimgs" />
+
+                <include layout="@layout/item_mianlayout_typeoneimg" />
+
+                <!--<include layout="@layout/item_mianlayout_typevedio" />-->
+
+                <!--<include layout="@layout/item_mianlayout_typeaudio" />-->
+
+                <include layout="@layout/item_mianlayout_typetaobao" />
+
+                <include layout="@layout/item_mianlayout_typeempty" />
+
+               <com.prettyyes.user.app.ui.appview.PaperView
+                   android:id="@+id/pagerView_main"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent">
+
+               </com.prettyyes.user.app.ui.appview.PaperView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:visibility="gone"></View>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_round_yellow10_buttom"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="查看更多回复"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_big" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+      <!--&gt;-->
+
+        <include layout="@layout/layout_question_head" />
+    <!--</RelativeLayout>-->
+
+    <ImageView
+        android:id="@+id/img_otherqueAdp_share"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp"
+        android:layout_marginTop="85dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/main_share_icon" />
+
+
+</RelativeLayout>

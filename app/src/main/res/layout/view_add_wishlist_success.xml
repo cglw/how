@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="307dp"
+                android:id="@+id/rel_root"
+                android:layout_height="225dp">
+
+    <LinearLayout
+        android:layout_width="287dp"
+        android:layout_height="215dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_round_translate_half"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/add_correct_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="已成功添加到购物车"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_big"/>
+
+        <Button
+            android:id="@+id/btn_go_wishlist"
+            android:layout_width="98dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/select_btn_yellow_dark_radius4"
+            android:gravity="center"
+            android:text="结 账"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/how_dismiss_icon"/>
+
+</RelativeLayout>

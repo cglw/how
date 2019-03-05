@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability= "blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="29.5dp">
+
+            <TextView
+                android:id="@+id/tv_orderlistchildAdp_ordernum"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="订单号：793721931"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/tv_orderlistchildAdp_orderState"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="待支付"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/font_small" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/line_color"></View>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rel_orderlistchildAdp_oneImg"
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/img_orderlistchildAdp_uintimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_defaultimg" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_orderlistchildAdp_uintimg"
+                android:paddingRight="5dp">
+
+                <TextView
+                    android:id="@+id/tv_orderlistchildAdp_uintname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="POKER家秋新品 简约COS风手镯"
+                    android:textColor="@color/main_black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv_orderlistchildAdp_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_orderlistchildAdp_uintname"
+                    android:layout_marginTop="5dp"
+                    android:text="￥169.00"
+                    android:textColor="@color/main_black"
+                    android:textSize="@dimen/font_big_more" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="购买数量："
+                    android:textColor="@color/main_black"
+                    android:textSize="9dp" />
+
+                <TextView
+                    android:id="@+id/tv_orderlistchildAdp_oneuintnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="X 1"
+                    android:textColor="@color/main_black"
+                    android:textSize="@dimen/font_big_more" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <include layout="@layout/item_mianlayout_typeimgs"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_orderlistchildAdp_ordertotalnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="共1件商品"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计："
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/tv_orderlistchildAdp_totalprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥169.00"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/font_big_more" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_orderlistchildAdp_left"
+                style="@style/btn_select_red_oval_round"
+                android:layout_marginRight="10dp"
+                android:layout_height="30dp"
+                android:text="申请退款" />
+
+            <Button
+                style="@style/btn_select_red_oval_round"
+                android:id="@+id/btn_orderlistchildAdp_right"
+                android:layout_height="30dp"
+                android:text="提醒发货" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

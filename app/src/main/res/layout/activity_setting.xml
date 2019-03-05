@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:SettingItemView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical"
+    tools:context="com.prettyyes.user.app.ui.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.prettyyes.user.app.view.app.SettingItemView
+            android:id="@+id/settingItem_settingAct_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            SettingItemView:leftTitle="版本"></com.prettyyes.user.app.view.app.SettingItemView>
+
+        <com.prettyyes.user.app.view.app.SettingItemView
+            android:id="@+id/settingItem_settingAct_passwordset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            SettingItemView:leftTitle="账户及密码设置"></com.prettyyes.user.app.view.app.SettingItemView>
+
+        <com.prettyyes.user.app.view.app.SettingItemView
+            android:id="@+id/settingItem_settingAct_clearcache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            SettingItemView:leftTitle="清除缓存"></com.prettyyes.user.app.view.app.SettingItemView>
+
+        <com.prettyyes.user.app.view.app.SettingItemView
+            android:id="@+id/settingItem_settingAct_changebindphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            SettingItemView:leftTitle="更改绑定手机"></com.prettyyes.user.app.view.app.SettingItemView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_settingAct_loginout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/select_layout_themedarkgreen"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="退出我的账号"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_big" />
+
+    </LinearLayout>
+
+</RelativeLayout>

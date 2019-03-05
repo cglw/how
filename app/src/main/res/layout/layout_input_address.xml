@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_checkorederAct_edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/distance_small"
+        android:paddingRight="@dimen/distance_small">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户信息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_content"/>
+
+        <TextView
+            android:id="@+id/tv_checkorederAct_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:text="编辑"
+            android:textColor="@color/theme_bggreen"
+            android:textSize="10sp"/>
+
+
+    </LinearLayout>
+
+    <View style="@style/line_grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="收货人：    "
+                android:textColor="@color/theme_lightgray"
+                android:textSize="@dimen/font_mid"/>
+
+            <TextView
+                android:id="@+id/tv_checkorderAct_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_mid"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="手机号：   "
+                android:textColor="@color/theme_lightgray"
+                android:textSize="@dimen/font_mid"/>
+
+            <TextView
+                android:id="@+id/tv_checkorderAct_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_mid"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp">
+
+        <TextView
+            android:id="@+id/left_tv"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="收货地址："
+            android:textColor="@color/theme_lightgray"
+            android:textSize="@dimen/font_mid"/>
+
+        <TextView
+            android:id="@+id/tv_checkorderAct_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/left_tv"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="3"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_mid"/>
+
+        <TextView
+            android:id="@+id/tv_checkorederAct_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="4dp"
+            android:text="[默认]"
+            android:textColor="@color/theme_red"
+            android:textSize="@dimen/font_mid"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+</LinearLayout>
+

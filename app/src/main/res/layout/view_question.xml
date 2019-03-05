@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/lin_question_base"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/distance_small"
+              android:paddingLeft="@dimen/distance_normal"
+              android:paddingRight="@dimen/distance_normal"
+              android:paddingTop="@dimen/distance_small"
+    >
+
+    <RelativeLayout
+        android:id="@+id/view_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false">
+
+        <View
+            android:id="@+id/view_red"
+            android:layout_width="4dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:background="@color/theme_red">
+
+        </View>
+
+        <TextView
+            android:id="@+id/tv_questionView2_sendNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/view_red"
+            android:lines="1"
+            android:text="狂野的小猫咪"
+            android:textColor="@color/theme_lightgray"
+            android:textSize="@dimen/font_mid"/>
+
+        <TextView
+            android:id="@+id/tv_questionView2_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="1 min ago"
+
+            android:textColor="@color/grey_txt"
+            android:textSize="@dimen/font_small"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="5dp">
+
+            <com.prettyyes.user.app.view.imageview.RoundImageView
+                android:id="@+id/img_questionView2"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_defaultimg"
+                app:borderRadius="2dp"/>
+
+            <TextView
+
+                android:id="@+id/tv_questionView2_moreimg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bg_round_translate_5"
+                android:gravity="center"
+                android:text="更多"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_small"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+        <com.prettyyes.user.app.ui.appview.QuestionTextView
+            android:id="@+id/tv_questionView2_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/rel"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5dp"
+            android:minLines="3"
+            android:paddingBottom="5dp"
+            android:text="狂野的小猫咪狂野的小猫咪狂野的小猫咪狂野的小猫咪狂野的小猫咪狂野的小猫咪狂野的小猫咪"
+            android:textColor="@color/theme_darkgreen"
+            android:textSize="@dimen/font_big"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_questionView2_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:drawableLeft="@mipmap/how_invite_icon"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="邀请有赏"
+        android:textColor="@color/theme_lightgray"
+        android:textSize="13sp"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

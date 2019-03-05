@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    app:layout_scrollFlags="scroll|snap"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <View
+        android:id="@+id/view_question_root"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:orientation="vertical"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_normal"
+        android:layout_marginRight="@dimen/distance_normal"
+        android:layout_marginTop="49dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+        <ImageView
+            android:id="@+id/img_invite"
+            style="@style/tv_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/distance_small"
+            android:layout_marginTop="@dimen/distance_small"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/how_home_top_share"
+            />
+
+        <ImageView
+            android:id="@+id/img_collect"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/distance_small"
+            android:layout_marginTop="@dimen/distance_small"
+            android:layout_toLeftOf="@+id/img_invite"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/how_home_like"/>
+
+
+        <RelativeLayout
+
+            android:id="@+id/view_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/distance_normal"
+            android:paddingLeft="@dimen/distance_normal"
+            android:paddingRight="@dimen/distance_normal"
+            android:paddingTop="33dp">
+
+
+            <View
+                android:id="@+id/view_red_line"
+                android:layout_width="4dp"
+                android:layout_height="14dp"
+                android:background="@color/theme_red">
+            </View>
+
+            <TextView
+                android:id="@+id/tv_que_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/view_red_line"
+                android:layout_marginLeft="@dimen/distance_small"
+                android:lines="1"
+                android:textColor="@color/theme_lightgray"
+                android:textSize="@dimen/font_mid"/>
+
+            <ImageView
+                android:id="@+id/img_que"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_que_name"
+                android:layout_marginRight="@dimen/distance_small"
+                android:layout_marginTop="@dimen/distance_small"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_defaultimg"
+                android:visibility="gone"
+                />
+
+            <TextView
+
+                android:id="@+id/tv_more"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_que_name"
+                android:layout_marginTop="@dimen/distance_small"
+                android:background="@color/transparent_0.2"
+                android:gravity="center"
+                android:text="@string/more"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_small"
+                android:visibility="gone"/>
+
+            <com.prettyyes.user.app.ui.appview.QuestionTextView
+                android:id="@+id/tv_que_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_que_name"
+                android:layout_marginTop="@dimen/distance_small"
+                android:minLines="2"
+                android:layout_toRightOf="@id/img_que"
+                android:gravity="center|left"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/theme_darkgreen"
+                android:textSize="@dimen/font_mid"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_big"
+        android:layout_marginTop="40dp">
+
+        <include
+            layout="@layout/layout_que_score"/>
+
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/distance_normal"
+            tools:context="com.prettyyes.user.app.ui.common.AddExtraVideoUrlActivity">
+
+            <TextView
+
+                style="@style/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="添加链接"/>
+
+            <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+                android:id="@+id/edit_video_url"
+                style="@style/edit_normal_margin_lr"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:hint="请输入您要添加的链接"
+                android:singleLine="true"/>
+
+            <TextView
+                style="@style/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:text="添加视频封面"/>
+
+            <RelativeLayout
+                android:id="@+id/view_change_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:id="@+id/img_video_covery"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="@dimen/distance_small"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/view_add_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_retange_grey_4_inner"
+                    android:src="@mipmap/ic_upload">
+
+                    <com.prettyyes.user.app.view.app.RoundView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        app:bg_color="@color/hintBlack"/>
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/backgroundWhit"/>
+
+                    <View
+                        android:layout_width="30dp"
+                        android:layout_height="8dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/backgroundWhit"/>
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_change_img"
+                style="@style/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:gravity="center"
+                android:text="点击更换图片"/>
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/btn_select_red_round"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/distance_big"
+                android:text="确认添加"/>
+
+            <TextView
+
+                style="@style/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_big"
+                android:text="注: 视频链接若为违法链接，经过查实后将会暂停您的账号"
+                android:textColor="@color/hintBlack"/>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_ask_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/img_askAct_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ScrollView
+        android:id="@+id/scrollView_askAct_foot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_sendquestion"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/rel_ask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.CoordinatorLayout
+                    android:id="@+id/coordinatorLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="34dp"
+                   >
+
+                    <LinearLayout
+                        android:layout_marginRight="@dimen/distance_normal"
+                        android:layout_marginLeft="@dimen/distance_normal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                           >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_horizontal"
+                                android:text="提问"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_big_more" />
+
+                            <ImageView
+                                android:id="@+id/img_askAct_close"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:scaleType="center"
+                                android:src="@mipmap/ic_close"
+                                android:layout_alignParentTop="true"
+                               />
+                            <TextView
+                                android:clickable="true"
+                                android:gravity="center"
+                                android:id="@+id/tv_how_to_ask"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="40dp"
+                                android:textColor="@color/white"
+                                android:scaleType="center"
+                                android:text="@string/ask_how_to"
+                                android:src="@mipmap/ic_close"
+                                android:layout_alignParentTop="true"
+                               />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/bg_rang_grey_radius_5"
+                            android:padding="5dp">
+
+
+                            <LinearLayout
+                                android:id="@+id/lin_sendQueAct_lefttv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentRight="true"
+                                android:gravity="center_vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_askAct_leftTv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="还可输入140个字"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small" />
+
+                            </LinearLayout>
+
+                            <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+                                android:layout_above="@id/lin_sendQueAct_lefttv"
+                                android:id="@+id/editdel_askAct_question"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@null"
+                                android:gravity="left|top"
+                                android:maxLength="140"
+                                android:textColor="@color/white" />
+
+                            <com.prettyyes.user.app.view.tvbtnetv.AutoVerticalScrollTextView
+                                android:id="@+id/tv_askAct_autoScroll"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                            </com.prettyyes.user.app.view.tvbtnetv.AutoVerticalScrollTextView>
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.design.widget.CoordinatorLayout>
+
+                <com.prettyyes.user.app.ui.appview.SelectMediaView
+                    android:id="@+id/selectPhotoView_askAct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="25dp"></com.prettyyes.user.app.ui.appview.SelectMediaView>
+
+
+                <LinearLayout
+                    android:layout_marginTop="25dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        style="@style/line_black"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_736465"></View>
+
+                    <RelativeLayout
+                        android:id="@+id/view_aksAct_selectKol"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp">
+
+                        <TextView
+                            android:id="@+id/view_left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" @Ta来回答"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_big" />
+
+                        <RelativeLayout
+
+                            android:id="@+id/rel"
+                            android:layout_width="30dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+
+                                android:src="@mipmap/ic_right_arrow" />
+                        </RelativeLayout>
+
+                        <com.prettyyes.user.app.view.FlowLayout
+                            android:id="@+id/flowlayout_aksAct_kol"
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@id/rel"
+                            android:layout_toRightOf="@id/view_left"
+                            android:minHeight="200dp">
+
+                        </com.prettyyes.user.app.view.FlowLayout>
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey_736465"></View>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="公开发问"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_mid"
+                        android:visibility="gone" />
+
+                    <ToggleButton
+                        android:id="@+id/toggle_askAct_isOpen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:background="@android:color/transparent"
+                        android:checked="false"
+                        android:drawableRight="@drawable/checkbox"
+                        android:textColor="@color/white"
+                        android:textOff="公开发问"
+                        android:textOn="匿名发问" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginTop="25dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <Button
+                        android:id="@+id/btn_askAct_sendquestion"
+                        android:layout_width="164dp"
+                        android:layout_height="42dp"
+
+                        android:background="@drawable/select_btn_themered_radius5"
+                        android:text="提交"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_big"></Button>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

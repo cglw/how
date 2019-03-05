@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+
+    <RadioGroup
+
+        android:id="@+id/main_radioGroups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/index_rb0"
+            style="@style/MainRadioBtnStyle"
+            android:drawableTop="@drawable/main_ask_selector"
+            android:text="@string/mainpage_ask"/>
+
+        <RadioButton
+            android:id="@+id/index_rb1"
+            style="@style/MainRadioBtnStyle"
+            android:drawableTop="@drawable/main_kol_selector"
+            android:text="@string/mainpage_kollist"/>
+
+        <RadioButton
+            android:id="@+id/index_rb2"
+            style="@style/MainRadioBtnStyle"
+            android:background="@null"
+            android:drawableTop="@drawable/main_kol_selector"
+            android:gravity="center"
+            android:text="@string/mainpage_center"/>
+
+        <RadioButton
+            android:id="@+id/index_rb3"
+            style="@style/MainRadioBtnStyle"
+            android:drawableTop="@drawable/main_myquestion_selector"
+            android:text="@string/mainpage_myquestion"/>
+
+        <RadioButton
+            android:id="@+id/index_rb4"
+            style="@style/MainRadioBtnStyle"
+            android:drawableTop="@drawable/main_my_selector"
+            android:text="@string/mainpage_more"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+
+        <RelativeLayout
+            android:id="@+id/ll_tips"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            >
+
+            <TextView
+                android:id="@+id/tv_main_hidequestin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@mipmap/tabbar_myask_selected"
+                android:text="@string/mainpage_more"
+                android:textSize="@dimen/font_small"
+                android:visibility="invisible"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/index_container"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_radioGroups"
+        android:layout_marginBottom="0.5dp"
+        android:background="@color/theme_red"/>
+
+    <ImageView
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/distance_normal"
+        android:src="@mipmap/tabbar_compose_button"/>
+
+    <ImageView
+        android:id="@+id/img_ask"
+        android:tint="@color/transparent_0.2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/framelayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+</RelativeLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_order_info"
+
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:id="@+id/view2"
+
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginTop="64dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="29.5dp"
+                android:layout_marginLeft="14dp"
+                android:gravity="center_vertical"
+                android:text="套系信息"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/font_small" />
+
+            <View style="@style/line_grey"></View>
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_circle_white"></View>
+
+
+        <LinearLayout
+            android:layout_width="96dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/view1"
+            android:layout_marginLeft="-5dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.prettyyes.user.app.view.app.TriangleView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:visibility="gone"
+                app:direction="rightbottom"
+                app:draw_color="@color/theme_darkgreen" />
+
+            <TextView
+                android:id="@+id/tv_checkorderAdpone_sellername"
+                android:layout_width="96dp"
+                android:layout_height="30dp"
+                android:background="@color/theme_yellow"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingRight="5dp"
+                android:text="木壳人"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <com.prettyyes.user.app.view.lvandgrid.MyListView
+            android:id="@+id/lv_checkorderAdpone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:divider="@null"
+            android:orientation="vertical">
+
+        </com.prettyyes.user.app.view.lvandgrid.MyListView>
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+            android:id="@+id/etv_checkorderAdpone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@id/lv_checkorderAdpone"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/bg_rang_grey_radius_5"
+            android:hint="给商家留言"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/theme_lightgray"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/lin_adp1_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/etv_checkorderAdpone"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp">
+
+            <TextView
+                android:id="@+id/tv_checkorderAdpone_totalnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="共0件商品"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="小计："
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_small"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_checkorderAdpone_totalprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="￥398.00"
+                android:textColor="@color/main_black"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_checkorderAdpone_kolinfo"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@mipmap/bg_kol_info">
+
+        <RelativeLayout
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/rel_checkorderAdpone_headimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.prettyyes.user.app.view.imageview.RoundImageView
+                android:id="@+id/img_checkorderAdpone_headimg"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+
+                android:src="@mipmap/myhead"
+                app:borderRadius="22dp" />
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/tv_checkorderAdpone_act"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rel_checkorderAdpone_headimg"
+            android:layout_toRightOf="@id/rel_checkorderAdpone_headimg"
+            android:ellipsize="end"
+            android:lines="1"
+            android:paddingRight="10dp"
+            android:text="一句话的描述"
+            android:textColor="@color/theme_lightgray"
+            android:textSize="@dimen/font_small" />
+
+        <TextView
+            android:id="@+id/tv_checkorderAdpone_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/rel_checkorderAdpone_headimg"
+            android:layout_marginBottom="2dp"
+            android:layout_toRightOf="@id/rel_checkorderAdpone_headimg"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="name"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/font_big" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

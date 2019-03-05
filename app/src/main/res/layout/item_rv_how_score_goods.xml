@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundWhit"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        app:cardPreventCornerOverlap="false"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_spu_img_height"
+        app:cardCornerRadius="5dp"
+        >
+
+        <com.prettyyes.user.app.view.imageview.RoundImageView
+            app:borderRadius="5dp"
+            android:id="@+id/img_covery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_defaultimg"
+            />
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/distance_small"
+        android:layout_marginRight="@dimen/distance_small"
+        android:layout_marginTop="@dimen/distance_normal"
+        android:layout_marginBottom="@dimen/distance_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_score"
+            style="@style/btn_select_red_round"
+            android:layout_height="30dp"
+            android:paddingLeft="@dimen/distance_small"
+            android:paddingRight="@dimen/distance_small"
+            android:text="400"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_toLeftOf="@id/tv_score"
+            android:id="@+id/tv_name"
+            style="@style/tv_title"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_width="match_parent"
+            android:text="商品名称，商品名称，商品名称，11商品名称商品名称商品名称商品名称"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

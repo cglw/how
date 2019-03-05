@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:layout_marginTop="@dimen/distance_small"
+    android:layout_marginLeft="@dimen/distance_small"
+    android:layout_marginBottom="@dimen/distance_small"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_share_brand"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:showIn="@layout/view_img_by_num_bg">
+
+    <LinearLayout
+        android:layout_width="50dp"
+        android:layout_height="19dp"
+        android:background="@mipmap/home_from_bk_icon"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/home_from_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="来自"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:clickable="true"
+        android:text=""
+        android:textColor="@color/theme_red"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/theme_lightgray"/>
+
+    <TextView
+        android:id="@+id/tv_shop_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text=""
+        android:textColor="@color/theme_lightgray"
+        android:textSize="14sp"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundWhit"
+    tools:context="com.prettyyes.user.app.ui.order.HowShopActivity">
+
+    <com.prettyyes.user.app.view.lvandgrid.SwipeRecycleView
+        android:id="@+id/swipe_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.prettyyes.user.app.view.lvandgrid.SwipeRecycleView>
+
+    <TextView
+        android:id="@+id/tv_go_how_rule"
+        android:clickable="true"
+        android:textSize="@dimen/font_big"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="积分兑换现金"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/select_layout_yellow"/>
+
+</LinearLayout>

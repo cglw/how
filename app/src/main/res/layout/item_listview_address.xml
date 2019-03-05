@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/ui_round_white"
+              android:orientation="horizontal"
+              android:gravity="center_vertical"
+              android:descendantFocusability="blocksDescendants"
+              android:padding="15dp">
+
+
+    <RelativeLayout
+        android:focusable="false"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+
+        <ImageButton
+            android:clickable="false"
+            android:background="@null"
+            android:id="@+id/img_address_select"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/ic_check_red_checked"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_addresslist_defaut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_retange_red_2"
+                android:paddingBottom="2dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="2dp"
+                android:text="默认"
+                android:textColor="@color/theme_red"
+                android:textSize="@dimen/font_small"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_normal"
+                android:src="@mipmap/ic_edit"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_addresslist_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/ll"
+            android:gravity="left"
+            android:text="cg 13083039763"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big"/>
+
+        <TextView
+            android:id="@+id/tv_addresslist_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_addresslist_phone"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/ll"
+            android:gravity="left"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="收货地址：北京 北京 东城区"
+            android:textColor="@color/grey_tv_main"
+            android:textSize="@dimen/font_big"/>
+
+        <View
+            style="@style/line_black"
+            android:layout_below="@id/tv_addresslist_address"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            ></View>
+    </RelativeLayout>
+
+</LinearLayout>

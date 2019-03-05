@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_specialAct_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rel_specialAct_bottomBtn"
+
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/select_layout_yellow">
+
+        <TextView
+            android:id="@+id/tv_specialAct_addCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@mipmap/kol_session_calendar_icon"
+            android:gravity="center"
+            android:text="添加到日历"
+            android:textColor="@color/theme_darkgreen"
+            android:textSize="@dimen/font_big"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_specialAct_sendQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="发问"
+            android:textColor="@color/theme_darkgreen"
+            android:textSize="@dimen/font_big"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <include layout="@layout/layout_spercialact_content" />
+</RelativeLayout>

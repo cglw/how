@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:layout_marginLeft="@dimen/margin_mine_fragment"
+    android:layout_marginRight="@dimen/margin_mine_fragment"
+    android:layout_marginTop="@dimen/margin_mine_fragment"
+    android:background="@drawable/bg_gradient_myask"
+    android:orientation="vertical"
+    android:padding="6dp"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/view_no_reply"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/distance_4"
+        android:layout_marginRight="@dimen/distance_4"
+        android:background="@drawable/bg_gradient_replynum"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_reply_num_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/distance_small"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/tv_content"
+                android:text="共收到 "
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_reply_info_num"
+                style="@style/tv_content"
+                android:layout_marginTop="@dimen/distance_small"
+                android:text="30个回复 | 3个可购买 | 2个解决方案 "
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                style="@style/tv_content"
+                android:text="暂无回复，你可以邀请好手来回答"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_invate"
+            android:layout_width="86dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/distance_small"
+            android:background="@drawable/bg_round_red_round100"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/item_minetype_que_invate"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:layout_marginTop="@dimen/distance_small"
+        android:background="@mipmap/how_myfeeds_ask_container"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_10"
+        >
+
+        <TextView
+            android:id="@+id/tv_date"
+            style="@style/tv_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:text="15分钟前"
+            android:textColor="@color/hintBlack"
+            android:textSize="@dimen/font_date"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_small">
+
+            <TextView
+
+                android:id="@+id/tv_title"
+                style="@style/tv_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/distance_4"
+                android:text="问题"
+                android:textSize="@dimen/font_hint"
+                />
+
+            <TextView
+                android:id="@+id/tv_reply_num"
+                style="@style/tv_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/how_left_bracket"
+                android:drawablePadding="@dimen/distance_2"
+                android:drawableRight="@mipmap/how_right_bracket"
+                android:text="收到4条新回复"
+                android:textColor="@color/theme_red"
+                android:textSize="@dimen/font_hint"/>
+        </RelativeLayout>
+
+        <include layout="@layout/layout_mine_line"/>
+
+        <com.prettyyes.user.app.ui.appview.NewQuestionView
+            android:id="@+id/newqueview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_small">
+
+        <include layout="@layout/layout_que_score"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/distance_normal"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/how_myfeeds_unread"
+        android:id="@+id/img_unread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

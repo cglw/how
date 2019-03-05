@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center"
+    >
+
+
+    <Button
+
+        android:id="@+id/btn_getcode"
+        style="@style/btn_select_red_round"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+
+        android:layout_alignParentRight="true"
+        android:text="@string/verify_code_get"/>
+
+    <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+        android:id="@+id/etv_code"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:textColor="@color/black_main"
+        android:textColorHint="@color/grey_tv_main"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/btn_getcode"
+        android:background="@null"
+        android:textSize="@dimen/font_big"
+        android:hint="@string/verify_code_hint"
+        android:paddingLeft="10dp"/>
+
+    <View
+        style="@style/line_grey"
+        android:layout_width="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/btn_getcode"/>
+
+
+</RelativeLayout>

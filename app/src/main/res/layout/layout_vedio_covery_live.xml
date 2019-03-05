@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/view_vedio_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_marginLeft="@dimen/distance_small"
+    android:layout_marginRight="@dimen/distance_small"
+    android:layout_marginTop="@dimen/distance_small"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ImageView
+        android:src="@mipmap/ic_defaultimg"
+        android:id="@+id/img_vedio_covery"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"/>
+    <View
+        android:background="@color/transparent_0.2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/iv_play"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_video_play"
+        />
+
+
+</RelativeLayout>

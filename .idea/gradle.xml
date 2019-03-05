@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/../node_modules/react-native-code-push/android/app" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/IMKit" />
+            <option value="$PROJECT_DIR$/IMLib" />
+            <option value="$PROJECT_DIR$/alertview" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/guideview" />
+            <option value="$PROJECT_DIR$/libhornen" />
+            <option value="$PROJECT_DIR$/library" />
+            <option value="$PROJECT_DIR$/libzxing" />
+            <option value="$PROJECT_DIR$/loadinglib" />
+            <option value="$PROJECT_DIR$/pulltorefreshlibrary" />
+            <option value="$PROJECT_DIR$/richeditor" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

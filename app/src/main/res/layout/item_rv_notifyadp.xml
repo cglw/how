@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:background="@drawable/select_layout_white"
+                android:paddingBottom="@dimen/distance_small"
+                android:layout_height="wrap_content"
+    >
+
+    <com.prettyyes.user.app.view.imageview.RoundImageView
+        android:id="@+id/img_1"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="@dimen/distance_normal"
+        android:layout_marginTop="@dimen/distance_small"
+        android:src="@mipmap/myhead"
+        app:borderRadius="17dp"/>
+
+    <com.prettyyes.user.app.view.imageview.RoundImageView
+        android:id="@+id/img_2"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="26dp"
+        android:src="@mipmap/myhead"
+        app:borderRadius="17dp"/>
+
+    <TextView
+        android:minLines="2"
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img_1"
+        android:layout_marginLeft="27dp"
+        android:layout_marginRight="@dimen/distance_normal"
+        android:layout_toRightOf="@+id/img_1"
+        android:text=""
+        android:textColor="@color/black_main"
+        android:textSize="13sp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_marginTop="@dimen/distance_4"
+        android:textSize="11sp"
+        android:layout_alignLeft="@id/tv_desc"
+        android:layout_below="@id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_1"
+        android:text="5天前"
+        android:textColor="@color/hintBlack"/>
+
+</RelativeLayout>

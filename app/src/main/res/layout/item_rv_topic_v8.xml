@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/view_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6.5dp"
+        android:layout_marginRight="6.5dp"
+        android:background="@color/white"
+        android:padding="@dimen/distance_normal"
+        >
+
+        <include layout="@layout/layout_question_content"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/line_grey"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="6.5dp"
+        android:layout_marginRight="6.5dp"
+        android:background="@color/white_grey"/>
+
+
+    <LinearLayout
+        android:id="@+id/view_reply_answer_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_skudel_bottom"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/distance_small">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:layout_marginRight="@dimen/distance_normal"
+            android:layout_marginTop="@dimen/distance_normal">
+
+            <include layout="@layout/layout_seller_info_content"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tsReason"
+            style="@style/tv_title"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:layout_marginRight="@dimen/distance_normal"
+            android:layout_marginTop="@dimen/distance_normal"
+            android:lineSpacingExtra="@dimen/distance_4"
+            android:maxLines="3"
+            android:text="不一样的感觉，类似出游。不一样的感觉，类似出游。"/>
+
+        <include layout="@layout/layout_muti_spu"/>
+
+
+        <View
+            style="@style/line_donate"
+            android:layout_height="@dimen/distance_2"
+            android:layout_marginTop="@dimen/distance_normal"
+            android:layerType="software"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="@dimen/distance_4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <include layout="@layout/layout_bottom_muti_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

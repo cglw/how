@@ -1,0 +1,489 @@
+<resources>
+    <string name="app_name">How</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="login_first">登录后可操作</string>
+    <string name="forget_pwd">忘记密码？</string>
+    <string name="register">注册</string>
+    <string name="register_user">没有账号？去注册</string>
+    <string name="register_have">已有账号？去登录</string>
+    <string name="forgetPwd_reset">确认重置</string>
+    <string name="password_hint">密码</string>
+    <string name="password_new_hint">新密码</string>
+    <string name="password_old_hint">旧密码</string>
+    <string name="password_repeat_hint">再次输入新密码</string>
+    <string name="username_hint">请输入用户名</string>
+    <string name="telephone_hint">手机号</string>
+    <string name="verify_hint">验证码</string>
+    <string name="verify_getcode">获取验证码</string>
+    <string name="verify_getcode_geting">获取中...</string>
+    <string name="post_repeatPwd">修改密码</string>
+    <string name="action_settings">Settings</string>
+    <string name="password">0123456789abcdefghigklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="digits_phone">0123456789</string>
+    <string name="refuseSeller">拉黑</string>
+    <string name="pick_photo">从相册选取照片</string>
+    <string name="look">查看</string>
+    <string name="look_more">查看更多</string>
+    <string name="look_more_reply">查看更多回复</string>
+    <string name="mainpage_ask">问答</string>
+    <string name="mainpage_kollist">他们</string>
+    <string name="mainpage_myquestion">收到答案</string>
+    <string name="mainpage_center">我要问</string>
+    <string name="mainpage_more">更多</string>
+    <string name="kf">How客服</string>
+    <string name="kol_ask_other">问他</string>
+    <string name="defalut_nickname">木刻人</string>
+    <string name="defalut_act_ont">我是一个板蓝根</string>
+    <string name="kol_question">好手用这个商品解决了%1$d个问题</string>
+    <string name="at_kol">输入你要@的好手</string>
+    <string name="mybehavior" translatable="false">com.prettyyes.user.core.MyBehavior</string>
+    <string name="collect_kol">收藏的好手</string>
+    <string name="empty_code">验证码不能为空</string>
+
+
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="addCartSuccess">添加购物车成功</string>
+
+    <string name="mine_kol_title">我的关注</string>
+    <string name="mine_kol_desc">喜欢的、讨厌的、想记得的人</string>
+    <string name="mine_wishlist_title">我的购物车</string>
+    <string name="mine_wishlist_desc">想得未得，将要未要的物</string>
+    <string name="mine_coupon_title">我的优惠券</string>
+    <string name="mine_coupon_desc">登录、发问、分享都可获得</string>
+    <string name="mine_order_title">我的购买</string>
+    <string name="mine_order_desc">评价已购商品可获得优惠券</string>
+    <string name="mine_tobe_title">申请成为How的好手</string>
+    <string name="mine_tobe_desc">想帮他人解答疑惑请点击</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="radius_simpledialog">2dp</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_test">Prettyyes</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_change_pwd">ChangePwdActivity</string>
+    <string name="title_activity_forget_pwd">ForgetPwdActivity</string>
+    <string name="rsa">MIICXAIBAAKBgQDg7pCJrxnorQUvKAsIkypdkB2mEtaUuqIowZ/rkZhSdYtlusQwybaIlgaktl9YkTkCFMjNN4UCOhMw/ph5rMTPnXWndK278ySli3LHRNk486BDrVWmoH1WsOa8idUTogSCerG3OCgGtLZTZ0A8kBvbwhwzpBfk/sFFDUpWr4xY8wIDAQABAoGAH2MKxjup2N7z3z2uNHccrUuj532vdbeJUziZkSyS3cbLOdnS8J/lGbAdozRTn688Dj9KOeCqbcIe1XJhYnEqUS9FHEO0USwRIMfXGdRznRkBkyAVJY+JcvfNjHDX4p16dFlsOd1yv5a2sjgr8CYUKj2X2fks2cJxE+sbqejlSvkCQQDy79+XYR9p3iwe8Q7sPUgT6ebXEiZ7yZSgjfj2z5vA+MwNDx/4opggt27tVxkgCgyTC4fwLMeJ8g7a35rThPz1AkEA7QbX8Bg2Ecp3t5aj85GDEPZEmq+fB2u3gNaA8F7PfQXzZsK4Hx2abk77zGcn6o9hAik7rBz5I/812xbPGnLNRwJASRiBtyOi9xDBR8ISUmSR9mPvcBDnAWIC1VhCa8jFvYdepiNB5GbPzTBEMSd+yNQdOnVCvrJKi6gIbjTPegtOrQJAfEmTX42ChK+zOOxfyi9qF7Ha5XXjoOOF1KQl9mTwzfEZ4a+HFqHSQbde557L2n4Wcyil5qlGpu6DEgAS1x6NrwJBAJnC99ZedLiIa8IyLgDR+gJ+Yu2hX/T3Ne6i0hFR87+2d5SA0sa27NyXFjcDCNBRMP6uT+rF5xrkvw65pEbENWI=</string>
+    <string name="title_activity_weixin">WeixinActivity</string>
+    <string name="title_activity_test_photo">TestPhotoActivity</string>
+    <string name="title_activity_photo">PhotoActivity</string>
+    <string name="title_activity_view_pager">ViewPagerActivity</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_add_tag">AddTagActivity</string>
+    <string name="title_activity_test_state_bar">TestStateBarActivity</string>
+    <string name="title_activity_test_main">TestMainActivity</string>
+    <string name="title_activity_view_pager_scale">ViewPagerScaleActivity</string>
+    <string name="title_activity_input_txt">InputTxtActivity</string>
+    <string name="title_activity_address_show">AddressShowActivity</string>
+    <string name="title_activity_change_address">ChangeAddressActivity</string>
+    <string name="title_activity_more_comment">回复详情</string>
+    <string name="title_activity_kol_detail">KolDetailActivity</string>
+    <string name="title_activity_kol_info">好手详情</string>
+    <string name="title_activity_question">QuestionActivity</string>
+    <string name="title_activity_clothes_detail">ClothesDetailActivity</string>
+    <string name="title_activity_my_question_detail">MyQuestionDetailActivity</string>
+    <string name="title_activity_pay_order">PayOrderActivity</string>
+    <string name="title_activity_oredr_list">OredrListActivity</string>
+    <string name="title_activity_order_list">OrderListActivity</string>
+    <string name="title_activity_order_detail">OrderDetailActivity</string>
+    <string name="title_activity_ship_state">ShipStateActivityActivity</string>
+    <string name="title_activity_comment_order">CommentOrderActivity</string>
+    <string name="title_activity_collection">收藏</string>
+    <string name="title_activity_coupon">优惠券</string>
+    <string name="title_activity_setting">设置</string>
+    <string name="title_activity_myorder">我的购买</string>
+    <string name="title_activity_resetPwd">重置密码</string>
+    <string name="title_activity_couponshare">分享好友优惠券</string>
+    <string name="title_activity_commentInfoList">评论详情</string>
+    <string name="title_activity_category">选择分类</string>
+    <string name="title_activity_unit_temp">极简模板上传</string>
+    <string name="title_activity_taobao_temp">极速模板上传</string>
+    <string name="title_activity_paper_temp">内容模板上传</string>
+    <string name="title_activity_brand_temp">品牌模板上传</string>
+    <string name="title_activity_suit_temp">内容模板上传</string>
+    <string name="title_activity_specifications">规格</string>
+    <string name="title_activity_spu_list">商品管理</string>
+    <string name="title_activity_unit_info">单品详情</string>
+    <string name="title_activity_paper_info">内容详情</string>
+    <string name="title_activity_paper_richedit">内容编辑</string>
+    <string name="title_activity_brand_info">品牌详情</string>
+    <string name="title_activity_brand_list">品牌列表</string>
+    <string name="title_activity_brand_list_spuinfo">品牌列表详情</string>
+    <string name="title_activity_kolreply">添加回复</string>
+    <string name="title_activity_invatekol">邀请好手</string>
+    <string name="title_activity_myaccount">账户设置</string>
+    <string name="title_activity_aliaccount">支付宝绑定</string>
+    <string name="title_activity_bankaccount">银行卡绑定</string>
+    <string name="title_activity_my_asklist">我的发问</string>
+    <string name="title_activity_invate_me">邀请我回复</string>
+    <string name="title_activity_my_replyque">我的回复</string>
+    <string name="title_activity_sellerorderlist">卖出的订单</string>
+    <string name="title_activity_sellerorderinfo">订单详情</string>
+    <string name="title_activity_addship">添加物流</string>
+    <string name="title_activity_shipCompany">物流公司</string>
+    <string name="title_activity_medal">我的How值</string>
+    <string name="title_activity_medallist">我的权益列表</string>
+
+    <string-array name="segment_control_arrays_order">
+        <item>未付款</item>
+        <item>已付款</item>
+        <item>退款</item>
+        <item>所有打赏</item>
+    </string-array>
+    <string-array name="segment_control_arrays_message">
+        <item>私信</item>
+        <item>通知</item>
+    </string-array>
+
+
+    <!--appbar-->
+    <string name="appbar_home">问答</string>
+    <string name="appbar_kol">他们</string>
+    <string name="appbar_reply">收到答案</string>
+    <string name="appbar_reply_title">问得好回复会更好</string>
+    <string name="appbar_mine">更多</string>
+
+    <!--common-->
+    <string name="delete">删除</string>
+    <string name="edit">编辑</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="collect">关注</string>
+    <string name="collect_cancel">关注取消</string>
+    <string name="share">分享</string>
+    <string name="invitate">邀请</string>
+    <string name="reply">回复</string>
+    <string name="want_reply">想答</string>
+    <string name="zeze">啧啧</string>
+    <string name="pei">呸</string>
+    <string name="socre_total">总分</string>
+    <string name="socre">分数</string>
+    <string name="ask">提问</string>
+    <string name="ask_how_to">发问秘笈</string>
+    <string name="search">搜索</string>
+    <string name="notify">提醒</string>
+    <string name="pwd">密码</string>
+    <string name="more">更多</string>
+    <string name="login">登录</string>
+    <string name="take_photo">拍照</string>
+    <string name="select_album">从相册选择</string>
+    <string name="price">价格</string>
+    <string name="freight">运费</string>
+    <string name="category">分类</string>
+    <string name="category_select">选择分类</string>
+    <string name="rmb">¥</string>
+    <string name="taobao">淘宝</string>
+    <string name="preview">预览</string>
+    <string name="add">添加</string>
+    <string name="format_rmb">￥%1s</string>
+    <string name="submit">提交</string>
+    <string name="no_iamge_save_fail">保存失败</string>
+    <string name="no_sdcard_save_fail">没有SD卡</string>
+    <string name="share_dialog_title">更多的共鸣将来源于你的每一次分享</string>
+
+
+    <!--verify_code-->
+    <string name="verify_code_hint">验证码</string>
+    <string name="verify_code_get">获取验证码</string>
+    <string name="verify_code_geting">获取中...</string>
+
+
+    <!--empty-->
+    <string name="empty_pwd">密码不能为空</string>
+    <string name="empty_phone">手机号不能为空</string>
+    <string name="empty_edit_resaon">回复理由不能为空</string>
+    <string name="range_edit_resaon">回复不得少于20字</string>
+    <string name="empty_reply_sku">需要选择回复套系</string>
+    <string name="empty_ask">发问不能为空</string>
+
+
+    <!--upload-->
+    <string name="upload_success">上传成功</string>
+    <string name="upload_ing">正在上传</string>
+    <string name="reply_success">回复成功</string>
+    <string name="upload_fail">上传失败</string>
+    <string name="upload_task_success">发问上传成功</string>
+    <string name="upload_task_ing">正在上传发问</string>
+    <string name="upload_error">上传失败</string>
+    <string name="post_api_ing">正在提交...</string>
+
+    <!--loading-->
+    <string name="loading_all">已加载全部数据</string>
+    <string name="loading_more">正在加载更多...</string>
+    <string name="loading_fail">加载失败，点击此处重试!</string>
+
+    <!--template-->
+    <string name="template_size">规格和尺寸</string>
+    <string name="template_stock">销售状态</string>
+    <string name="template_size_hint">填写规格及尺寸</string>
+    <string name="template_btn_post">发  布</string>
+    <string name="template_goods_title">输入套系/商品名</string>
+    <string name="template_goods_desc">描述</string>
+    <string name="template_goods_title_hint">一件好物需要一个好名字</string>
+    <string name="template_goods_desc_hint">从功能、外在、能解决的问题等维度详细介绍这个好物，书写时请在心中默念“为什么一定要买它”
+    </string>
+    <string name="template_fmt_price">价格: ¥%1$s</string>
+    <string name="template_fmt_freight">运费: ¥%1$s</string>
+    <string name="template_photos">添加封面图或详情图</string>
+    <string name="template_taobao_url">输入淘宝链接，快速上传</string>
+    <string name="template_taobao_go_desc">如果不是那么方便找到链接，去大淘宝找商品，到商品详情页，点击右上角确定就好</string>
+    <string name="template_taobao_go">前往淘宝  ——></string>
+    <string name="template_empty_taobao_url">淘宝链接不允许为空</string>
+
+    <!--template paper -->
+    <string name="paper_title">标题</string>
+    <string name="paper_hint">一件好物需要一个好名字</string>
+    <string name="paper_desc">图文详情</string>
+    <string name="paper_desc_hint">从功能、外在、能解决的问题等维度详细介绍这个好物，书写时请在心中默念“为什么一定要买它”
+    </string>
+
+    <string name="brand_title">标题</string>
+    <string name="brand_hint">一件好物需要一个好名字</string>
+    <string name="brand_desc">图文详情</string>
+    <string name="brand_desc_hint">从功能、外在、能解决的问题等维度详细介绍这个好物，书写时请在心中默念“为什么一定要买它”
+    </string>
+
+    <!--template img config-->
+    <integer name="template_taobao_imgs_num">109</integer>
+    <integer name="template_suit_imgs_num">9</integer>
+    <integer name="template_paper_imgs_num">1</integer>
+    <integer name="template_brand_imgs_num">9</integer>
+    <integer name="template_unit_imgs_num">9</integer>
+
+
+    <!---->
+    <!--Specifications-->
+
+    <string name="spftcation_name">规格名称</string>
+    <!--<string name="spftcation_introduce">请注意规格名称与规格详情的对应关系，避免混乱。\n规格名称：（填写框中给出灰字案例）填写例如重量或长度或材质等规格的具体名称\n规格详情：（填写框中给出灰字案例）填写与上一行规格名称对应的数值或详情，如s或m或l</string>-->
+    <string name="spftcation_introduce">请注意规格名称与规格详情的对应\n一次仅能填写一次规格名称\n点击“添加”才可再次添加其他规格信息</string>
+    <string name="spftcation_detail">规格详情</string>
+    <string name="spftcation_repeat_value">规格详情已存在</string>
+    <string name="spftcation_empty_value">你需要添加规格详情</string>
+    <string name="spftcation_add">+ 添加更多详情细节</string>
+    <string name="spftcation_add_contincue">确定</string>
+    <string name="spftcation_add_title">已添加规格</string>
+    <string name="spftcation_empty_name">你需要添加规格名称</string>
+    <string name="spftcation_repeate_add_name">规格名称已存在</string>
+    <string name="spftcation_name_change">修改</string>
+
+    <!--suit template-->
+    <string name="suit_add_goods">添加单品</string>
+    <string name="suit_good">优点</string>
+    <string name="suit_good_hint">填写整个套系的优点</string>
+    <string name="suit_bad">缺点</string>
+    <string name="suit_bad_hint">填写整个套系的缺点</string>
+
+    <!--how-->
+    <string name="spu_add_goods">添加商品</string>
+    <string name="template_need_save">是否保留文本内容</string>
+    <string name="template_edit_giveup">放弃编辑</string>
+    <string name="template_empty_imgs">你需要添加图片</string>
+    <string name="template_empty_taobao">还未获取淘宝信息</string>
+    <string name="template_empty_name">你需要添加标题</string>
+    <string name="template_empty_desc">你需要添加描述</string>
+    <string name="template_empty_bright">你需要添加亮点</string>
+    <string name="template_empty_rubbish">你需要添加缺点</string>
+    <string name="template_empty_price">你需要添加价格</string>
+    <string name="template_empty_freight">你需要添加邮费</string>
+    <string name="template_empty_unitlist">你需要添加或选择单品不少于2件</string>
+    <string name="template_empty_attr">你需要添加或选择规格</string>
+    <string name="template_back">直接退出</string>
+    <string name="template_edit_complete">确认编辑完成</string>
+    <string name="template_error_selectmax">最多选择2个属性</string>
+
+    <!--notify-->
+    <string name="notify_max_select">已经达到最大选择数量</string>
+    <string name="empty_spu_detail">还未获取到商品信息</string>
+
+    <string name="fmt_express_price">运费：¥%1$s</string>
+    <string name="fmt_reply">你的问题 "%s" 被回复了</string>
+    <!--format-->
+
+    <string name="apply_kol_category">完成新手任务，即可进行分类筛选，\n回复自己感兴趣的问题，用好物找到共鸣。</string>
+    <string name="apply_kol_reward">完成新手任务，即可回复悬赏令问题。\n立享双倍HOW值，领取赏金猎人礼包。</string>
+    <string name="apply_kol_best_new">我们需要更多地记录你使用HOW的时刻，\n才能找到最适合推荐给你的问题\n请努力提升HOW值至300分，开启最新问答。</string>
+    <!--apply-->
+
+
+    <string name="attr_name">输入规格名称,例如尺寸</string>
+    <string name="attr_info">输入详细规格属性，例如L或M</string>
+
+    <string name="template_add_title">选择模板</string>
+    <string name="template_add_placeholer">除了购买产生的收入，\n你还能通过商品找到与TA之间的共鸣。</string>
+    <string name="template_add_unit">极简</string>
+    <string name="template_add_unit_desc">最好用\n的快捷上传模板</string>
+    <string name="template_add_unit_range">适用人群：所有好手</string>
+    <string name="template_add_taobao">极速</string>
+    <string name="template_add_taobao_desc">一键复制连接，\n搬运商品到HOW</string>
+    <string name="template_add_taobao_range">适用人群：已在淘宝/微店开店的好手</string>
+    <string name="template_add_paper">内容</string>
+    <string name="template_add_paper_desc">最美观最丰富\n的内容图文模板</string>
+    <string name="template_add_paper_range">适用人群：写文章带货的好手 | 测评文大V | 追求文字打赏的好手等。</string>
+    <string name="template_add_suit">多样</string>
+    <string name="template_add_suit_desc">多样\n商品搭配</string>
+    <string name="template_add_suit_range">适用人群：擅于搭配的好手和必须混搭的好物</string>
+    <string name="template_add_brand">品牌</string>
+    <string name="template_add_brand_desc">为品牌提供\n商品管理</string>
+    <string name="template_add_brand_range">适用人群：所有品牌</string>
+
+
+    <string name="error_do_nothing">当前状态下不可操作</string>
+
+
+    <string name="brand_authentication">品牌认证</string>
+    <string name="brand_guarantee">交易担保</string>
+    <string name="brand_info_desc">图文详情</string>
+    <string name="brand_infomation">品牌介绍</string>
+    <string name="brand_recommon">相关推荐</string>
+
+    <string name="success_del">删除成功</string>
+
+
+    <!--home 页面-->
+    <string name="screen">筛选</string>
+    <string name="collect_tasklike_succes">关注成功</string>
+    <string name="collect_taskdislike_success">取消关注成功</string>
+    <string name="task_filter">减少查看此类问题？</string>
+
+    <!--reply select pupop -->
+    <string name="reply_select_title">选择合适的模板添加详细的商品内容，使你的回复更有说服力。</string>
+    <string name="reply_select_from_brand">品牌库</string>
+    <string name="reply_select_from_brand_desc">囊括个全球品牌，免去选货烦恼</string>
+    <string name="reply_select_from_newsku">添加新的商品</string>
+    <string name="reply_select_from_newsku_desc">多样上传编辑模板，自由推广商品。</string>
+    <string name="reply_select_from_sku">选择已有商品</string>
+    <string name="reply_select_from_sku_desc">快捷推荐适用历史商品</string>
+    <string name="reply_hint">请回复能解决此问题的好物方案，以及为什么推荐它。</string>
+
+    <string name="item_minetype_collect">我的关注</string>
+    <string name="item_minetype_que">问题</string>
+    <string name="item_minetype_que_score">问题得分</string>
+    <string name="item_minetype_que_fmt">收到%1$s条新回复</string>
+    <string name="item_minetype_que_noreply">没有回复？邀请你好手们来作答吧！</string>
+    <string name="item_minetype_que_invate">邀请回答</string>
+    <string name="item_minetype_comment_me">评论</string>
+    <string name="item_minetype_comment">答案</string>
+
+
+    <!--售后-->
+    <string name="custom_serve">售后服务</string>
+    <string name="custom_serve_title">所有好物均非How平台自营，由认证好手自己采购；带有品牌标记的商品均由品牌提供发货。</string>
+    <string name="custom_serve_second_title">How 对商品进行以下保障：</string>
+    <string name="custom_serve_content">
+        极速物流\n
+        所有商品均会在购买后第一时间发货，超过48小时赔付。\n\n
+        七天免费退换货\n
+        非特殊商品（如内衣等），收货7天内可免费办理退换货服务。\n\n
+        先行赔付\n
+        好人值较高的用户发起退款后，可以在How平台进行先行赔付，不用等待好手/品牌确认退款。</string>
+    <string name="apply_kol_post_success">恭喜你成功提交申请好手，审核结果会在1-3个工作日内以邮件的形式发送</string>
+    <string name="rule_get_money">1. How App提现不收取任何手续费哟！\n2. How App配合银行等监管机构，坚决严厉打击虚假交易、套现以及欺诈交易，对于How App风险控制部门认定的违规交易，将扣除0.3%的手续费！\n3. 账户金额达到5000以上或者在每月15号、25号可进行提现操作！</string>
+    <string name="custom_serve_chat">如果有其他任何问题，请联系How客服</string>
+
+
+    <string name="mine_item_title_info">个人信息</string>
+    <string name="mine_item_info_lookdetail">查看或编辑个人资料</string>
+    <string name="mine_item_info_withdraw">提现</string>
+    <string name="mine_item_info_apply_kol">申请好手</string>
+    <string name="mine_item_title_score">我的How值</string>
+    <string name="mine_item_title_content">我的内容</string>
+    <string name="mine_item_title_other">其他</string>
+    <string name="mine_item_score_type">级别</string>
+    <string name="mine_item_score_how">How值</string>
+    <string name="mine_item_score">当前How值</string>
+    <string name="mine_item_title_order">我的交易</string>
+    <string name="mine_item_order_buy">购买的订单</string>
+    <string name="mine_item_order_sell">卖出的订单</string>
+    <string name="mine_item_order_cart">购物车</string>
+    <string name="mine_item_order_account">账户设置和提现</string>
+    <string name="mine_item_title_goods">管理商品</string>
+    <string name="mine_item_goods_manager">商品管理</string>
+    <string name="mine_item_ask">我的发问</string>
+    <string name="mine_item_coupon">我的优惠券</string>
+    <string name="mine_item_reply">我的回复</string>
+    <string name="mine_item_collect">我的收藏</string>
+    <string name="mine_item_invate">邀请我回复的问题</string>
+    <string name="mine_item_setting">设置</string>
+    <string name="mine_item_chatkf">联系客服</string>
+
+
+    <string name="header_scrolling_behavior">com.prettyyes.user.core.HeaderScrollingBehavior</string>
+    <string name="header_float_behavior">com.prettyyes.user.core.HeaderFloatBehavior</string>
+    <!--<string name="reactNativeCodePush_androidDeploymentKey" moduleConfig="true">ua8oYACtOOaGHwYIG_G9j3uQ9viMcf4ed692-c163-4c17-9d0e-277f158ba213</string>-->
+    <string name="reactNativeCodePush_androidDeploymentKey" moduleConfig="true">TE9TtXs6rWuK99wPaN3B9jzDBxH8cf4ed692-c163-4c17-9d0e-277f158ba213</string>
+
+
+    <string name="score_rule">
+How值兑换现金规则\n\n
+累计How总值达到2000分以上\n
+即可成为好手兑换现金；\n
+好手每20分可兑换1元。\n\n
+累计How总值达到10000分以上\n
+即可由好手升级成为好厉害；\n
+好厉害每10分可兑换1元。\n\n
+
+维系等级要求\n\n
+好手每月How值不得低于1500分\n
+好厉害每月How值不得低于3000分\n\n
+
+
+How值兑换限额\n\n
+每次兑换不低于600分\n
+每月兑换上限10000分\n
+    </string>
+    <string name="score_warning_title">提示</string>
+    <string name="score_warning_content">切勿回复与问题不符\n
+切勿推荐物与回复不符\n
+切勿抄袭他人的原创回复\n
+切勿恶意刷提问、刷评论、刷分享、刷购买\n
+被小编抽查到，将会警告并有相应惩罚！</string>
+
+    <string name="score_exchange_title">How值兑换现金规则
+</string>
+    <string name="score_exchange_content">累计How总之达到1000分以上\n
+即可成为好手兑换现金；\n
+好手每20分可兑换1元。\n\n
+累计How总值达到10000分以上\n
+即可由好手升级成为好厉害；\n
+好厉害每10分可兑换1元。</string>
+
+    <string name="score_keeplevel_title">维系等级要求
+</string>
+    <string name="score_keeplevel_content">好手每月How值不得低于800分；\n
+好厉害每月How值不得低于3000分</string>
+
+    <string name="score_range_title">How值兑换限额
+</string>
+    <string name="score_range_content">每次兑换不低于600分\n
+每月兑换上限10000分</string>
+
+
+    <string name="score_rule_title">How值兑换现金规则</string>
+    <string name="score_accout_set">设置提现账号</string>
+    <string name="score_how">最终解释权归How所有</string>
+    <string name="score_caculate">当前可兑换How值=How总值-已兑换How值</string>
+    <string name="score_ask">发问得分</string>
+    <string name="score_reply">回复得分</string>
+    <string name="score_hd">互动得分</string>
+    <string name="score_buy">购买得分</string>
+
+
+
+
+
+    <string name="compose_shortcut_short_label1">发问</string>
+    <string name="compose_shortcut_long_label1">发问</string>
+    <string name="compose_disabled_message1">发问</string>
+
+    <string name="compose_shortcut_short_label2">搜索</string>
+    <string name="compose_shortcut_long_label2">搜索</string>
+    <string name="compose_disabled_message2">搜索</string>
+</resources>
+

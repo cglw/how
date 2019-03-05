@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lin_muittypeview2_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.prettyyes.user.app.ui.appview.ViewimgBynum
+        android:visibility="gone"
+        android:id="@+id/viewimg_muittypeview2"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"/>
+
+    <com.prettyyes.user.app.ui.appview.ViewimgBynumbg
+        android:visibility="gone"
+        android:id="@+id/viewimgbg_muittypeview2"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"/>
+
+    <com.prettyyes.user.app.ui.appview.PaperView
+
+        android:id="@+id/pagerView_muittypeview2"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:visibility="gone" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/emptyview_muittypeview2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="没有套系" />
+
+
+</LinearLayout>

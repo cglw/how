@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="86dp"
+    android:layout_height="28dp"
+    android:clickable="true"
+    android:background="@color/home_score_bg"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_width="59dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_hint"
+        style="@style/tv_content"
+        android:text="问题得分"/>
+
+    <com.prettyyes.user.app.view.DashedLineView
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:layout_width="26dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/tv_score"
+        style="@style/tv_content"
+        android:text="0"
+        android:textColor="@color/theme_red"/>
+
+</LinearLayout>
+
+        

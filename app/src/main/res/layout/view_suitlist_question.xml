@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_suit_question_bg"
+    android:layout_width="match_parent"
+    android:layout_height="134dp"
+    android:background="@drawable/how_question_container1"
+    android:orientation="vertical">
+
+    <com.prettyyes.user.app.ui.appview.QuestionTextView
+        android:id="@+id/tv_question_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="14dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="示例文字示例文字示例文字示例文字…"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_question_question"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="7dp"
+        android:background="@color/grey_bg"></View>
+
+    <TextView
+        android:id="@+id/tv_question_replydesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字…"
+        android:textColor="@color/black_main"
+        android:textSize="14sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="6dp"
+        android:clipChildren="false"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:id="@+id/lin_zeze"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_layout"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_bottomv2_zeze"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/how_zan_icon_highlighted" />
+
+            <TextView
+                android:id="@+id/tv_bottomv2_zeze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="啧啧0"
+                android:textColor="@color/grey_555555"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="17dp"
+            android:background="@color/white_grey"></View>
+
+
+        <LinearLayout
+            android:id="@+id/lin_pei"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/lin_1"
+
+            android:layout_weight="1"
+            android:background="@drawable/select_layout"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_bottomv2_pei"
+
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/how_pei_icon_highlighted" />
+
+            <TextView
+                android:id="@+id/tv_bottomv2_pei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:lineSpacingExtra="2dp"
+                android:text="呸0"
+                android:textColor="@color/grey_555555"
+                android:textSize="@dimen/font_small" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="17dp"
+            android:background="@color/white_grey"></View>
+
+
+        <LinearLayout
+            android:id="@+id/lin_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@drawable/select_layout"
+            android:clipChildren="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/home_share_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="分享"
+                android:textColor="@color/grey_555555"
+                android:textSize="@dimen/font_small" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="17dp"
+            android:background="@color/white_grey"></View>
+
+
+        <LinearLayout
+            android:id="@+id/lin_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@drawable/select_layout"
+            android:clipChildren="false"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/comment_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="评论"
+                android:textColor="@color/grey_555555"
+                android:textSize="@dimen/font_small" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

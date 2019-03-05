@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/view_commnet_head"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="horizontal"
+    android:paddingTop="15dp"
+    tools:showIn="@layout/item_rv_comment_list">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_small"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_head"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="@dimen/distance_small"
+            android:src="@mipmap/myhead"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_head"
+            android:layout_toRightOf="@id/img_head"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="用户名"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_big"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/img_comment"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="@dimen/distance_small"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_comment"
+                android:tint="@color/black"/>
+
+            <ImageView
+                android:id="@+id/img_del"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="@dimen/distance_small"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_delete"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/tv_content"
+            android:layout_alignBottom="@id/img_head"
+            android:layout_toRightOf="@id/img_head"
+            android:text="2018/01/09 12:10:10"
+            android:textColor="@color/textNormal"
+            android:textSize="@dimen/font_mid"/>
+
+        <TextView
+            android:id="@+id/tv_comment"
+            style="@style/tv_content"
+            android:layout_below="@id/tv_time"
+            android:layout_marginTop="@dimen/distance_2"
+            android:layout_toRightOf="@id/img_head"
+            android:text=""
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/font_big"/>
+
+        <com.prettyyes.user.app.view.app.TriangleView
+            android:id="@+id/triangleView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/tv_comment"
+            android:layout_marginTop="@dimen/distance_2"
+            android:layout_toRightOf="@id/img_head"
+            app:direction="top"
+            app:draw_color="@color/grey_bg_lookmore"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

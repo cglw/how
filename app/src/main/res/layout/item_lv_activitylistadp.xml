@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_activitylistAdp_time"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_trans_grey_round"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"
+        android:text="2016-10-12   12:30"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_small" />
+
+    <LinearLayout
+        android:id="@+id/lin_activitylistAdp_item"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_layout_round5"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_activitylistAdp_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="标题"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big_more"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:background="@color/theme_yellow"
+            android:id="@+id/img_activitylistAdp_mainimg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+             />
+
+        <TextView
+            android:id="@+id/tv_activitylistAdp_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="描述啊"
+            android:textColor="@color/grey_tv_main"
+            android:textSize="@dimen/font_big" />
+
+        <View style="@style/line_grey"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="查看详情"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big" />
+    </LinearLayout>
+
+</LinearLayout>

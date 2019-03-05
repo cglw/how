@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="@dimen/distance_small"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/tv_content"
+        android:text="尺寸"
+        android:textColor="@color/secondaryTextBlack"/>
+
+    <com.prettyyes.user.app.view.FlowLayout
+        android:id="@+id/flowlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_small"
+        app:divider_column="@dimen/distance_normal"
+        app:divider_row="@dimen/distance_normal">
+
+    </com.prettyyes.user.app.view.FlowLayout>
+
+</LinearLayout>

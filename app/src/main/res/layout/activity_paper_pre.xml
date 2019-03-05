@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.prettyyes.user.app.ui.template.PaperPreActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_normal"
+        android:layout_marginRight="@dimen/distance_normal"
+        android:layout_marginTop="@dimen/distance_big"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="请输入标题"
+        android:maxLength="30"
+        android:maxLines="1"
+        android:text="私奔到月球吧"
+        android:textColor="@color/textBlack"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <View
+        style="@style/line_black"
+        android:layout_height="1.5dp"
+        android:layout_marginLeft="@dimen/distance_normal"
+        android:layout_marginRight="@dimen/distance_normal"
+        android:layout_marginTop="@dimen/distance_normal"
+        android:background="@color/textBlack"/>
+
+    <com.prettyyes.user.app.view.app.AppWebView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/webview_appweb"
+        android:layout_marginTop="@dimen/distance_small"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_release"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="@dimen/distance_small"
+        android:layout_marginLeft="@dimen/distance_small"
+        android:layout_marginRight="@dimen/distance_small"
+        android:layout_marginTop="@dimen/distance_small"
+        android:background="@drawable/select_red_layout"
+        android:text="发  布"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_title"/>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout
+        android:id="@+id/lin_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:background="@color/grey_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                style="@style/line_grey"
+                android:layout_width="67dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:gravity="center_vertical"
+                android:text="相关推荐"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/font_big"
+                android:textStyle="bold"/>
+
+            <View
+                style="@style/line_grey"
+                android:layout_width="67dp"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.prettyyes.user.app.view.AutoViewPager
+                android:id="@+id/vp_suitdelAct_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"/>
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_recommend"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:textColor="#4A4A4A"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lin_suitdelAct_indexRecommend"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal"/>
+
+    </LinearLayout>
+</merge>

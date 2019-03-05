@@ -1,0 +1,42 @@
+package com.prettyyes.user.api.netXutils.requests;
+
+import com.prettyyes.user.api.netXutils.BaseRequest;
+import com.prettyyes.user.core.SpMananger;
+import com.prettyyes.user.data.DataCenter;
+import com.prettyyes.user.model.user.UserInfo;
+
+import java.util.HashMap;
+
+/**
+ * Created by chengang on 2018/1/19.
+ */
+
+public class LoginBySinaReq extends BaseRequest<UserInfo> {
+    @Override
+    public String setExtraUrl() {
+        return "/app/weibo/auth";
+    }
+    private String uid;
+    private String access_token;
+
+
+    public LoginBySinaReq setUid(String uid) {
+        this.uid = uid;
+        return this;
+    }
+
+    public LoginBySinaReq setAccess_token(String access_token) {
+        this.access_token = access_token;
+        return this;
+
+    }
+
+    @Override
+    public HashMap<String, Object> setParams() {
+        arrayMap.put("uid",uid);
+        arrayMap.put("access_token",access_token);
+        arrayMap.put("deviceToken",  SpMananger.getClien_id());
+        arrayMap.put("source_uid",DataCenter.getSource_uid());
+        return super.setParams();
+    }
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_wishlishAct_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:clipChildren="false"
+    android:background="@color/white"
+    tools:context=".app.ui.WishListActivity">
+
+
+    <LinearLayout
+        android:id="@+id/lin_wishlistAct_buttom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme_darkgreen"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_wishlistAct_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/select_layout_themedarkgreen"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_big" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"></View>
+
+        <Button
+            android:id="@+id/btn_wishlistAct_buy"
+            android:layout_width="0dp"
+
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/select_layout_themedarkgreen"
+            android:gravity="center"
+            android:text="直接购买"
+            android:textColor="@color/theme_yellow"
+            android:textSize="@dimen/font_big">
+
+        </Button>
+
+    </LinearLayout>
+
+    <com.prettyyes.user.app.view.app.BgView
+        app:bgcolor="@color/theme_yellow"
+        app:triangelcolor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="334dp" />
+    
+    <com.prettyyes.user.app.view.ClipViewPager
+        android:id="@+id/vp_wishlistAct_showmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/lin_wishlistAct_buttom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="24dp"
+
+        android:clipChildren="false"></com.prettyyes.user.app.view.ClipViewPager>
+
+
+</RelativeLayout>

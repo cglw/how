@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroundWhit"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingTop="30dp">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="260dp"-->
+    <!--android:layout_height="320dp"-->
+
+    <!--android:background="@drawable/bg_round_kol_bg"-->
+    <!--android:padding="@dimen/distance_small">-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#FFAE9C"/>-->
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="-35dp"
+        android:src="@mipmap/logo_apply_kol"/>
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/tv_title"
+        android:layout_marginLeft="@dimen/distance_small"
+        android:layout_marginRight="@dimen/distance_small"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1.5"
+        android:text="@string/apply_kol_best_new"
+        android:textColor="#705651"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_apply"
+        style="@style/btn_select_red_round_15"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/distance_big_1"
+        android:layout_marginTop="@dimen/template_btn_margin_top"
+        android:text="立即申请"
+        android:textSize="@dimen/font_content"
+        />
+
+
+    <!--</RelativeLayout>-->¬
+
+    <!--<ImageView-->
+    <!--v-->
+    <!--android:layout_marginRight="60dp"-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="75dp"-->
+    <!--android:layout_marginTop="-35dp"-->
+    <!--android:src="@mipmap/logo_apply_kol"/>-->
+
+</LinearLayout>

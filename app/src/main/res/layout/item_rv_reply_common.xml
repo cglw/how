@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/lin_mocmtAdp_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/distance_normal"
+              android:layout_marginRight="@dimen/distance_normal"
+              android:background="@mipmap/reply_bottom_container1"
+              android:clipChildren="false"
+              android:orientation="vertical"
+              android:paddingBottom="10dp"
+              android:paddingTop="20dp">
+
+    <com.prettyyes.user.app.ui.appview.QuestionView2
+        android:id="@+id/QuestionView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6.5dp"
+        android:layout_marginRight="6.5dp"
+        android:background="@color/white"/>
+
+
+    <include layout="@layout/layout_common_reply"/>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+
+    android:background="@drawable/select_layout">
+
+    <RelativeLayout
+        android:id="@+id/rel_simpleInfoView_header"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="17dp">
+
+        <ImageView
+            android:id="@+id/img_brand"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@mipmap/myhead" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/rel_simpleInfoView_header"
+
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@id/rel_simpleInfoView_header">
+
+        <TextView
+            android:id="@+id/tv_brand_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:paddingBottom="2dp"
+            android:text="AMANGO 大芒"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_brand_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/tv_brand_name"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="服饰"
+            android:textColor="@color/theme_red"
+            android:textSize="10sp" />
+
+
+        <TextView
+            android:id="@+id/tv_brand_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_brand_name"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="一个像韩剧女主角一样活着的美术系Girl"
+            android:textColor="@color/grey_tv_main"
+            android:textSize="@dimen/font_small" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/ic_right_arrow"
+        android:tint="@color/black" />
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/line_grey"></View>
+
+</RelativeLayout>

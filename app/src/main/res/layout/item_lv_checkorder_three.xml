@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="94dp"
+    android:background="@color/theme_darkgreen">
+
+    <ImageView
+        android:id="@+id/img_checkorderAdpthree_uintimg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="7dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_defaultimg" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/img_checkorderAdpthree_uintimg"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/tv_checkorderAdpthree_uintname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="POKER家秋新品 简约COS风手镯"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_checkorderAdpthree_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_checkorderAdpthree_uintname"
+            android:layout_marginTop="5dp"
+            android:text="￥169.00"
+            android:textColor="@color/theme_yellow"
+            android:textSize="@dimen/font_small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:text="购买数量："
+            android:textColor="@color/theme_yellow"
+            android:textSize="9dp" />
+
+        <TextView
+            android:id="@+id/tv_checkorderAdpthree_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="X 1"
+            android:textColor="@color/theme_yellow"
+            android:textSize="@dimen/font_big" />
+    </RelativeLayout>
+
+</RelativeLayout>

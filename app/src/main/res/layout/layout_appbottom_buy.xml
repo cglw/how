@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_common_buttom"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    tools:showIn="@layout/activity_suit_del">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rel_common_gowishlist"
+            android:layout_width="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_layout"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/photo_addwish_highlighted_icon" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btn_common_collect"
+            style="@style/btn_select_red_oval_round"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rel_common_gowishlist"
+            android:text="关注" />
+
+        <Button
+            android:id="@+id/btn_common_addcart"
+
+            style="@style/btn_select_red_round"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="加入购物车">
+
+        </Button>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

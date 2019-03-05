@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:padding="@dimen/distance_normal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/tv_title"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:text="完成新手任务，赢取积分"
+    android:textColor="@color/secondaryTextBlack">
+
+
+</TextView>

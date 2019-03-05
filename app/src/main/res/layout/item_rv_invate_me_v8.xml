@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginLeft="@dimen/distance_normal"
+    android:layout_marginRight="@dimen/distance_normal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/view_question_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_retange_pink_top4"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/img_close"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/distance_small"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/how_home_not_like"/>
+
+        <ImageView
+            android:id="@+id/img_invite"
+            style="@style/tv_content"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="@dimen/distance_small"
+            android:layout_toLeftOf="@id/img_close"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/how_home_top_share"
+            />
+
+        <ImageView
+            android:id="@+id/img_collect"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="@dimen/distance_small"
+            android:layout_marginTop="@dimen/distance_small"
+            android:layout_toLeftOf="@+id/img_invite"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/how_home_like"/>
+
+
+        <RelativeLayout
+
+            android:id="@+id/view_question"
+            android:layout_width="match_parent"
+            android:layout_height="126dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/distance_normal"
+            android:paddingRight="@dimen/distance_normal"
+            android:paddingTop="33dp">
+            <include layout="@layout/layout_question_content"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_reply_good_buy"
+            style="@style/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/view_question"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/distance_small"
+            android:paddingRight="94dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="30个回复 | 3个可购买 | 2个解决方案 "
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/font_hint"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_want_reply"
+            android:layout_width="86dp"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@id/tv_reply_good_buy"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:layout_marginRight="@dimen/distance_4"
+            android:background="@drawable/bg_round_red_round100"
+            android:gravity="center"
+            android:text="我也要答"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_hint"
+            />
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:layout_marginTop="30dp">
+
+            <include
+                layout="@layout/layout_que_score"/>
+
+        </FrameLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/img_unread"
+            android:layout_margin="@dimen/distance_normal"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/how_myfeeds_unread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

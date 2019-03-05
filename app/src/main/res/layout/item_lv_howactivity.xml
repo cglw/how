@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/select_layout">
+
+        <ImageView
+            android:id="@+id/img_howactivityAdp_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/myhead"/>
+
+
+        <TextView
+            android:id="@+id/tv_howactivityAdp_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="2dp"
+            android:text="1小时前"
+            android:textColor="@color/grey_tv_main"
+            android:textSize="@dimen/font_mid"/>
+
+        <RelativeLayout
+            android:layout_toLeftOf="@id/tv_howactivityAdp_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_alignTop="@id/img_howactivityAdp_head"
+            android:layout_toRightOf="@id/img_howactivityAdp_head">
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_howactivityAdp_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_round_yellow_5"
+                android:padding="2dp"
+                android:text="官方"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_small"/>
+            <TextView
+
+                android:layout_toLeftOf="@id/tv_howactivityAdp_tag"
+                android:id="@+id/tv_howactivityAdp_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="How"
+                android:ellipsize="end"
+                android:lines="1"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_howactivityAdp_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/img_howactivityAdp_head"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/img_howactivityAdp_head"
+            android:ellipsize="end"
+            android:lines="1"
+            android:padding="2dp"
+            android:text="这是一个活动啊"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big"/>
+
+
+        <View
+            android:id="@+id/view_unread"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_round_red"
+            android:visibility="visible"></View>
+    </RelativeLayout>
+</RelativeLayout>

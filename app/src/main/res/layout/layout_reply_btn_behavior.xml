@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:gravity="center_vertical"
+    android:id="@+id/ll_want_reply"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/header_float_behavior"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:layout_marginLeft="@dimen/distance_normal"
+    android:layout_marginRight="@dimen/distance_normal"
+
+    >
+
+    <TextView
+        android:id="@+id/tv_reply_good_buy"
+        style="@style/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/distance_small"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="30个回复 | 3个可购买 | 2个解决方案 "
+        android:textColor="@color/textBlack"
+        android:textSize="@dimen/font_hint"
+        />
+
+
+    <TextView
+
+        android:id="@+id/tv_want_reply"
+        android:layout_width="86dp"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@id/tv_reply_good_buy"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/distance_normal"
+        android:layout_marginRight="@dimen/distance_4"
+        android:background="@drawable/bg_round_red_round100"
+        android:gravity="center"
+        android:text="我也要答"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_hint"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daasuu.bl.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    app:bl_arrowDirection="left"
+    app:bl_arrowHeight="8dp"
+    app:bl_arrowPosition="9dp"
+    app:bl_arrowWidth="8dp"
+    app:bl_bubbleColor="@color/theme_red"
+    app:bl_cornersRadius="5dp">
+
+    <TextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="@dimen/font_small"
+        android:layout_width="match_parent"
+        android:text="什么样的问题是个好问题？"
+        android:textColor="@android:color/white"
+        android:layout_height="match_parent" />
+
+</com.daasuu.bl.BubbleLayout>

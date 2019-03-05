@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            xmlns:tools="http://schemas.android.com/tools"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/white"
+                                            android:scrollbars="none"
+                                            tools:context=".app.ui.person.PersonInfoActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_personinfoAct_head"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/myhead"/>
+
+            <TextView
+                android:id="@+id/tv_personinfoAct_edithead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:clickable="true"
+                android:text="编辑"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_big"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:text="昵称"
+                android:textColor="@color/grey_tv_main"
+                android:textSize="@dimen/font_big"/>
+
+            <com.prettyyes.user.app.view.app.SettingItemView
+                android:id="@+id/settingItem_personinfoAct_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle=""/>
+
+            <View
+                style="@style/line_grey"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:text="性别"
+                android:textColor="@color/grey_tv_main"
+                android:textSize="@dimen/font_big"/>
+
+
+            <com.prettyyes.user.app.view.app.SettingItemView
+                android:id="@+id/settingItem_personinfoAct_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle=""/>
+
+            <View
+                style="@style/line_grey"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:text="一句话介绍"
+                android:textColor="@color/grey_tv_main"
+                android:textSize="@dimen/font_big"/>
+
+            <com.prettyyes.user.app.view.app.SettingItemView
+                android:id="@+id/settingItem_personinfoAct_ace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle=""/>
+
+
+            <View
+                style="@style/line_grey"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:text="个人详情"
+                android:textColor="@color/grey_tv_main"
+                android:textSize="@dimen/font_big"/>
+
+            <com.prettyyes.user.app.view.app.SettingItemView
+                android:id="@+id/settingItem_personinfoAct_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle=""/>
+
+
+            <View
+                style="@style/line_grey"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:text="标签"
+                android:textColor="@color/grey_tv_main"
+                android:textSize="@dimen/font_big"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/item_bg_selector"
+                android:minHeight="40dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.prettyyes.user.app.view.FlowLayout
+                    android:id="@+id/flow_personinfoAct_tags"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="20dp"/>
+            </LinearLayout>
+
+            <View
+                style="@style/line_grey"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp">
+
+
+            </View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:text="地址"
+                android:textColor="@color/grey_tv_main"
+                android:textSize="@dimen/font_big"/>
+
+            <com.prettyyes.user.app.view.app.SettingItemView
+                android:id="@+id/settingItem_personinfoAct_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftTitle="查看收货地址"/>
+
+            <View
+                style="@style/line_grey"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.v4.widget.NestedScrollView>

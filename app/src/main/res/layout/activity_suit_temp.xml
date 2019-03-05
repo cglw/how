@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.prettyyes.user.app.ui.template.SuitTempActivity">
+
+    <View
+        style="@style/line_grey"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_go_unitlist"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distance_big_1"
+        android:background="@drawable/select_layout">
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:text="@string/suit_add_goods"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/distance_normal"
+            android:src="@mipmap/ic_right_arrow"
+            android:tint="@color/black"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants">
+
+        <com.prettyyes.user.app.view.lvandgrid.MoveRecycleview
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/distance_normal"
+            android:paddingRight="@dimen/distance_normal"/>
+    </RelativeLayout>
+
+    <View
+        style="@style/line_grey"/>
+
+    <TextView
+
+        style="@style/template_title"
+        android:text="@string/suit_good"/>
+
+    <View style="@style/template_line"/>
+
+    <com.prettyyes.user.app.view.EditInScrollText
+        android:id="@+id/edit_bright"
+        style="@style/template_edit"
+        android:hint="@string/suit_good_hint"
+        android:lines="1"/>
+
+
+    <TextView
+        android:id="@+id/tv_desc_desc"
+        style="@style/template_title"
+        android:text="@string/suit_bad"/>
+
+    <View style="@style/template_line"/>
+
+    <com.prettyyes.user.app.view.EditInScrollText
+        android:id="@+id/edit_rubbish"
+        style="@style/template_edit"
+        android:layout_height="@dimen/template_desc_height"
+        android:hint="@string/suit_bad_hint"/>
+
+
+</LinearLayout>

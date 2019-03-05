@@ -1,0 +1,150 @@
+<resources>
+
+    <dimen name="statusbar_view_height">0dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="font_important">18dp</dimen>
+    <dimen name="font_important_low">15dp</dimen>
+    <dimen name="font_general">14dp</dimen>
+    <dimen name="font_general_low">13dp</dimen>
+    <dimen name="font_weak">12dp</dimen>
+    <dimen name="font_weak_low">11dp</dimen>
+
+    <dimen name="font_big_more">17sp</dimen>
+    <dimen name="font_big">15sp</dimen>
+    <dimen name="font_mid">13sp</dimen>
+    <dimen name="font_small">11sp</dimen>
+    <dimen name="font_small_1">9sp</dimen>
+    <dimen name="radius_mian">10dp</dimen>
+    <dimen name="radius_mid">5dp</dimen>
+    <dimen name="title_app_sp">@dimen/font_big_more</dimen>
+
+    <dimen name="Margin1">8dp</dimen>
+    <dimen name="Margin2">16dp</dimen>
+    <dimen name="Margin3">22dp</dimen>
+    <dimen name="Margin4">44dp</dimen>
+    <dimen name="Margin5">88dp</dimen>
+    <dimen name="app_title">40dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+
+
+    <dimen name="dp_066">0.66dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_72">72dp</dimen>
+
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+
+
+    <!--common-->
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_height_small">30dp</dimen>
+    <dimen name="btn_width">60dp</dimen>
+
+    <!--margin-->
+    <dimen name="head_img_small">40dp</dimen>
+    <dimen name="head_img_normal">64dp</dimen>
+    <dimen name="distance_small">8dp</dimen>
+    <dimen name="distance_2">2dp</dimen>
+    <dimen name="distance_4">4dp</dimen>
+    <dimen name="distance_6">6dp</dimen>
+    <dimen name="distance_normal">16dp</dimen>
+    <dimen name="distance_big">32dp</dimen>
+    <dimen name="distance_big_1">64dp</dimen>
+    <dimen name="distance_25">25dp</dimen>
+    <!--height-->
+    <dimen name="height_edit_normal">45dp</dimen>
+
+    <!--radius-->
+    <dimen name="radius_retange_common">4dp</dimen>
+    <dimen name="radius_retange_small">2dp</dimen>
+
+
+    <!--12sp 小字提示-->
+    <!--14sp（桌面端13sp） 正文/按钮文字-->
+    <!--16sp（桌面端15sp） 小标题-->
+    <!--20sp Appbar文字-->
+    <!--24sp 大标题-->
+    <!--34sp/45sp/56sp/112sp 超大号文字-->
+
+    <dimen name="font_title">16sp</dimen>
+    <dimen name="font_title_big">24sp</dimen>
+    <dimen name="font_content">14sp</dimen>
+    <dimen name="font_hint">12sp</dimen>
+    <dimen name="font_notify">12sp</dimen>
+    <dimen name="font_app_bar">20sp</dimen>
+    <dimen name="font_date">10sp</dimen>
+
+    <dimen name="divider_height">0.7dp</dimen>
+    <dimen name="divider_width">0.7dp</dimen>
+
+
+    <!--template-->
+    <dimen name="template_item_height">50dp</dimen>
+    <dimen name="template_btn_width">200dp</dimen>
+    <dimen name="template_btn_margin_top">30dp</dimen>
+    <dimen name="template_input_height">50dp</dimen>
+    <dimen name="template_desc_height">68dp</dimen>
+    <dimen name="template_taobao_confirm">25dp</dimen>
+
+
+    <dimen name="template_spftcation_item_height">54dp</dimen>
+    <dimen name="template_spftcation_tv_minwith">60dp</dimen>
+    <dimen name="template_spftcation_tv_maxwith">200dp</dimen>
+    <!---->
+
+    <!--mine-->
+    <dimen name="mine_item_height_normal">100dp</dimen>
+
+    <!--spu list-->
+    <dimen name="item_spu_list_height">238dp</dimen>
+    <dimen name="item_spu_img_height">148dp</dimen>
+
+    <dimen name="template_add_title">17sp</dimen>
+    <dimen name="template_add_placeholer">15sp</dimen>
+    <dimen name="template_add_desc">11sp</dimen>
+    <dimen name="template_add_ranger">13sp</dimen>
+    <dimen name="template_margin_left">32dp</dimen>
+    <dimen name="template_margin_right">32dp</dimen>
+    <dimen name="template_line_margin">22dp</dimen>
+    <dimen name="template_range_top">12dp</dimen>
+    <!--Home-->
+    <dimen name="width_screen">70dp
+    </dimen>
+    <dimen name="font_spu_small">9sp</dimen>
+
+    <dimen name="height_common_header_line">0.3dp</dimen>
+
+    <!--search-->
+    <dimen name="height_look_more">33dp</dimen>
+    <dimen name="height_serach_question">86dp</dimen>
+    <dimen name="height_serach_seller">62dp</dimen>
+    <dimen name="height_serach_collect">25dp</dimen>
+    <dimen name="height_serach_title">42dp</dimen>
+    <dimen name="height_serach_topic">55dp</dimen>
+    <!--mine-->
+    <dimen name="margin_mine_fragment">10dp</dimen>
+    <dimen name="mine_like_padding_left">20dp</dimen>
+
+
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="collapsed_header_height">44dp</dimen>
+    <dimen name="init_float_offset_y">130dp</dimen>
+    <dimen name="collapsed_float_offset_y">0dp</dimen>
+    <dimen name="init_float_margin">16dp</dimen>
+    <dimen name="collapsed_float_margin">0dp</dimen>
+
+
+    <dimen name="grade_ic_width">20dp</dimen>
+
+
+</resources>

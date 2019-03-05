@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/template_item_height"
+              android:clickable="true"
+
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/distance_normal"
+              android:paddingRight="@dimen/distance_normal">
+
+    <ImageView
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_check_red_checked"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/tv_title"
+        android:layout_marginLeft="@dimen/distance_normal"
+        android:text="尺寸"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@mipmap/ic_edit"/>
+
+        <TextView
+            android:id="@+id/tv_info"
+            style="@style/tv_title"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/distance_big"
+            android:layout_marginRight="@dimen/distance_small"
+            android:layout_toLeftOf="@id/img_edit"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:lines="1"
+            android:text="M / L / XL"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

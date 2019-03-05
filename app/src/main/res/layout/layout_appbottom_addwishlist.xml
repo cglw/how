@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:background="@color/white"
+        android:id="@+id/tv_common_price"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="right"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="@dimen/distance_small"
+        android:paddingRight="@dimen/distance_small"
+        android:text="￥0.00"
+        android:textColor="@color/theme_red"
+        android:textSize="@dimen/font_big"/>
+
+    <View
+        style="@style/line_black"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_chat"
+            style="@style/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/select_layout_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="联系好手"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_right"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="70"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/btn_common_addcart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@drawable/select_coffee_layout"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/how_shoopingcart_icon_white"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="加入购物车"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_common_buy"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@drawable/select_red_layout"
+                android:drawableLeft="@mipmap/how_checkout_icon"
+                >
+
+                <TextView
+                    android:id="@+id/tv_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableLeft="@mipmap/how_checkout_icon"
+                    android:drawablePadding="5dp"
+                    android:text="购买"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+

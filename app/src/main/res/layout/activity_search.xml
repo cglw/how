@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="visible"
+        app:iconifiedByDefault="false"
+        app:queryHint="请输入搜索内容"/>
+    <ImageView
+        android:onClick="ask"
+        android:src="@mipmap/ic_search_top"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <include layout="@layout/layout_swipe"/>
+
+
+</LinearLayout>

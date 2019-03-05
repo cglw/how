@@ -1,0 +1,10 @@
+<com.weavey.loading.lib.LoadingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.prettyyes.user.app.view.lvandgrid.SwipeRecycleView
+        android:id="@+id/swipe_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.weavey.loading.lib.LoadingLayout>

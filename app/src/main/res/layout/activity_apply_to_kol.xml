@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alwaysDrawnWithCache="false"
+    android:fadingEdge="none"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:persistentDrawingCache="none"
+    android:scrollbars="none"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/how_reply_detail_bk"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+
+        <LinearLayout
+            android:id="@+id/ll_bg"
+            android:layout_width="match_parent"
+            android:layout_height="770dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view_head"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="132"/>
+
+            <LinearLayout
+                android:id="@+id/view_nickname"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="33"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="88"/>
+
+              <com.prettyyes.user.app.view.EditInScrollText
+                    android:id="@+id/edit_nickname"
+                    style="@style/edit_applay_tokol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="259"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:lines="1"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_desc"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="49"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26"/>
+
+                <com.prettyyes.user.app.view.EditInScrollText
+                    android:id="@+id/edit_act"
+                    style="@style/edit_applay_tokol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="324"
+                    android:hint="请力图通过一句话让别人了解你"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="24"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_1"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="12"/>
+
+            <LinearLayout
+                android:id="@+id/view_phone"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="35"
+                android:orientation="horizontal">
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="88"/>
+
+                <com.prettyyes.user.app.view.EditInScrollText
+                    android:id="@+id/edit_phone"
+                    style="@style/edit_applay_tokol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="259"
+                    android:gravity="center_vertical"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:lines="1"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="24"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_white1"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="8"/>
+
+
+            <LinearLayout
+                android:id="@+id/view_email"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="35"
+                android:orientation="horizontal">
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="88"/>
+
+                <com.prettyyes.user.app.view.EditInScrollText
+                    android:id="@+id/edit_email"
+                    style="@style/edit_applay_tokol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="259"
+                    android:gravity="center_vertical"
+                    android:hint="请填写正确的邮箱"
+                    android:inputType="textEmailAddress"
+                    android:lines="1"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="24"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_share_story"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="104"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26"/>
+
+                <com.prettyyes.user.app.view.EditInScrollText
+                    android:id="@+id/edit_share_story"
+                    style="@style/edit_applay_tokol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="324"
+                    android:hint="请分享最近在看的一本好书/电影，以及分享理由，我们认为这是了解你灵魂的最快方式"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="24"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_2"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="12"/>
+
+            <View
+                android:id="@+id/view_how"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="38"/>
+
+            <LinearLayout
+                android:id="@+id/view_kunhuo"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="60"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26"/>
+
+                <com.prettyyes.user.app.view.EditInScrollText
+                    android:id="@+id/edit_your_question"
+                    style="@style/edit_applay_tokol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="324"
+                    android:hint="请分享最近在看的一本好书/电影，以及分享理由，我们认为这是了解你灵魂的最快方式"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="24"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_white2"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="8"/>
+
+            <LinearLayout
+                android:id="@+id/view_why"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="60"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26"/>
+
+                <com.prettyyes.user.app.view.EditInScrollText
+                    android:id="@+id/edit_why"
+                    style="@style/edit_applay_tokol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="324"
+                    android:hint="你为什么想来How当好手"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="24"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_white3"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="8"/>
+
+            <LinearLayout
+                android:id="@+id/view_hope"
+                style="@style/edit_applay_tokol"
+                android:layout_weight="73"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="26"/>
+
+                <com.prettyyes.user.app.view.EditInScrollText
+                    android:id="@+id/edit_hope"
+                    style="@style/edit_applay_tokol"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="324"
+                    android:hint="希望How能为你做什么"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="24"/>
+
+            </LinearLayout>
+
+
+            <View
+                style="@style/edit_applay_tokol"
+                android:layout_weight="25"/>
+
+            <Button
+                android:id="@+id/btn_post"
+                android:layout_width="164dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="42"
+                android:background="@drawable/select_btn_coffee"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_big"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="19"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

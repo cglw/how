@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="@dimen/distance_normal"
+              android:layout_marginTop="@dimen/distance_small"
+              android:gravity="center_vertical"
+            >
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_look_persons"/>
+
+    <TextView
+        android:id="@+id/tv_answer_view_num"
+        android:textColor="@color/secondaryTextBlack"
+        android:text="0"
+        android:textSize="@dimen/font_small"
+        android:layout_marginLeft="@dimen/distance_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_action"
+        android:layout_marginRight="@dimen/distance_normal"
+        android:text=""
+        android:textSize="@dimen/font_small"
+        android:textColor="@color/secondaryTextBlack"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="@dimen/distance_small"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

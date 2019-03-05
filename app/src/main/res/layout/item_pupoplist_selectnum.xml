@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_puponlv_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_pupoplSelectNum"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/select_layout_yellow"
+        android:text="确 定"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_big" />
+
+
+
+    <ImageView
+        android:id="@+id/img_pupoplSelectNum_close"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_close"
+        android:tint="@color/black" />
+<TextView
+    android:paddingLeft="10dp"
+    android:layout_below="@id/img_pupoplSelectNum_close"
+android:id="@+id/tv"
+    android:text="请选择你的尺寸"
+    android:textColor="@color/black"
+    android:textSize="@dimen/font_big"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:id="@+id/rgp_selectnum"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:text="XS"
+            style="@style/btn_select_radius_black" />
+        <RadioButton
+            android:text="S"
+            style="@style/btn_select_radius_black" />
+        <RadioButton
+            android:text="M"
+            style="@style/btn_select_radius_black" />
+        <RadioButton
+            android:text="L"
+            style="@style/btn_select_radius_black" />
+        <RadioButton
+            android:text="XL"
+            android:layout_marginRight="10dp"
+            style="@style/btn_select_radius_black" />
+    </RadioGroup>
+    <ListView
+        android:layout_below="@id/rgp_selectnum"
+        android:id="@+id/lv_pupoplSelectNum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_pupoplSelectNum"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="10dp"
+        android:divider="@color/white"
+        android:dividerHeight="7dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"></ListView>
+</RelativeLayout>

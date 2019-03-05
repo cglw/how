@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+                android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/distance_big">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_title"
+            android:text="基础分"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/tv_content"
+            android:layout_marginTop="@dimen/distance_4"
+            android:text="2017-09-01"
+            android:textColor="@color/secondaryTextBlack"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_toRightOf="@id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/distance_normal">
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:width="60dp"
+            android:background="@drawable/bg_round_red_round100"
+            android:gravity="center"
+            android:paddingBottom="@dimen/distance_2"
+            android:paddingTop="@dimen/distance_2"
+            android:text="100"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_number"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_4"
+            android:gravity="right"
+            android:text="x0"
+            android:textColor="@color/theme_red"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

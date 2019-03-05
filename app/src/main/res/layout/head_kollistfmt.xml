@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@color/grey_bg"
+        >
+
+        <TextView
+            android:id="@+id/tv_searchkolAct_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big"
+            android:visibility="gone" />
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+
+            android:drawableLeft="@mipmap/kolsearch_search"
+            android:drawablePadding="10dp"
+            android:id="@+id/edit_kolfmt_input"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tv_searchkolAct_search"
+            android:background="@drawable/bg_round_white_5"
+            android:gravity="center_vertical"
+            android:hint="搜好手"
+            android:imeOptions="actionSearch"
+
+            android:paddingLeft="10dp"
+            android:textColorHint="@color/grey_tv_main"
+            android:textSize="@dimen/font_mid" />
+    </RelativeLayout>
+
+
+
+    <com.prettyyes.user.app.view.AutoViewPager
+        android:visibility="gone"
+        android:id="@+id/vp_kollistFmt"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"></com.prettyyes.user.app.view.AutoViewPager>
+
+</LinearLayout>

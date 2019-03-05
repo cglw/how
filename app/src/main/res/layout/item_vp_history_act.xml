@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:paddingLeft="@dimen/distance_normal"
+                android:paddingRight="@dimen/distance_normal"
+                android:orientation="vertical">
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/bg_round_histoty_act_5"/>
+
+    <LinearLayout
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@mipmap/home_act_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_act_name"
+            style="@style/tv_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/distance_normal"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="历史专场名称"
+            android:textColor="@color/theme_red"/>
+
+        <View
+            style="@style/line_black"
+            android:layout_width="148dp"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="@dimen/distance_small"
+            android:background="@color/home_score_bg"/>
+
+        <TextView
+            android:id="@+id/tv_act_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="18dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="6dp"
+            android:lines="3"
+            android:maxLines="3"
+            android:text="我有一件这样的衣服，想穿出不一样的感觉，类似出游示例文字示例文字示例文字示例文字示例，类似出游示例文字示例文字示例文字示例……"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/font_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="right|center_vertical">
+
+            <TextView
+                android:id="@+id/tv_act_time"
+                style="@style/tv_content"
+                android:layout_marginRight="@dimen/distance_small"
+                android:text="05/24/2017"
+                android:textSize="@dimen/font_small"/>
+
+            <View
+                style="@style/line_black"
+                android:layout_width="70dp"
+                android:layout_height="0.8dp"
+                android:background="@color/home_score_bg"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

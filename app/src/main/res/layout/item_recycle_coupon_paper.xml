@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_coupon_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="312dp"
+        android:layout_height="137dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/img_coupon_paper_bg"
+            android:layout_width="312dp"
+            android:layout_height="137dp"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/coupon_list_paper_coupon" />
+
+        <LinearLayout
+            android:layout_width="312dp"
+            android:layout_height="137dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tv_coupon_paper_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="文章打赏券"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_mid" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_paper_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥1000"
+                    android:textColor="@color/white"
+                    android:textSize="36sp" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_paper_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="• 满100减50元"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/tv_coupon_paper_endtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="• 截止时间"
+                    android:textColor="@color/white"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+
+
+        <com.prettyyes.user.app.view.app.SelectView
+            android:id="@+id/view_coupon_paper_select"
+            android:layout_width="37.5dp"
+            android:layout_height="37.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            app:select_color="@color/paper_coupon"></com.prettyyes.user.app.view.app.SelectView>
+    </RelativeLayout>
+</RelativeLayout>

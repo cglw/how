@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/bg_order_info"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+
+    <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+        android:id="@+id/KolSimpleInfoView_commentNotify"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+
+    </com.prettyyes.user.app.ui.appview.KolSimpleInfoView>
+
+    <TextView
+        android:id="@+id/tv_commentNotify_my_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:maxLines="2"
+        android:text="回复了 木壳人：这个问题很难，但是没有关系，这个相对来书并不难"
+        android:textColor="@color/black_main"
+        android:textSize="@dimen/font_mid" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <View
+            android:id="@+id/view100"
+            android:layout_width="3dp"
+            android:layout_height="102dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/theme_red"></View>
+
+        <TextView
+
+            android:id="@+id/tv_commentNotify_other_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_toRightOf="@id/view100"
+            android:text="这个问题其实我觉得有些难度。但是完全不影响其他的进度因为总归很难说服他"
+            android:textColor="@color/black_main"
+            android:textSize="@dimen/font_mid" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_commentNotify_other_reply"
+            android:layout_toRightOf="@id/view100"
+            android:orientation="horizontal">
+
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/theme_red"></View>
+
+            <com.prettyyes.user.app.view.imageview.RoundImageView
+                android:id="@+id/img_commentNotify_covery"
+                android:layout_width="101dp"
+                android:layout_height="73dp"
+                android:layout_marginLeft="13dp"
+                android:src="@mipmap/ic_defaultimg"
+                app:borderRadius="4dp" />
+
+            <TextView
+                android:id="@+id/tv_commentNotify_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="不一样的感觉真的很不一样不一样的感觉真的很不一样不一样的感觉真的很不一样不一样的感觉真的很不一样"
+                android:textColor="@color/black_main"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

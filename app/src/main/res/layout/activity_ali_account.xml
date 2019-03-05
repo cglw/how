@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.prettyyes.user.app.ui.person.AliAccountActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_alipay"/>
+    </RelativeLayout>
+
+    <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+        android:id="@+id/etv_alipay_account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/distance_normal"
+        android:background="@color/white"
+        android:hint="支付宝账户"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColorHint="@color/grey_tv_main"/>
+
+    <View
+        style="@style/line_grey"/>
+
+    <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+        android:id="@+id/etv_alipay_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:hint="手机号"
+        android:inputType="phone"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColorHint="@color/grey_tv_main"/>
+
+    <View
+        style="@style/line_grey"/>
+
+    <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+        android:id="@+id/etv_alipay_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:hint="姓名"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColorHint="@color/grey_tv_main"/>
+</LinearLayout>

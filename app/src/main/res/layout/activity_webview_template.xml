@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_click_web"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/edit_web"
+        android:layout_marginRight="@dimen/distance_normal"
+        android:clickable="true"
+        style="@style/tv_content"
+        android:layout_gravity="right"
+        android:text="@string/edit"/>
+
+    <com.prettyyes.user.app.view.app.AppWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="@dimen/distance_normal"
+        android:layout_marginRight="@dimen/distance_normal"
+        android:clickable="false"
+        />
+
+
+</LinearLayout>

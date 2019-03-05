@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll_units"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="102dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1">
+
+            <com.prettyyes.user.app.view.imageview.RoundImageView
+                android:id="@+id/img_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_defaultimg"
+                app:borderRadius="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_round_trans_5_buttom"/>
+
+
+            <TextView
+                android:id="@+id/tv_one_price"
+                style="@style/tv_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/distance_4"
+                android:layout_marginLeft="@dimen/distance_4"
+                android:lines="1"
+                android:text="￥233.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_spu_small"/>
+
+            <TextView
+                android:id="@+id/tv_one_name"
+                style="@style/tv_content"
+                android:layout_above="@id/tv_one_price"
+                android:layout_marginBottom="@dimen/distance_2"
+                android:layout_marginLeft="@dimen/distance_4"
+                android:lines="1"
+                android:text="商品名"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_spu_small"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="102dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1">
+
+            <com.prettyyes.user.app.view.imageview.RoundImageView
+                android:id="@+id/img_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_defaultimg"
+                app:borderRadius="4dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_round_trans_5_buttom"
+                android:orientation="vertical"
+             />
+
+
+            <TextView
+                android:id="@+id/tv_two_price"
+                style="@style/tv_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/distance_4"
+                android:layout_marginLeft="@dimen/distance_4"
+                android:lines="1"
+                android:text="￥233.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_spu_small"/>
+
+            <TextView
+                android:id="@+id/tv_two_name"
+                style="@style/tv_content"
+                android:layout_above="@id/tv_two_price"
+                android:layout_marginBottom="@dimen/distance_2"
+                android:layout_marginLeft="@dimen/distance_4"
+                android:lines="1"
+                android:text="商品名"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_spu_small"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/rel_look_detail"
+            style="@style/tv_content"
+            android:layout_width="0dp"
+            android:clickable="true"
+            android:layout_height="102dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:background="@drawable/bg_gradient_pink"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/distance_4"
+            android:text="查看套系"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_suit_covery"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/distance_small"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_defaultimg"/>
+
+    <TextView
+        android:layout_alignTop="@id/img_suit_covery"
+        android:id="@+id/tv_suit_name"
+        style="@style/tv_content"
+        android:layout_marginTop="@dimen/distance_4"
+        android:layout_toRightOf="@id/img_suit_covery"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="套系标题"
+        android:textSize="@dimen/font_hint"/>
+
+    <TextView
+        android:id="@+id/tv_suit_price"
+        style="@style/tv_content"
+        android:layout_below="@id/tv_suit_name"
+        android:layout_marginTop="@dimen/distance_small"
+        android:layout_toRightOf="@id/img_suit_covery"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="搭配购买价：￥2300.00"
+        android:textSize="@dimen/font_hint"/>
+</merge>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/distance_normal"
+    android:paddingRight="@dimen/distance_normal"
+    >
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginRight="@dimen/distance_small"
+        android:src="@mipmap/how_search_hot"
+        android:id="@+id/img_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/tv_content"
+        android:layout_height="@dimen/height_serach_title"
+        android:gravity="center_vertical"
+        android:text="热门"/>
+
+
+</LinearLayout>

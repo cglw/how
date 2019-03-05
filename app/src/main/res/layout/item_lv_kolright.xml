@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordlayout_kollistAdpRight"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/rel_topright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:background="@mipmap/bg_kollist_right"
+        android:gravity="right">
+
+        <com.prettyyes.user.app.view.imageview.RoundImageView
+            android:id="@+id/img_kollistRightAdp_headimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/myhead"
+            app:borderRadius="25dp" />
+
+
+        <TextView
+            android:id="@+id/tv_kollistRightAdp_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@id/img_kollistRightAdp_headimg"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="Jackie Closet"
+            android:textColor="@color/main_black"
+            android:textSize="@dimen/font_big" />
+
+        <TextView
+            android:id="@+id/tv_kollistRightAdp_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_kollistRightAdp_nickname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@id/img_kollistRightAdp_headimg"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="一个提供最便携旅行美妆产品以色列品牌"
+            android:textColor="@color/theme_lightgray"
+            android:textSize="@dimen/font_big" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="195dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/bg_oval_grey_radius_15"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_heart"
+                android:tint="@color/theme_red" />
+
+            <TextView
+                android:id="@+id/tv_kollistRightAdp_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:tint="@color/theme_yellow" />
+
+            <TextView
+                android:id="@+id/tv_kollistRightAdp_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_start_black"
+                android:tint="@color/blue_dark" />
+
+            <TextView
+                android:id="@+id/tv_kollistRightAdp_dislike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

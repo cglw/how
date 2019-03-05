@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_act_end_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_top_act"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:orientation="vertical"
+            android:padding="@dimen/distance_small">
+
+            <LinearLayout
+                android:id="@+id/view_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_4"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="15dp"
+                    android:background="@color/textNormal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_4"
+                    android:text="专场嘉宾"
+                    android:textColor="@color/theme_red"
+                    android:textSize="@dimen/font_title"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_4"
+                    android:drawableRight="@mipmap/right_arrow"
+                    android:gravity="right"
+                    android:textColor="@color/theme_red"
+                    android:textSize="@dimen/font_big"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_kols"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/distance_4"
+                android:gravity="center_vertical">
+
+                <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </com.prettyyes.user.app.ui.appview.KolSimpleInfoView>
+
+                <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </com.prettyyes.user.app.ui.appview.KolSimpleInfoView>
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/view_kol_1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1">-->
+                <!--<com.prettyyes.user.app.ui.appview.KolSimpleInfoView-->
+                <!--android:layout_width=""-->
+                <!--android:layout_height=""></com.prettyyes.user.app.ui.appview.KolSimpleInfoView>-->
+
+                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/img_head_1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="32dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="32dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginRight="@dimen/distance_4"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@mipmap/myhead"/>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/tv_nickname_1"&ndash;&gt;-->
+                <!--&lt;!&ndash;style="@style/tv_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_alignTop="@id/img_head_1"&ndash;&gt;-->
+
+                <!--&lt;!&ndash;android:layout_toRightOf="@id/img_head_1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:ellipsize="end"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:lines="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="肖大夫包治百病哦哦哦"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="13sp"/>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/img_head_1"&ndash;&gt;-->
+                <!--&lt;!&ndash;style="@style/tv_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_below="@id/tv_nickname_1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_toRightOf="@id/img_head_1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:ellipsize="end"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:lines="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="肖大夫包治百病哦哦哦"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textColor="@color/secondaryTextBlack"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="@dimen/font_small"/>&ndash;&gt;-->
+
+
+                <!--</RelativeLayout>-->
+
+
+                <!--<RelativeLayout-->
+                <!--android:id="@+id/view_kol_2"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/img_head_2"-->
+                <!--android:layout_width="32dp"-->
+                <!--android:layout_height="32dp"-->
+                <!--android:layout_marginRight="@dimen/distance_4"-->
+                <!--android:src="@mipmap/myhead"/>-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_nickname_2"-->
+                <!--style="@style/tv_title"-->
+                <!--android:layout_alignTop="@id/img_head_2"-->
+                <!--android:layout_toRightOf="@id/img_head_2"-->
+                <!--android:ellipsize="end"-->
+                <!--android:lines="1"-->
+                <!--android:text="肖大夫包治百病哦哦哦"-->
+                <!--android:textSize="13sp"/>-->
+
+                <!--<TextView-->
+                <!--style="@style/tv_content"-->
+                <!--android:layout_below="@id/tv_nickname_2"-->
+                <!--android:layout_toRightOf="@id/img_head_2"-->
+                <!--android:ellipsize="end"-->
+                <!--android:lines="1"-->
+                <!--android:text="肖大夫包治百病哦哦哦"-->
+                <!--android:textColor="@color/secondaryTextBlack"-->
+                <!--android:textSize="@dimen/font_small"/>-->
+
+                <!--</RelativeLayout>-->
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/line_grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:orientation="vertical"
+            android:padding="@dimen/distance_small">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_4"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="15dp"
+                    android:background="@color/textNormal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_4"
+                    android:text="专场内容介绍"
+                    android:textColor="@color/theme_red"
+                    android:textSize="@dimen/font_title"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_4"
+                    android:drawablePadding="@dimen/distance_4"
+                    android:drawableRight="@mipmap/right_arrow"
+                    android:gravity="right"
+                    android:text="查看完整内容"
+                    android:textColor="@color/theme_red"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <com.prettyyes.user.app.view.tvbtnetv.ExpandableTextView
+                android:id="@+id/tv_act_desc"
+                style="@style/tv_title"
+                android:clickable="true"
+                android:layout_marginTop="@dimen/distance_small"
+                android:text="专场内容介Ko绍专场内容介绍专场内容介绍专场内容介绍专场内容介绍专场内容……剩余300字"
+                android:textSize="13sp"
+                app:etv_MaxLinesOnShrink="2"
+                app:etv_ToExpandHintColor="@color/secondaryTextBlack"
+                app:etv_show_left_tv="true"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/view_shrink"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_shrink"
+            android:layout_width="11dp"
+            android:layout_height="8.5dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/content_more"/>
+    </LinearLayout>
+
+    <View
+        style="@style/line_grey"
+        android:layout_marginTop="@dimen/distance_4"/>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/distance_normal"
+    android:paddingRight="@dimen/distance_normal"
+    android:paddingBottom="@dimen/distance_small"
+    android:paddingTop="@dimen/distance_small"
+    >
+
+
+    <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+        android:id="@+id/kolinfoView_mocmtAdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.prettyyes.user.app.view.tvbtnetv.ExpandableTextView
+        android:id="@+id/tv_mocmtAdp_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint=""
+        android:lineSpacingExtra="5dp"
+        android:textColor="@color/theme_darkgreen"
+        android:textSize="@dimen/font_big"
+        app:etv_IsCanTouchTxt="false"
+        app:etv_MaxLinesOnShrink="3"
+        app:etv_ToExpandHint="「展开」"
+        app:etv_ToExpandHintColor="@color/theme_lightgray"
+        app:etv_ToShrinkHint="「收起」"
+        app:etv_ToShrinkHintColor="@color/theme_lightgray"
+
+        />
+
+    <com.prettyyes.user.app.ui.appview.MutiSpuView
+        android:id="@+id/mutispuview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/line_grey"
+        android:layout_height="0.3dp"
+        android:layout_marginTop="15dp"/>
+
+    <com.prettyyes.user.app.ui.appview.BottomDoView2
+        android:id="@+id/bottomView2_mocmtAdp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <View
+            style="@style/line_grey"
+            android:layout_height="0.3dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#4A4A4A"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#4A4A4A"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="更多"
+            android:textColor="@color/theme_red"
+            android:textSize="10sp"/>
+
+
+    </LinearLayout>
+</LinearLayout>

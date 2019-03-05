@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test_recycle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_coffee"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.prettyyes.user.app.ui.TestRecycle">
+    <com.prettyyes.user.app.view.app.BgView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        app:bgcolor="@color/white"
+        app:triangelcolor="@color/theme_coffee" />
+
+    <com.prettyyes.user.app.view.lvandgrid.SwipeRecycleView
+        android:id="@+id/swipe_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.prettyyes.user.app.view.lvandgrid.SwipeRecycleView>
+</RelativeLayout>

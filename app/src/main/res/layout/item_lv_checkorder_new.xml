@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:paddingTop="@dimen/distance_normal"
+        android:id="@+id/view_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_normal"
+        android:background="@color/bg_blue_pale"
+       android:paddingLeft="@dimen/distance_normal"
+        android:paddingRight="@dimen/distance_normal">
+
+        <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+            android:id="@+id/KolSimpleInfoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           >
+
+        </com.prettyyes.user.app.ui.appview.KolSimpleInfoView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_center"
+        android:layout_width="match_parent"
+        android:layout_height="93.5dp"
+        android:background="@color/bg_blue_pale"
+        >
+        <!--        android:background="@drawable/select_layout"
+        -->
+        <ImageView
+            android:id="@+id/img_covey"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_defaultimg"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="14dp"
+            android:layout_toRightOf="@id/img_covey"
+            >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="POKER家秋新品 简约COS风手镯"
+                android:textColor="@color/main_black"
+                android:textSize="12dp"/>
+
+
+            <com.prettyyes.user.app.view.app.TypefaceTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="5dp"
+                android:text="￥169.00"
+                android:textColor="@color/main_black"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_attr_str"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_price"
+                android:text="黑色"
+                android:textColor="@color/secondaryTextBlack"
+                android:textSize="@dimen/font_small"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:clickable="true"
+                android:text="购买数量："
+                android:textColor="@color/main_black"
+                android:textSize="9dp"/>
+
+            <TextView
+                android:textStyle="italic"
+                android:id="@+id/tv_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:text="X 1"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/font_big_more"/>
+        </RelativeLayout>
+
+        <View
+            style="@style/line_grey"
+            android:layout_alignParentBottom="true"></View>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_blue_pale"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/distance_normal"
+        android:paddingRight="@dimen/distance_normal"
+        android:paddingTop="@dimen/distance_normal"
+        >
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+            android:id="@+id/edit_remark"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_rang_grey_radius_5"
+            android:hint="给商家留言"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/theme_lightgray"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_small"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_total_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:text="共0件商品"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/font_small"/>
+
+
+            <com.prettyyes.user.app.view.app.TypefaceTextView
+                android:id="@+id/tv_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="￥398.00"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_title"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/distance_normal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:text="@string/freight"
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/font_small"/>
+
+
+            <com.prettyyes.user.app.view.app.TypefaceTextView
+                android:id="@+id/tv_total_express"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="￥1.00"
+                android:textColor="@color/textBlack"
+                android:textSize="@dimen/font_title"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

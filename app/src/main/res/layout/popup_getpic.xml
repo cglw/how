@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_popup_getpic"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+
+    android:padding="15dp">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btn_popupgetpic_pick_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/select_item_shap_topradiius"
+        android:text="@string/pick_photo"
+        android:textColor="@color/black_mid"
+        android:textSize="@dimen/font_general" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    ></View>
+    <Button
+        android:id="@+id/btn_popupgetpic_take_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/select_item_shap_buttomradiius"
+        android:text="@string/take_photo"
+        android:textColor="@color/black_mid"
+        android:textSize="@dimen/font_general" />
+    <Button
+        android:id="@+id/btn_popupgetpic_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/select_item_shap"
+        android:text="@string/cancel"
+        android:textColor="@color/black_mid"
+        android:textSize="@dimen/font_general" />
+
+
+
+</LinearLayout>
+
+
+</RelativeLayout>

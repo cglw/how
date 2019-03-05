@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/select_img_translate"
+    android:padding="30dp"
+    android:layout_height="200dp">
+
+
+    <TextView
+
+        android:textSize="@dimen/font_mid"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:id="@+id/tv_kollistAdp_right_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="我有这样一件衣服，想穿出不一样的感觉" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@id/tv_kollistAdp_right_desc"
+        android:layout_below="@id/tv_kollistAdp_right_desc"
+        android:textSize="@dimen/font_mid"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+        android:id="@+id/tv_kollistAdp_right_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="----Kathee" />
+
+
+</RelativeLayout>

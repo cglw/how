@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.prettyyes.user.app.ui.person.BankAccountActivity">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_bank"/>
+
+
+        </RelativeLayout>
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+            android:id="@+id/etv_bank_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/distance_normal"
+            android:background="@color/white"
+            android:hint="银行账户"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_tv_main"
+            android:textSize="@dimen/font_big"/>
+
+        <View
+            style="@style/line_grey"/>
+
+        <RelativeLayout
+            android:id="@+id/rel_slelct_bank"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/select_layout">
+
+            <TextView
+                android:id="@+id/etv_bank_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="银行"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_right_arrow"
+                android:tint="@color/black"/>
+
+
+        </RelativeLayout>
+
+
+        <View
+            style="@style/line_grey"/>
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+            android:id="@+id/etv_bank_branch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:hint="开户支行"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_tv_main"
+            android:textSize="@dimen/font_big"/>
+
+        <View
+            style="@style/line_grey"/>
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+            android:id="@+id/etv_bank_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:hint="登记手机"
+            android:inputType="phone"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_tv_main"
+            android:textSize="@dimen/font_big"/>
+
+        <View
+            style="@style/line_grey"/>
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+            android:id="@+id/etv_bank_uname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:hint="姓名"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_tv_main"
+            android:textSize="@dimen/font_big"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="tag" />
+    <item type="id" name="statusbarutil_fake_status_bar_view" />
+    <item type="id" name="statusbarutil_translucent_view" />
+    <item type="id" name="id_view" />
+    <item type="id" name="id_position" />
+    <item type="id" name="id_data" />
+    <item type="id" name="cover_image" />
+    <item type="id" name="holder" />
+    <item type="id" name="tag_act_soft" />
+
+</resources>

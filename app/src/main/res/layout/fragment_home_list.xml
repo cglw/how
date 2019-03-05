@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.weavey.loading.lib.LoadingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/loadingLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            app:elevation="0dp">
+
+            <com.prettyyes.user.app.view.AutoViewPager
+                android:id="@+id/autoVp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_scrollFlags="scroll|snap"/>
+
+
+            <com.prettyyes.user.app.ui.appview.HomeActivityEnterView
+                android:id="@+id/homeEnterView"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:visibility="gone"/>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <com.prettyyes.user.app.view.lvandgrid.SwipeRecycleView
+            android:id="@+id/swipe_rv"
+            android:background="@color/app_page_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <com.prettyyes.user.app.ui.appview.ApplyKolView
+            android:id="@+id/applykol_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+    </android.support.design.widget.CoordinatorLayout>
+</com.weavey.loading.lib.LoadingLayout>

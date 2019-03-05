@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_select_extra_video"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/distance_normal"
+    android:layout_marginRight="@dimen/distance_normal"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_edit_extra_video"
+        android:clickable="true"
+        style="@style/tv_content"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_gravity="right"
+        android:text="编辑"
+        android:textColor="@color/hintBlack"/>
+
+    <RelativeLayout
+        android:id="@+id/view_play"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/distance_small">
+
+        <ImageView
+            android:src="@mipmap/ic_defaultimg"
+            android:scaleType="centerCrop"
+            android:id="@+id/img_covery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_video_play"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_del"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/distance_small"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_delete"/>
+
+</LinearLayout>
+
+
+                

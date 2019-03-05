@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            xmlns:tools="http://schemas.android.com/tools"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context="com.prettyyes.user.app.ui.template.TaobaoUrlSelectActivity">
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:layout_marginRight="@dimen/distance_normal"
+            android:layout_marginTop="@dimen/distance_big"
+            android:text="复制淘宝或微店的商品链接粘贴到下面的区域"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="@dimen/distance_big"
+            android:layout_marginRight="@dimen/distance_big"
+            android:layout_marginTop="@dimen/distance_normal"
+            android:background="@drawable/bg_retange_dotted_line"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/upload_link_gray"/>
+
+            <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+                android:id="@+id/edit_link"
+                style="@style/template_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_4"
+                android:hint="粘贴链接到这里哦"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="185dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="-17dp"
+            android:background="@drawable/bg_round_yellow_100"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="248dp"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:layout_marginRight="@dimen/distance_normal"
+            android:layout_marginTop="@dimen/distance_big_1"
+            android:background="@drawable/bg_retange_dotted_line_black"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/tv_title"
+                android:layout_marginLeft="@dimen/distance_big"
+                android:layout_marginTop="@dimen/distance_big"
+                android:text="找不到链接？"
+                android:textColor="@color/theme_red"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_marginRight="@dimen/distance_normal"
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_big"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:text="去大淘宝或者微店找商品，到商品详情点击【确定】就好。"
+                android:textColor="@color/textNormal"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_big"
+                android:layout_marginTop="@dimen/distance_big"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_go_taobao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="点击这里"
+                    android:textColor="#282DB5"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="快速前往淘宝"
+                    android:textColor="@color/textNormal"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_big"
+                android:layout_marginTop="@dimen/distance_small"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_go_weidian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:text="点击这里"
+                    android:textColor="#282DB5"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="快速前往微店"
+                    android:textColor="@color/textNormal"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

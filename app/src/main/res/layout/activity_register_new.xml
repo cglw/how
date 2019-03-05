@@ -1,0 +1,236 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:paddingTop="24dp"
+            tools:context="com.prettyyes.user.app.ui.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="19dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:paddingTop="19dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:background="@drawable/bg_retange_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_register_logo"/>
+
+
+            <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+                android:id="@+id/edit_register_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="53dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="手机号"
+                android:inputType="phone"
+                android:maxLength="16"
+                android:textColor="@color/black_main"
+                android:textSize="@dimen/font_big"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/bg_line_gradient_grey"/>
+
+            <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+                android:id="@+id/edit_register_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:gravity="center"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:textColor="@color/black_main"
+                android:textSize="@dimen/font_big"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/bg_line_gradient_grey"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+                    android:id="@+id/edit_register_verify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="@string/verify_hint"
+                    android:inputType="number"
+                    android:maxEms="8"
+                    android:maxLength="8"
+                    android:textColor="@color/black_main"
+                    android:textSize="@dimen/font_big"/>
+
+                <TextView
+                    android:id="@+id/btn_register_getVerifyCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="@string/verify_getcode"
+
+                    android:textColor="@color/tv_kolact_lookmore"
+                    android:textSize="@dimen/font_small"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/bg_line_gradient_grey"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_small"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/check_protocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_4"
+                    android:text="点击注册表示同意"
+                    android:textColor="@color/textNormal"
+                    android:textSize="@dimen/font_small"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_4"
+                    android:clickable="true"
+                    android:onClick="protocol"
+                    android:text="《用户协议》"
+                    android:textColor="@color/theme_red"
+                    android:textSize="@dimen/font_small"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:text="点击注册表示同意用户协议"
+                android:textColor="@color/grey_tv_main"
+                android:textSize="@dimen/font_small"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_register_register"
+            style="@style/btn_select_black"
+            android:layout_width="162dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="-17dp"
+            android:text="@string/register"/>
+
+        <TextView
+            android:id="@+id/btn_register_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="@string/register_have"
+            android:textColor="@color/black_main"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:clickable="true"
+            android:text="使用其他账号"
+            android:textColor="@color/black_main"
+            android:textSize="@dimen/font_small"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <com.prettyyes.user.app.view.imageview.RoundImageView
+                android:id="@+id/img_register_wechat"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:src="@drawable/umeng_socialize_wechat"
+                app:borderRadius="@dimen/dp_22"/>
+
+            <com.prettyyes.user.app.view.imageview.RoundImageView
+                android:id="@+id/img_register_sina"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/umeng_socialize_sina"
+                app:borderRadius="@dimen/dp_22"/>
+            <com.prettyyes.user.app.view.imageview.RoundImageView
+                android:id="@+id/img_register_qq"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/umeng_socialize_qq"
+                app:borderRadius="@dimen/dp_22"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

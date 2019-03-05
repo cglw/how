@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="theme_yellow">#FFF099</color>
+    <color name="theme_darkgreen">#3F475C</color>
+    <color name="theme_bggreen">#39d4c6</color>
+    <color name="theme_lightgray">#6F6E6F</color>
+    <color name="theme_red">#C93A48</color>
+    <color name="backgroundWhit">#F7F7F7</color>
+    <color name="hash_tag_color">#50E2C1</color>
+    <color name="ux_green">#61C4AA</color>
+    <color name="home_histoty_act">#ADDF5B75</color>
+    <color name="reply_select_bg">#A2EBFD
+    </color>
+    <color name="home_notify_bg">#A9D74953
+    </color>
+
+    <!---->
+    <color name="yellow_normal">#F3C740</color>
+    <color name="yellow_normal_press">#88F3C740</color>
+    <color name="line_color">#B7B7B7</color>
+    <!--所有的页面title-->
+    <color name="title_app">@color/theme_darkgreen</color>
+    <color name="main_black">@color/theme_darkgreen</color>
+    <color name="paper_coupon">#FC7962</color>
+    <color name="live_bg">#F6F7FE</color>
+    <color name="theme_coffee">#494042</color>
+    <color name="reply_coffee">#B88E68</color>
+    <color name="tv_dark_grey">#AAAAAA</color>
+    <color name="grey_555555">#555555</color>
+    <color name="grey_155_155_155">#9B9B9B</color>
+    <color name="grey_736465">#C8494041</color>
+    <color name="grey_244_244_244">#F4F4F4
+    </color>
+    <color name="grey_247_247_247">#F7F7F7
+    </color>
+    <color name="comment_user">#17436E
+
+    </color>
+    <color name="bg_blue_pale">#F0F4F7
+    </color>
+    <color name="black_subject">#494042</color>
+
+    <color name="divider">#ffd2d2d2</color>
+    <color name="blue_dark">#283D86</color>
+    <!--淡蓝色 RGB:178 235 242-->
+    <color name="blue_pale">#B2EBF2</color>
+    <!--淡青色 RGB:36 221 183-->
+    <color name="green_pale">#24DDB7</color>
+    <!--淡粉色 RGB:241 143 121-->
+    <color name="pink_pale">#F18F79</color>
+    <!--深粉色 RGB:244 105 105-->
+    <color name="pink_dark">#F46969</color>
+    <color name="pink_bg_kol">#F97373</color>
+    <color name="pink_bg_koltv">#7FF97373</color>
+    <color name="pink_comment">#33FFABBF</color>
+    <color name="yellow_press">#70FFF099</color>
+    <color name="yellow_dark">#FFF099</color>
+    <color name="yellow_dark_more">#F6CC54</color>
+    <color name="yellow_add_cart">#F6A623</color>
+    <!--淡黄色 RGB:255 241 177-->
+
+
+    <color name="yellow_pale">#66FFF099</color>
+    <!--淡黑色 RGB:38 38 38-->
+    <color name="black_dark">#262626</color>
+    <!--黑色略淡 RGB:51 51 51-->
+    <color name="black_mid">#333333</color>
+    <!--淡黑色 RGB:102 102 102-->
+    <color name="black_pale">#666666</color>
+    <!--灰色 RGB:153 153 153-->
+    <color name="grey">#999999</color>
+    <!--灰白色 RGB:219 219 219-->
+    <color name="white_grey">#DBDBDB</color>
+    <color name="grey_bg_lookmore">#F2F2F2</color>
+    <color name="black_main">@color/theme_darkgreen</color>
+    <color name="app_color">@color/black_main</color>
+    <color name="grey_txt">#D3D3D8</color>
+    <color name="grey_bg">#F0F0F2</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_sendquestion">#BF040914</color>
+    <!-- 半透明 -->
+
+    <color name="transparent_grey">#60000000</color>
+    <color name="transparent_0.2">#33000000</color>
+    <color name="transparent_0.1">#20000000</color>
+    <color name="transparent_0.5">#7B000000</color>
+    <color name="grey_press">#d8d8d8</color>
+    <color name="price_color">#EC4D56</color>
+    <color name="ship_color_last">#0D8D6B</color>
+    <color name="ship_color_normal">#A9A9A9</color>
+    <color name="bg_main">@color/white</color>
+    <color name="half_tra">#90000000</color>
+
+    <color name="grey_tv_main">#9B9B9B</color>
+    <color name="tv_0.8">#CC000000</color>
+    <color name="tv_kolact_question">#AE816B</color>
+    <color name="tv_kolact_lookmore">#C72C49</color>
+    <color name="tv_kolact_greenpoint">#7ED321</color>
+
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <!--app 文字颜色-->
+    <color name="textBlack">#DD000000</color>
+    <color name="textNormal">#4a4a4a</color>
+    <color name="textWhite">#ffffff</color>
+    <color name="secondaryTextBlack">#89000000</color>
+    <color name="secondaryTextWhite">#b2ffffff</color>
+    <color name="hintBlack">#42000000</color>
+    <color name="hintWhite">#4cffffff</color>
+    <color name="disableBlack">#42000000</color>
+    <color name="disableWhite">#4cffffff</color>
+    <color name="dividersBlack">#1e000000</color>
+    <color name="dividersWhite">#1effffff</color>
+
+
+    <color name="pink_topic">#FDB4A2</color>
+
+
+    <!--app  icon 颜色-->
+    <color name="iconNormalBlack">#89000000</color>
+    <color name="iconDisableBlack">#42000000</color>
+    <color name="iconNormalWhite">#fff</color>
+    <color name="iconDisableWhite">#4cffffff</color>
+
+    <!--<color name="line_grey">@color/hintBlack</color>-->
+    <color name="divider_black">@color/secondaryTextBlack</color>
+
+
+    <!--template-->
+    <color name="template_spftcation_item_title">#4cD8D8D8</color>
+
+    <!--Home-->
+    <color name="home_score_bg">#494042</color>
+    <color name="home_score_line">#969696</color>
+    <color name="home_item_bg">#FFBAAA</color>
+    <color name="home_reply_bg">#F6F6F6</color>
+    <color name="app_page_bg">#FAFAFA</color>
+    <!--search-->
+    <color name="search_key_word">#F5A523</color>
+    <color name="mine_drivder_line">#CC4A4A4A</color>
+
+
+    <color name="colorInitFloatBackground">@color/white</color>
+    <color name="colorCollapsedFloatBackground">#66d2d2d2</color>
+
+
+    <!--gride title-->
+    <color name="gride_title_normal">#F7A991</color>
+    <color name="gride_title_good">#E95B75</color>
+    <color name="gride_title_famous">#CC64516A</color>
+    <color name="gride_title_brand">#494042</color>
+
+
+    <color name="pink_more_reply">#ffb1a0</color>
+    <color name="pink_live">#E95B75</color>
+    <color name="live_reply_bg">#FFB4A2</color>
+    <color name="live_reply_look_more">#F7D8D0</color>
+
+
+    <color name="withdraw_unenable">#9b9b9b</color>
+    <color name="withdraw_enable">#8F415C</color>
+    <color name="withdraw_account">#D0011B</color>
+    <color name="withdraw_account_press">#7BD0011B</color>
+    <color name="withdraw_caculate">#EDEDEE</color>
+
+    <color name="score_how">#8F415C </color>
+    <color name="score_this_month">#64516A</color>
+    <color name="score_start">#FDB4A2</color>
+    <color name="score_center">#F18188</color>
+    <color name="score_end">#E95B75</color>
+    <color name="score_item_title">#E0E0E0</color>
+    <color name="color_f6">#f6f6f6</color>
+
+
+</resources>

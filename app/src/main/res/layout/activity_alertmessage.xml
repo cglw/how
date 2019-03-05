@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+              android:background="@color/transparent"
+    android:id="@+id/lin_AlertmessageAct_base"
+    tools:context="com.prettyyes.user.app.ui.common.AlertMessageActivity">
+    <ImageView
+        android:layout_gravity="right"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="40dp"
+        android:id="@+id/img_AlertmessageAct_close"
+        android:tint="@color/black"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="60dp"
+        app:cardPreventCornerOverlap="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_AlertmessageAct_alertimg"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/bg_app_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

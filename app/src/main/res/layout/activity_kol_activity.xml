@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_kol_activity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginRight="-20dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/kol_list_container"/>
+
+        <TextView
+            android:id="@+id/tv_kolactAct_unstart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="专场活动还没开始"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_kolactAct_end"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="查看专场活动"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/rel_kolactAct_start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_round_red_15"
+                android:gravity="center"
+                android:text="进  入  专  场"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_big"/>
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="24dp"-->
+            <!--android:text="专场传送门" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="16dp"-->
+            <!--android:layout_height="16dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="24dp"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--android:src="@mipmap/kol_list_triangle" />-->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="245dp">
+
+                <ImageView
+                    android:id="@+id/img_kolactAct_unstartbg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/kol_session_unstart_bg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="27dp"
+                    android:text="HOW专场活动"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"/>
+
+
+                <com.prettyyes.user.app.view.app.TypefaceTextView
+                    android:id="@+id/tv_kolactAct_actname"
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="43dp"
+                    android:layout_marginRight="@dimen/distance_normal"
+                    android:layout_marginLeft="40dp"
+                    android:text="xx专场活动sdasnddnsa,mdnm"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/tv_kolactAct_actname"
+                    android:layout_alignLeft="@id/tv_kolactAct_actname"
+                    android:layout_marginBottom="@dimen/distance_normal"
+                    android:text="专场"
+                    android:textColor="@color/black_main"
+                    android:textSize="20sp"/>
+
+                <View
+                    android:id="@+id/view_line"
+                    style="@style/line_black"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/tv_kolactAct_actname"
+                    android:layout_alignTop="@id/tv"
+                    android:layout_marginLeft="24dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="-15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_kolactAct_timeunstart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/kol_session_time_unstart"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/tv_kolactAct_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:letterSpacing="0.2"
+                            android:text="xx"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"/>
+
+                        <TextView
+                            android:id="@+id/tv_kolactAct_month"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:letterSpacing="0.1"
+                            android:text="x月"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_big"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="11dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_kolactAct_weekandtime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="星期x 下午xx:xx"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/font_big"/>
+
+                            <ProgressBar
+                                android:id="@+id/progress_kolactAct"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="5dp"
+                                android:max="100"
+                                android:progress="30"
+                                android:progressDrawable="@drawable/bg_progress_kolact"/>
+
+                            <TextView
+                                android:id="@+id/tv_kolactAct_detailtime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="剩余xx天xx小时xx分钟"
+                                android:textColor="@color/grey_tv_main"
+                                android:textSize="@dimen/font_small"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_kolactAct_calendar"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginRight="7dp"
+                                android:src="@mipmap/kol_session_calendar"/>
+
+                            <CheckBox
+                                android:id="@+id/checkbox_kolactAct_collect"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginRight="7dp"
+                                android:background="@drawable/select_checkbox_collect_kolact"
+                                android:button="@null"/>
+
+                            <ImageView
+                                android:id="@+id/img_kolactAct_share"
+                                android:layout_width="32dp"
+                                android:layout_height="32dp"
+                                android:layout_marginRight="14dp"
+                                android:src="@mipmap/kol_session_share"/>
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp">
+
+                <com.prettyyes.user.app.view.AutoViewPager
+                    android:id="@+id/vp_kolactAct_kol"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.prettyyes.user.app.view.AutoViewPager>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_order_info"
+                android:padding="20dp">
+
+                <View
+                    android:id="@+id/line_red"
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:background="@color/theme_red">
+
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="活动介绍"
+                    android:textColor="@color/black_main"
+                    android:textSize="@dimen/font_big"/>
+
+                <com.prettyyes.user.app.view.app.TypefaceTextView
+                    android:id="@+id/tv_kolactAct_activitydesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_red"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text=" 活动内容 "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_big"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

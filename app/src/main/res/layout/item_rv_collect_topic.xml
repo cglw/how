@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/activity_subject"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:layout_centerInParent="true"
+
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp">
+
+            <View
+                android:layout_width="194dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_retange_translate_2" />
+
+            <View
+                android:id="@+id/view_bg_color"
+                android:layout_width="190dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/pink_dark" />
+
+
+            <LinearLayout
+                android:layout_width="194dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_retange_white_2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="#谈恋爱不如跳舞"
+                    android:textColor="@color/black_subject"
+                    android:textSize="@dimen/font_mid"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_word_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="·4630个字"
+                android:textColor="@color/grey_155_155_155"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:id="@+id/tv_ask_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="·4630个字"
+                android:textColor="@color/grey_155_155_155"
+                android:textSize="@dimen/font_small" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

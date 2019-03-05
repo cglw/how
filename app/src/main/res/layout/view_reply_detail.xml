@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.handmark.pulltorefresh.library.PullToRefreshScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pull_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:ptrAnimationStyle="flip"
+    app:ptrHeaderTextColor="@color/hintBlack"
+    app:ptrMode="both">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_small"
+            android:padding="@dimen/distance_normal"
+            >
+
+            <include layout="@layout/layout_seller_info_content"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tsReason"
+            style="@style/tv_title"
+            android:clickable="false"
+            android:lineSpacingExtra="@dimen/distance_4"
+            android:paddingLeft="@dimen/distance_normal"
+            android:paddingRight="@dimen/distance_normal"
+            android:text=""/>
+
+        <!--<include android:visibility="gone" layout="@layout/layout_imgs"/>-->
+        <!--<include android:visibility="gone"  layout="@layout/layout_vedio_covery"/>-->
+        <!--<include layout="@layout/layout_muti_spu"/>-->
+        <!---->
+        <include
+            layout="@layout/layout_look_num"
+            android:visibility="visible"/>
+
+        <include
+            layout="@layout/layout_imgs"
+            android:visibility="gone"/>
+
+        <include
+            layout="@layout/layout_vedio_covery"
+            android:visibility="gone"/>
+
+        <include
+            layout="@layout/layout_muti_spu"
+            android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_comment_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/distance_normal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/distance_small"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingLeft="53dp"
+                    android:text="这个问题其实我觉得有些难度。但是完全不影响其他的进度因为总归很难说服他"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/distance_4"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:paddingLeft="53dp"
+                    android:text="这个问题其实我觉得有些难度。但是完全不影响其他的进度因为总归很难说服他"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/distance_small"
+                android:gravity="right"
+                android:text="更多"
+                android:textColor="@color/theme_red"
+                android:textSize="10sp"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <!--</com.prettyyes.user.app.view.VerticalScrollView>-->

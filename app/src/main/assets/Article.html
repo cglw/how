@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How</title>
+    <style>
+        img {
+        width: 100%;
+        background: url(loading.gif) 50% no-repeat;
+
+        }
+        body {
+        background: transparent;
+        word-wrap: break-word;
+        }
+        .content_desc {
+        padding-bottom: 50px;
+        min-height: 70vh;
+        }
+        .award {
+        height: auto;
+        text-align: center;
+        bottom: 0px;
+        width: 100%;
+        display:none;
+        }
+        .reward-button {
+        background-color: white;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 8px 12px 8px 12px;
+        color: #C8424B;
+        border: 1px solid #C8424B;
+        border-radius: 5px;
+        }
+
+        .rewarded-button {
+        background-color: #C8424B;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 8px 12px 8px 12px;
+        color: white;
+        border: 1px solid #C8424B;
+        border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="content_desc" id="content">
+</div>
+<div class="award " id="award">
+    <a class="reward-button" id="reward_button"
+       onClick="window.how.rewardApand()"
+    >追加打赏</a>
+    <a class="rewarded-button" id="rewarded_button"
+       onClick="window.how.rewardAgagin()">已经打赏</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
+
+</body>
+<script language="javascript" type="text/javascript">
+    function hideRewardButton(isreward,paper){
+    document.getElementById('content').innerHTML= paper;
+    if(isreward==0)
+    {
+       document.getElementById('rewarded_button').style.display='none';
+    }
+    else
+    {
+      document.getElementById('reward_button').style.display='none';
+    }
+    document.getElementById('award').style.display='block';
+
+    }
+
+    function toKol(kolId) {
+    }
+
+    function hideAll(paper)
+    {
+     document.getElementById('content').innerHTML= paper;
+     document.getElementById('reward_button').style.display='none';
+     document.getElementById('rewarded_button').style.display='none';
+    }
+
+</script>
+
+
+</html>

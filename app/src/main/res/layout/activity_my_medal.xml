@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.prettyyes.user.app.ui.person.MyMedalActivity">
+
+    <TextView
+        style="@style/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_big"
+        android:text="本月积分"
+        android:textColor="@color/secondaryTextBlack"/>
+
+    <TextView
+        style="@style/tv_title"
+        android:id="@+id/tv_total_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="136"
+        android:textColor="@color/secondaryTextBlack"
+        android:textSize="40sp"/>
+
+    <Button
+        android:enabled="false"
+        android:onClick="go_score_detail"
+        style="@style/btn_select_yellow_round"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/template_taobao_confirm"
+       />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="@dimen/distance_normal"
+        android:background="@color/grey_bg"
+        android:padding="@dimen/distance_small">
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="我的权益"/>
+
+        <TextView
+            android:id="@+id/tv_more"
+            style="@style/tv_content"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="right|center"
+            android:text="更多"
+            android:textColor="@color/theme_red"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <com.prettyyes.user.app.view.lvandgrid.SwipeRecycleView
+        android:id="@+id/swipe_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="123dp"
+  >
+
+    <com.prettyyes.user.app.view.imageview.RoundImageView
+        android:id="@+id/img_suitlistAdp_goodsimg"
+        android:layout_width="123dp"
+        android:layout_height="123dp"
+        android:src="@mipmap/ic_defaultimg"
+        app:borderRadius="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/img_suitlistAdp_goodsimg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_suitlistAdp_goodsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="简约几何感觉套装"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/pink_dark"></View>
+
+        <TextView
+            android:id="@+id/tv_suitlistAdp_goodsdesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+
+            android:text="SKU介绍SKU介绍SKU介绍SKU介SKU介绍SKU介绍SKU介绍SKU介绍"
+            android:textColor="@color/black_main"
+            android:textSize="@dimen/font_big" />
+
+        <TextView
+            android:id="@+id/tv_suitlistAdp_goodsprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="￥566.00"
+            android:textColor="@color/black_main"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+    

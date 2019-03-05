@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_normal"
+        android:layout_marginRight="@dimen/distance_normal"
+        android:layout_marginTop="@dimen/distance_normal"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_que_home_head"/>
+
+        <include layout="@layout/layout_que_home_bottom"/>
+    </LinearLayout>
+
+    <com.prettyyes.user.app.ui.appview.SplitView
+        android:visibility="gone"
+        android:id="@+id/splitview_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <com.prettyyes.user.app.ui.appview.HomeAskView
+        android:visibility="gone"
+        android:id="@+id/homeaskview_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="156dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"/>
+
+    <com.prettyyes.user.app.ui.appview.KolHistoryHomeListView
+        android:visibility="gone"
+        android:id="@+id/kolhistoryhomelistView_homepage"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:focusable="false"/>
+
+
+</LinearLayout>

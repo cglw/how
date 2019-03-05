@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_layout"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/view_searchseller_check"
+        android:layout_width="40dp"
+        android:layout_height="70dp"
+        android:padding="5dp">
+
+        <CheckBox
+            android:layout_alignParentRight="true"
+            android:id="@+id/img_searchseller_select"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:button="@null"
+            android:background="@drawable/select_checkbox"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        >
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/rel_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="18dp">
+
+            <com.prettyyes.user.app.view.imageview.RoundImageView
+                android:id="@+id/img_head"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:borderRadius="25dp"
+
+                android:src="@mipmap/myhead" />
+        </RelativeLayout>
+
+        <com.prettyyes.user.app.view.app.TypefaceTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/rel_head"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/rel_head"
+            android:drawablePadding="3dp"
+            android:lines="1"
+            android:text="How"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big" />
+
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rel_head"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/rel_head"
+            android:ellipsize="end"
+            android:lines="1"
+            android:padding="2dp"
+            android:text="这是一个活动啊这是一个活动啊这是一个活动啊这是一个活动啊"
+            android:textColor="@color/grey_tv_main"
+            android:textSize="@dimen/font_big" />
+
+
+    </RelativeLayout>
+</LinearLayout>

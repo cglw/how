@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical"
+    tools:context="com.prettyyes.user.app.ui.ResetPwdActivity">
+    <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey_tv_main"
+        android:paddingLeft="30dp"
+        android:paddingRight="10dp"
+        android:textSize="@dimen/font_big"
+        android:background="@color/white"
+        android:layout_marginTop="50dp"
+        android:id="@+id/edit_resetPwd_password_old"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="@string/password_old_hint" />
+
+    <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey_tv_main"
+        android:paddingLeft="30dp"
+        android:paddingRight="10dp"
+        android:textSize="@dimen/font_big"
+        android:id="@+id/edit_resetPwd_password_new"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="@string/password_new_hint" />
+    <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+        android:textSize="@dimen/font_big"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey_tv_main"
+        android:paddingLeft="30dp"
+        android:paddingRight="10dp"
+        android:id="@+id/edit_resetPwd_passwordreperat"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginTop="1dp"
+        android:inputType="textPassword"
+        android:hint="@string/password_repeat_hint" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="right"
+        android:text="@string/post_repeatPwd"
+        android:textSize="@dimen/font_big"
+        android:textColor="@color/white"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/select_btn_thremdrakgreen"
+        android:id="@+id/btn_repeatPwd_post"
+        android:layout_width="match_parent"
+        android:layout_height="34dp" />
+
+</LinearLayout>

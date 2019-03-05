@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+
+    android:descendantFocusability="blocksDescendants"
+    android:paddingTop="12dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="258dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="58dp"
+        android:background="@mipmap/replay_bottom_container"
+
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="30dp">
+
+        <com.prettyyes.user.app.view.progress.CircleProgressView
+            android:id="@+id/progress_myreplyAdp"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginRight="14dp" />
+
+        <RelativeLayout
+            android:id="@+id/rel_top"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@id/progress_myreplyAdp">
+
+            <com.prettyyes.user.app.view.app.TriangleView
+                android:id="@+id/view_TriangleView"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_centerVertical="true"
+                app:direction="top"
+                app:draw_color="@color/theme_red" />
+
+
+            <TextView
+                android:id="@+id/tv_myreplyAdp_howtoask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableLeft="@mipmap/info_icon"
+                android:drawablePadding="2dp"
+                android:text="如何提问"
+                android:textColor="@color/theme_red"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_myreplyAdp_remind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@id/tv_myreplyAdp_howtoask"
+                android:layout_toRightOf="@id/view_TriangleView"
+                android:text="的好问题得到了丰富优质的回答"
+                android:textColor="@color/black_main"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rel_top"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/progress_myreplyAdp"
+            android:orientation="vertical"
+            android:paddingBottom="6dp">
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="#DCDCDC"></View>
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.prettyyes.user.app.view.app.TriangleView
+                    android:layout_width="11dp"
+                    android:layout_height="7dp"
+                    app:direction="top"
+                    app:draw_color="@color/reply_coffee" />
+
+                <com.prettyyes.user.app.view.app.TriangleView
+                    android:layout_width="11dp"
+                    android:layout_height="7dp"
+                    android:layout_marginTop="-2dp"
+                    app:direction="bottom"
+                    app:draw_color="@color/reply_coffee" />
+
+                <com.prettyyes.user.app.view.app.RoundView
+
+                    android:layout_width="3dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="40dp"
+                    app:bg_color="@color/reply_coffee" />
+
+                <com.prettyyes.user.app.view.app.RoundView
+
+                    android:layout_width="3dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="40dp"
+                    app:bg_color="@color/reply_coffee" />
+
+                <com.prettyyes.user.app.view.app.RoundView
+
+                    android:layout_width="3dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="40dp"
+                    app:bg_color="@color/reply_coffee" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rel_top"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/view_progress"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="共收到回复"
+                    android:textColor="@color/black_main"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_myreplyAdp_totalreply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/textView10"
+                    android:text="50"
+                    android:textColor="@color/black_main"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_myreplyAdp_unread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="1 条未读"
+
+                    android:textColor="@color/theme_red"
+                    android:textSize="9sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="入选优秀内容"
+                    android:textColor="@color/black_pale"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_myreplyAdp_excellect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginRight="20dp"
+                    android:text="50"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <View
+                    style="@style/line_donate"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@id/tv_myreplyAdp_excellect"
+                    android:textColor="@color/theme_red" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="23dp">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="知名人士回复"
+                    android:textColor="@color/black_pale"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_myreplyAdp_famous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginRight="20dp"
+                    android:text="50"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <View
+                    style="@style/line_donate"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@id/tv_myreplyAdp_famous"
+                    android:textColor="@color/theme_red" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="23dp">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="可选购商品"
+                    android:textColor="@color/black_pale"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/tv_myreplyAdp_canbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_marginRight="20dp"
+                    android:text="50"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <View
+                    style="@style/line_donate"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toLeftOf="@id/tv_myreplyAdp_canbuy"
+                    android:textColor="@color/theme_red" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@mipmap/replay_top_container"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <com.prettyyes.user.app.view.imageview.RoundImageView
+            android:id="@+id/img_myreplyAdp_askimg"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_defaultimg"
+            app:borderRadius="4dp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_myreplyAdp_more"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_round_translate_5"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_small" />
+
+
+        <com.prettyyes.user.app.ui.appview.QuestionTextView
+            android:id="@+id/tv_myreplyAdp_ask_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_myreplyAdp_askimg"
+            android:ellipsize="end"
+            android:lines="2"
+            android:paddingBottom="5dp"
+            android:paddingRight="2dp"
+            android:text="我有一件这样的衣服1111，想穿出不一样的感觉，类似出游。"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

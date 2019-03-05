@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/layout_imgs"/>
+
+    <include android:visibility="gone" layout="@layout/layout_vedio_covery"/>
+
+    <include android:visibility="gone" layout="@layout/layout_muti_spu"/>
+    <include android:visibility="visible" layout="@layout/layout_look_num"/>
+
+
+</merge>

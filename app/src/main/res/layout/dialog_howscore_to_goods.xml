@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="414dp"
+                android:layout_margin="@dimen/distance_normal"
+                android:background="@drawable/bg_round_white_5"
+                android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv"
+        style="@style/tv_title"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/distance_small"
+        android:text="权益商品"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_normal"
+            android:orientation="vertical"
+            >
+
+            <com.prettyyes.user.app.view.imageview.RoundImageView
+                android:id="@+id/img_covery"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_defaultimg"
+                app:bottomLeftRadius="0dp"
+                app:bottomRightRadius="0dp"
+                app:topLeftRadius="5dp"
+                app:topRightRadius="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/distance_small"
+                android:layout_marginLeft="@dimen/distance_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商品名称："
+                    android:textColor="@color/secondaryTextBlack"
+                    android:textSize="@dimen/font_content"/>
+
+                <TextView
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/tv_title"
+                    android:textColor="@color/textBlack"
+                    style="@style/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_small"
+                    android:layout_marginRight="@dimen/distance_small"
+                    android:text="水粉艺术画"
+                 />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="@dimen/distance_small"
+                android:layout_marginLeft="@dimen/distance_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_small"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="兑换积分："
+                    android:textColor="@color/secondaryTextBlack"
+                    android:textSize="@dimen/font_content"/>
+
+                <TextView
+                    android:id="@+id/tv_score"
+                    android:textColor="@color/textBlack"
+                    style="@style/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/distance_small"
+                    android:layout_marginRight="@dimen/distance_small"
+                    android:text="752"
+
+                 />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <include
+
+            layout="@layout/layout_input_address"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_get"
+        style="@style/btn_select_yellow_round"
+        android:layout_width="109dp"
+        android:layout_height="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/distance_normal"
+        android:text="立刻领取"/>
+</RelativeLayout>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdb4a2"
+ >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.prettyyes.user.app.view.app.BgView
+                android:layout_width="match_parent"
+                android:layout_height="253dp"
+                app:bgcolor="#494042"
+                app:triangelcolor="#fdb4a2"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@mipmap/share_top_corner"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="264dp"
+                    android:layout_height="139dp"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/share_title"/>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@mipmap/share_no1"
+                    />
+
+                <com.prettyyes.user.app.view.SpacingTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="WECHAT | 微信"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_big"
+                    android:textStyle="bold"
+                    app:letterSpacing="1"/>
+
+                <View
+                    android:layout_width="134dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/black"/>
+
+                <com.prettyyes.user.app.view.SpacingTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="你朋友里，一定有解决此类问题的"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_mid"
+                    app:letterSpacing="1"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/share_triangle"/>
+
+                    <com.prettyyes.user.app.view.SpacingTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="好手，请微信他们。"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_mid"
+                        app:letterSpacing="1"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_wechat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/share_wechat"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@mipmap/share_no2"
+                    />
+
+                <com.prettyyes.user.app.view.SpacingTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="WEIBO | 微博"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_big"
+                    android:textStyle="bold"
+                    app:letterSpacing="1"/>
+
+                <View
+                    android:layout_width="134dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <com.prettyyes.user.app.view.SpacingTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:text="请转发并"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_mid"
+                        app:letterSpacing="1"/>
+
+
+                    <com.prettyyes.user.app.view.SpacingTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:text="\@TA微博名人或暗恋对象,"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_mid"
+                        />
+
+
+                </LinearLayout>
+
+                <com.prettyyes.user.app.view.SpacingTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="这将是你最好的搭讪借口"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_mid"
+                    app:letterSpacing="1"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:layout_width="202dp"
+                        android:layout_height="0.8dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/white"/>
+
+                    <com.prettyyes.user.app.view.SpacingTextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="已有人成功引起吴彦祖的注意"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_small"
+                        app:letterSpacing="1"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_weibo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/share_weibo"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@mipmap/share_no3"
+                    />
+
+                <com.prettyyes.user.app.view.SpacingTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="moments | 朋友圈"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_big"
+                    android:textStyle="bold"
+                    app:letterSpacing="1"/>
+
+                <View
+                    android:layout_width="134dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <com.prettyyes.user.app.view.SpacingTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="猜猜朋友圈里有哪些你不知道的好手，"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_mid"
+                        app:letterSpacing="1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/share_dot"/>
+                </LinearLayout>
+
+                <com.prettyyes.user.app.view.SpacingTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="能提供出乎意料的答案。"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_mid"
+                    app:letterSpacing="1"/>
+
+                <ImageView
+                    android:id="@+id/img_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/share_friends"/>
+
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--app:srcCompat="@mipmap/share_no4"-->
+                    <!--/>-->
+
+                <!--<com.prettyyes.user.app.view.SpacingTextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:text="How | 好手们"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/font_big"-->
+                    <!--android:textStyle="bold"-->
+                    <!--app:letterSpacing="1"/>-->
+
+                <!--<View-->
+                    <!--android:layout_width="134dp"-->
+                    <!--android:layout_height="2dp"-->
+                    <!--android:layout_marginTop="12dp"-->
+                    <!--android:background="@color/black"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="20dp"-->
+
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<com.prettyyes.user.app.view.SpacingTextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="How上的好手同样可以为您"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="@dimen/font_mid"-->
+                        <!--app:letterSpacing="1"/>-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="right"-->
+                        <!--android:src="@mipmap/share_dot"-->
+                        <!--android:visibility="gone"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<com.prettyyes.user.app.view.SpacingTextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="答疑解惑"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="@dimen/font_mid"-->
+                    <!--app:letterSpacing="1"/>-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/img_prettyyes"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:src="@mipmap/share_invite"/>-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@mipmap/share_no4"
+                    />
+
+                <com.prettyyes.user.app.view.SpacingTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="TENCENT | QQ"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_big"
+                    android:textStyle="bold"
+                    app:letterSpacing="1"/>
+
+                <View
+                    android:layout_width="134dp"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical">
+
+                    <com.prettyyes.user.app.view.SpacingTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="给你的小伙伴一起看一看聊一聊"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/font_mid"
+                        app:letterSpacing="1"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/share_dot"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <com.prettyyes.user.app.view.SpacingTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="解决趣味话题"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/font_mid"
+                    app:letterSpacing="1"/>
+
+                <ImageView
+                    android:id="@+id/img_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/share_qq"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/share_right_corner"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="424dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/badge_background"
+        android:orientation="vertical">
+
+        <com.prettyyes.user.app.view.imageview.RoundImageView
+            android:id="@+id/img_couponGet_covery"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_defaultimg"
+            app:borderRadius="10dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="-10dp"
+            android:background="@color/white"></View>
+
+        <LinearLayout
+            android:id="@+id/ll_couponGet_type"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_couponGet_four_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/compon_select_login"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:checked="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/compon_select_ask"
+                    android:button="@null" />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:checked="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/compon_select_share"
+                    android:button="@null" />
+
+                <CheckBox
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/compon_select_zeze"
+                    android:button="@null" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_couponGet_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:lines="1"
+                android:text="恭喜你获得首次分享奖励！"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tv_couponGet_price"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:lines="1"
+                android:text="500元"
+                android:textColor="@color/theme_red"
+                android:textSize="21sp" />
+
+            <TextView
+                android:id="@+id/tv_couponGet_type"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:lines="1"
+                android:text="新人大礼包"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_couponGet_do"
+                style="@style/btn_select_coffee"
+                android:layout_width="178dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="15dp"
+                android:text="查看优惠券" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+
+        android:id="@+id/img_couponGet_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/badge_dismiss"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <include layout="@layout/layout_comment_head"/>
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/grey_bg_lookmore"
+        android:gravity="center_vertical"
+        android:minHeight="30dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/distance_small"
+        >
+
+        <TextView
+            android:id="@+id/tv_info_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/distance_4"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:text="我:"
+
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/font_mid"/>
+
+        <TextView
+            android:id="@+id/tv_info_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_small"
+            android:layout_marginRight="@dimen/distance_4"
+            android:clickable="true"
+            android:lines="1"
+            android:text="删除"
+            android:textColor="@color/textBlack"
+            android:textSize="@dimen/font_mid"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>

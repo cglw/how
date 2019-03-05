@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                android:orientation="vertical"
+
+    >
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@mipmap/how_score_get_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/tv_title"
+            android:layout_width="220dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/distance_normal"
+            android:text="如何赚取How值？"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingRight="6dp"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/distance_big"
+            android:text="欢迎您来到How，提出您的问题，分享您的经验与好物。
+How值为How平台的专属积分，累积How值可提升用户等级并获取积分换现特权。
+"
+            android:textColor="@color/secondaryTextBlack"/>
+
+    </LinearLayout>
+</RelativeLayout>

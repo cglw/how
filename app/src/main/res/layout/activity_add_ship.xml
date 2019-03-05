@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_round_black_5"
+        android:padding="7dp"
+        >
+
+        <ImageView
+            android:id="@+id/img_go_zxing"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ship_scan"/>
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+            android:id="@+id/etv_ship_number"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@id/img_go_zxing"
+            android:background="@drawable/bg_order_info"
+            android:hint="请输入运单号"
+            android:padding="5dp"
+            android:textSize="@dimen/font_big"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_go_ship_commany"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/select_layout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="选择物流公司"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_right_arrow"
+            android:tint="@color/black"/>
+
+        <View
+            style="@style/line_grey"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

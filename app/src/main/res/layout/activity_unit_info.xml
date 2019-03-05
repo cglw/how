@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        tools:context="com.prettyyes.user.app.ui.spu.UnitInfoActivity">
+
+        <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+            android:id="@+id/KolSimpleInfoView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/distance_normal">
+
+        </com.prettyyes.user.app.ui.appview.KolSimpleInfoView>
+
+        <View
+            style="@style/line_grey"></View>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_title"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/distance_normal"
+            android:text="这个是商品名字"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/tv_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:layout_marginRight="@dimen/distance_normal"
+            android:text="这个是商品名字这个是商品名字这个是商品名字这个是商品名字这个是商品名字"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_normal">
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/framelayout_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>
+

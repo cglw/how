@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:background="@drawable/bg_round_white"
+              android:orientation="vertical"
+              android:padding="20dp">
+
+    <include layout="@layout/layout_goods"/>
+
+    <LinearLayout
+        android:id="@+id/ll_task_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/line_color">
+
+
+        </View>
+
+        <TextView
+            android:id="@+id/tv_suitlistAdp_questionnumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@mipmap/how_small_logo"
+            android:gravity="center"
+            android:text="好手用这个商品解决了N个问题 "
+            android:textColor="@color/black_main"
+            android:textSize="13sp"/>
+
+        <com.prettyyes.user.app.ui.appview.SuitListQuestionView
+            android:id="@+id/suitListQuestionView_suitlistAdp_question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <com.prettyyes.user.app.ui.appview.SuitListQuestionView
+            android:id="@+id/suitListQuestionView_suitlistAdp_question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:clickable="true"
+
+            android:id="@+id/tv_look_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:text="查看全部"
+            android:textColor="@color/theme_red"
+            android:textSize="13sp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_mutispu_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/fm_mutispu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_small"
+        android:layout_marginRight="@dimen/distance_small"
+        android:layout_marginTop="@dimen/distance_normal"
+        android:background="@color/home_reply_bg"
+        android:orientation="vertical"
+        >
+
+
+        <include layout="@layout/layout_share_brand"/>
+
+        <RelativeLayout
+
+            android:id="@+id/view_suit_root"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:visibility="gone">
+
+            <include layout="@layout/view_suit"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/view_unit_root"
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <include layout="@layout/layout_img_bug_view"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <include layout="@layout/layout_img_bug_view"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <include layout="@layout/layout_img_bug_view"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:padding="@dimen/distance_small"
+            android:background="@mipmap/home_article"
+            android:id="@+id/view_paper_root"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <include layout="@layout/view_newpaper"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/view_taobao_root"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:visibility="visible"
+            >
+
+            <include layout="@layout/view_taobao"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/home_clip"
+        android:layout_marginRight="@dimen/distance_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

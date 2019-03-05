@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_orderParentAdp_ordernum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="父亲订单号"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big_more"/>
+
+        <com.prettyyes.user.app.view.lvandgrid.MyListView
+            android:id="@+id/lv_orderParentAdp_orderchild"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"/>
+
+        <Button
+            android:id="@+id/btn_orderParentAdp_dosomething"
+            style="@style/btn_select_red_oval_round"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:text="付款"/>
+    </LinearLayout>
+</LinearLayout>

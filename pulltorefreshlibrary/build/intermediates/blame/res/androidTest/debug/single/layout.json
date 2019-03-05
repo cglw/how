@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/chengang/AndroidStudioProject/prettyyes_project/prettyyes_user/user/pulltorefreshlibrary/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_vertical_cp.xml",
+        "source": "/Users/chengang/AndroidStudioProject/prettyyes_project/prettyyes_user/user/pulltorefreshlibrary/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_vertical_cp.xml"
+    },
+    {
+        "merged": "/Users/chengang/AndroidStudioProject/prettyyes_project/prettyyes_user/user/pulltorefreshlibrary/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_vertical.xml",
+        "source": "/Users/chengang/AndroidStudioProject/prettyyes_project/prettyyes_user/user/pulltorefreshlibrary/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "/Users/chengang/AndroidStudioProject/prettyyes_project/prettyyes_user/user/pulltorefreshlibrary/build/intermediates/res/merged/androidTest/debug/layout/pull_to_refresh_header_horizontal.xml",
+        "source": "/Users/chengang/AndroidStudioProject/prettyyes_project/prettyyes_user/user/pulltorefreshlibrary/build/intermediates/bundles/debug/res/layout/pull_to_refresh_header_horizontal.xml"
+    }
+]

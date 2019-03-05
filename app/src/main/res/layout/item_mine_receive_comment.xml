@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/distance_normal">
+
+        <include layout="@layout/layout_mineitem_top"/>
+
+        <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_normal"/>
+        <TextView
+            style="@style/tv_content"
+            android:layout_marginTop="@dimen/distance_normal"
+            android:text="回复了@我：80还嫌贵…淘宝你买得着么？"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/tv_content"
+        android:layout_margin="@dimen/distance_normal"
+        android:text="木壳人：太贵了，还不如去淘宝买呢"/>
+
+</LinearLayout>

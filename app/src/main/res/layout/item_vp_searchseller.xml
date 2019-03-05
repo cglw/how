@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:background="@mipmap/kol_session_kol_container"
+        >
+
+        <ImageView
+
+            android:id="@+id/img_head"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/myhead" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_head"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/img_head"
+            android:drawablePadding="3dp"
+            android:drawableRight="@mipmap/kol_session_badge_icon"
+            android:lines="1"
+            android:text="How"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_big" />
+
+
+        <TextView
+            android:id="@+id/tv_act"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginRight="65dp"
+            android:layout_toRightOf="@id/img_head"
+            android:ellipsize="end"
+            android:lines="2"
+            android:padding="2dp"
+            android:text="这是一个活动啊这是一个活动啊这是一个活动啊这是一个活动啊"
+            android:textColor="@color/theme_lightgray"
+            android:textSize="@dimen/font_small" />
+
+        <TextView
+            android:id="@+id/tv_session"
+            android:textSize="@dimen/font_small"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/theme_bggreen"
+            android:text="她是一个擅长怎么样咋么样的人"
+            android:layout_width="match_parent"
+           android:layout_marginBottom="15dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/img_sendquestion"
+            android:layout_margin="4dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="57dp"
+            android:scaleType="centerCrop"
+            android:layout_height="57dp" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.prettyyes.user.app.ui.person.AddTagActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/lin_selectPhotos_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img_selectPhotos_add"
+            android:layout_width="71dp"
+            android:layout_height="71dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_ask_craema" />
+    </LinearLayout>
+
+
+</LinearLayout>

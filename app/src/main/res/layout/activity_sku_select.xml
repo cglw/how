@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.prettyyes.user.app.ui.spu.SkuSelectActivity">
+
+    <View
+        android:id="@+id/view_dote"
+        style="@style/line_donate"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+
+
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center_vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/upload_add"
+            />
+
+        <ImageView
+            android:id="@+id/img_covery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/distance_big"
+            android:src="@mipmap/upload_article"
+            />
+
+        <TextView
+            android:id="@+id/tv_text"
+            style="@style/tv_title"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:text="创作一篇好文"
+            android:textColor="@color/textBlack"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<com.weavey.loading.lib.LoadingLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+                                      android:id="@+id/loadingLayout"
+                                      tools:context="com.prettyyes.user.app.fragments.collect.CollectKolActFragment">
+
+    <com.prettyyes.user.app.view.lvandgrid.SwipeListByView
+        android:id="@+id/swipeList_collectkolActfmt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.weavey.loading.lib.LoadingLayout>

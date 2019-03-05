@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp">
+
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="36dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="17dp">
+
+        <ImageView
+            android:id="@+id/img_moreCommentAdp_header"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@mipmap/myhead"/>
+
+    </RelativeLayout>
+
+
+    <com.prettyyes.user.app.view.app.TypefaceTextView
+        android:id="@+id/tv_moreCommentAdp_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rel_header"
+        android:layout_marginRight="@dimen/distance_small"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/rel_header"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="1"
+        android:textStyle="bold"
+        android:maxLength="15"
+        android:paddingBottom="2dp"
+        android:text="weqe348304834erwe9r79237483034"
+        android:textColor="@color/theme_darkgreen"
+        android:textSize="13sp"/>
+
+    <ImageView
+        android:id="@+id/img_grade_title"
+        android:layout_width="@dimen/grade_ic_width"
+        android:layout_height="@dimen/grade_ic_width"
+        android:scaleType="centerCrop"
+        android:layout_alignTop="@id/rel_header"
+        android:layout_toRightOf="@id/tv_moreCommentAdp_nickname"
+     />
+
+    <TextView
+        android:id="@+id/tv_moreCommentAdp_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/rel_header"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/rel_header"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="dsasdsad"
+        android:textColor="@color/secondaryTextBlack"
+        android:textSize="@dimen/font_small"/>
+
+
+</RelativeLayout>

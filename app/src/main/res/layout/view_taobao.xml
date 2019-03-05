@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!--<RelativeLayout-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:id="@+id/view_taobao_root"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="120dp"-->
+<!--android:visibility="visible"-->
+<!--&gt;-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/img_taobao_covey"
+        android:layout_width="95dp"
+        android:layout_height="101dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/distance_small"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_defaultimg"/>
+
+    <TextView
+        android:id="@+id/tv_taobao_name"
+        style="@style/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/img_taobao_covey"
+        android:layout_toRightOf="@id/img_taobao_covey"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="POKER家秋新品 简约COS风手镯"
+        android:textStyle="bold"
+        />
+
+
+    <com.prettyyes.user.app.view.app.TypefaceTextView
+        android:id="@+id/tv_taobao_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_taobao_name"
+        android:layout_marginTop="@dimen/distance_small"
+        android:layout_toRightOf="@id/img_taobao_covey"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="￥169.00"
+        android:textColor="@color/main_black"
+        android:textSize="18sp"/>
+
+
+    <TextView
+        style="@style/tv_content"
+        android:layout_width="55dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/distance_small"
+        android:layout_marginRight="@dimen/distance_small"
+        android:background="@drawable/bg_round_red_2"
+        android:gravity="center"
+        android:paddingBottom="@dimen/distance_2"
+
+        android:paddingTop="@dimen/distance_2"
+        android:text="购买"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_hint"/>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="76dp"-->
+    <!--android:layout_height="18dp"-->
+    <!--android:layout_below="@id/tv_taobao_price"-->
+    <!--android:layout_marginTop="@dimen/distance_small"-->
+    <!--android:layout_toRightOf="@id/img_taobao_covey"-->
+    <!--android:gravity="center">-->
+
+    <!---->
+    <!--&lt;!&ndash;<View&ndash;&gt;-->
+    <!--&lt;!&ndash;v&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="26dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="1dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginLeft="@dimen/distance_4"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@color/white"/>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+
+
+</merge>
+
+    <!--</RelativeLayout>-->
+

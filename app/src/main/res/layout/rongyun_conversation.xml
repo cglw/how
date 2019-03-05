@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/view_conversation_sku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rel_conversation_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:background="@mipmap/kol_session_desc_container">
+
+            <ImageView
+                android:id="@+id/img_conversation_covery"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="7dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_defaultimg" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/img_conversation_covery"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_conversation_uintname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="POKER家秋新品 简约COS风手镯"
+                    android:textColor="@color/main_black"
+                    android:textSize="12dp" />
+
+                <TextView
+
+                    android:id="@+id/tv_conversation_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="￥0.00"
+                    android:textColor="@color/theme_red"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+
+            android:id="@+id/tv_conversation_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="3dp"
+            android:clickable="true"
+            android:text="发送"
+            android:textColor="@color/theme_red"
+            android:textSize="@dimen/font_big" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/view_conversation_order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+       <TextView
+           android:background="@drawable/bg_order_info"
+           android:text="我订单号码为，这个订单我想要退款。"
+           android:padding="10dp"
+           android:id="@+id/tv_conversation_order"
+
+           android:gravity="center|left"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+        <TextView
+
+            android:id="@+id/tv_conversation_send_ordernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="3dp"
+            android:clickable="true"
+            android:text="发送"
+            android:textColor="@color/theme_red"
+            android:textSize="@dimen/font_big" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/conversation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

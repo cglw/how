@@ -1,0 +1,87 @@
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:paddingBottom="@dimen/distance_big"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_recommend"></include>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/grey_bg"
+                android:gravity="center"
+                android:text="@string/custom_serve"/>
+
+            <TextView
+
+                style="@style/tv_title"
+                android:layout_margin="@dimen/distance_normal"
+                android:text="@string/custom_serve_title"/>
+
+            <TextView
+                style="@style/tv_title"
+                android:layout_margin="@dimen/distance_normal"
+                android:text="@string/custom_serve_second_title"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_normal"
+                android:text="@string/custom_serve_content"
+                android:textColor="@color/secondaryTextBlack"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/distance_normal"
+                android:layout_marginRight="@dimen/distance_normal"
+                >
+
+
+                <TextView
+                    android:id="@+id/tv_chat_kf"
+                    style="@style/tv_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/distance_normal"
+                    android:clickable="true"
+                    android:drawableLeft="@mipmap/how_customer_service_icon"
+                    android:text="为您服务"
+                    android:textColor="@color/theme_red"/>
+
+                <TextView
+                    style="@style/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/tv_chat_kf"
+                    android:gravity="left"
+                    android:text="@string/custom_serve_chat"
+                    android:textColor="@color/theme_red"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

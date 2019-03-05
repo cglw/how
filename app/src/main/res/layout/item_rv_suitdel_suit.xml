@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="117dp"
+   android:orientation="vertical"
+    >
+    <View
+        android:id="@+id/view_line"
+        style="@style/line_grey"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:background="@drawable/select_layout">
+
+        <ImageView
+            android:id="@+id/img_uintimg"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_defaultimg" />
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/lin_select_num"
+            android:layout_width="55dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/img_uintimg"
+            android:background="@drawable/bg_rang_grey_radius_100"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_layout"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_mid" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_layout"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_mid" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/img_uintimg"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/lin_select_num"
+            android:layout_toRightOf="@id/img_uintimg"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:id="@+id/tv_uintname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="POKER家秋新品 简约COS风手镯"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_uintname"
+                android:layout_marginTop="5dp"
+                android:text="￥169.00"
+                android:textColor="@color/theme_red"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>
+

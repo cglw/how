@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/btn_ask"
+        android:layout_width="92dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/distance_small"
+        android:background="@drawable/bg_round_pink_live_2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="提问"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="visible"/>
+
+
+    <ImageView
+        android:id="@+id/img_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/distance_small"
+        android:src="@mipmap/kol_onlive_icon"
+        android:visibility="visible"/>
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/distance_small"
+        android:layout_toLeftOf="@id/btn_ask"
+        android:id="@+id/view_kol"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/img_left">
+
+        <RelativeLayout
+            android:id="@+id/rel_head"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            >
+
+            <com.prettyyes.user.app.view.imageview.RoundImageView
+                android:id="@+id/img_head"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@mipmap/myhead"
+                app:borderRadius="13dp"/>
+        </RelativeLayout>
+
+
+        <com.prettyyes.user.app.view.app.TypefaceTextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/rel_head"
+            android:layout_toRightOf="@id/rel_head"
+            android:text="肖大夫包治百病哦哦哦"
+            android:textColor="@color/black"
+            android:textSize="13sp"/>
+
+        <com.prettyyes.user.app.view.app.TypefaceTextView
+            android:id="@+id/tv_ace"
+            android:lines="1"
+            android:ellipsize="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nickname"
+            android:layout_marginTop="@dimen/distance_2"
+            android:layout_toRightOf="@id/rel_head"
+            android:text="一句话简介sdasdsadsadasdsadsadsadsdsadsda"
+            android:textColor="@color/secondaryTextBlack"
+            android:textSize="11sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.prettyyes.user.app.ui.ShipStateActivity">
+
+    <TextView
+        android:id="@+id/tv_shipActvity_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFEEF3"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="物流信息 暂无"
+        android:textColor="@color/ship_color_normal"
+        android:textSize="15sp" />
+
+    <ListView
+        android:id="@+id/lv_shipActivty_shiplist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:scrollbars="none"></ListView>
+
+</LinearLayout>

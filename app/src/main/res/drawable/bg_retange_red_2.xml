@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <stroke
+        android:width="0.5dp"
+        android:color="@color/theme_red"></stroke>
+    <solid android:color="@color/white"
+
+        />
+    <corners android:radius="@dimen/radius_retange_small"></corners>
+
+</shape>
+    <!-- From: file:/D:/IdeaProjects/TPConn-Android/app/src/main/res/drawable/ui_round_button_blue.xmlxml -->

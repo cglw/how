@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <com.prettyyes.user.app.view.lvandgrid.VpSwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeRef_swipeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--去掉item按下背景
+                             android:listSelector="@android:color/transparent"
+            -->
+            <ListView
+                android:id="@+id/lv_swipeList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:overScrollMode="never"
+              />
+
+            <ScrollView
+                android:visibility="gone"
+                android:id="@+id/scrollView_emptyView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:background="@color/backgroundWhit"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/ll_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingLeft="60dp"
+                        android:paddingRight="60dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="我们无法预知未来很有挑逗意味。"
+                            android:textColor="@color/theme_red"
+                            android:textSize="@dimen/font_big" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="——霍金"
+                            android:textColor="@color/theme_red"
+                            android:textSize="@dimen/font_big" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:text="当前网络信号出错，刷新后的页面会让您更加惊喜。"
+                            android:textColor="@color/grey_tv_main"
+                            android:textSize="@dimen/font_big" />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:layout_marginTop="10dp"
+                        style="@style/btn_select_red_round"
+                        android:id="@+id/btn_reload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:text="重新加载"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+    </com.prettyyes.user.app.view.lvandgrid.VpSwipeRefreshLayout>

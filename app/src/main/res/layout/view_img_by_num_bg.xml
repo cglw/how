@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_viewimg_bynum_bg_form"
+    android:layout_width="match_parent"
+    android:layout_height="168dp"
+    android:background="@mipmap/home_sku_container"
+    android:orientation="vertical"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="14dp">
+
+    <include layout="@layout/layout_share_brand"/>
+
+
+    <com.prettyyes.user.app.ui.appview.ViewimgBynum
+        android:layout_marginTop="12dp"
+        android:id="@+id/viewimgbynum_viewimg_bynum_bg"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</LinearLayout>
+
+

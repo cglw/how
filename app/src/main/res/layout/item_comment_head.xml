@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/view_reply_answer_root"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_question_name"
+            style="@style/tv_title"
+            android:text="问题："
+            android:textColor="@color/secondaryTextBlack"
+            android:visibility="gone"
+            />
+
+        <com.prettyyes.user.app.view.tvbtnetv.ExpandableTextView
+            android:id="@+id/tv_question"
+            style="@style/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundWhit"
+            android:ellipsize="end"
+            android:padding="@dimen/distance_small"
+            android:text="我有一件这样的衣服，类似出游……"
+            app:etv_MaxLinesOnShrink="2"/>
+
+        <TextView
+            style="@style/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/distance_4"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="查看问题"
+            android:textColor="@color/theme_red"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tv_reply_num"
+            style="@style/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/distance_small"
+            android:layout_marginTop="@dimen/distance_small"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="有0个回复 >"
+            android:textColor="@color/theme_red"
+            android:textSize="@dimen/font_small"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/backgroundWhit"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_small"
+        android:padding="@dimen/distance_normal"
+        >
+
+        <include layout="@layout/layout_seller_info_content"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_tsReason"
+        style="@style/tv_title"
+        android:lineSpacingExtra="@dimen/distance_4"
+        android:paddingLeft="@dimen/distance_normal"
+        android:paddingRight="@dimen/distance_normal"
+        android:text="不一样的感觉，类似出游。不一样的感觉，类似出游。"/>
+
+    <include layout="@layout/layout_muti_spu"/>
+
+
+</LinearLayout>

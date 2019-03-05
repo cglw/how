@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_serach_topic"
+        android:background="@drawable/select_layout_white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/distance_normal"
+        android:paddingRight="@dimen/distance_normal"
+        >
+
+        <TextView
+            android:id="@+id/tv_topic_name"
+            style="@style/tv_title"
+            android:layout_width="match_parent"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="这是一个什么问题呢？"
+            android:textColor="@color/pink_topic"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_topic_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/distance_4"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="这边是回复哦，这个会回复很不错呢。。。。"/>
+    </LinearLayout>
+</LinearLayout>

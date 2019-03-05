@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="184dp"
+    android:layout_height="150dp"
+    android:layout_marginLeft="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="5dp"
+    app:cardPreventCornerOverlap="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+            <com.prettyyes.user.app.view.imageview.RoundImageView
+                android:id="@+id/img_act_covery"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_defaultimg"
+                app:borderRadius="5dp"/>
+
+            <TextView
+                android:id="@+id/tv_actname"
+                android:layout_width="match_parent"
+                android:layout_height="94dp"
+                android:background="@drawable/bg_rectangle_gradient_5"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:lines="1"
+                android:paddingBottom="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="￥19.9解决人生所有烦恼"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:background="@color/white"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/distance_small"
+                android:id="@+id/tv_act_desc"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="POKER家秋新品 法式..."
+                android:textColor="@color/main_black"
+                android:textSize="@dimen/font_mid"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_act_kols"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="6dp"-->
+                <!--android:ellipsize="end"-->
+                <!--android:maxLines="2"-->
+                <!--android:text="kols"-->
+                <!--android:textColor="@color/grey_tv_main"-->
+                <!--android:textSize="@dimen/font_small"-->
+                <!--android:visibility="gone"/>-->
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+

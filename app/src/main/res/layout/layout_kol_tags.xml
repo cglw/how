@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabLayout_kollistAdp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/tv_cf"
+    android:orientation="horizontal"
+    tools:showIn="@layout/item_recycle_kollist">
+
+    <TableRow>
+
+        <com.prettyyes.user.app.view.app.TypefaceTextView
+            android:layout_column="1"
+
+
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/kol_list_triangle"
+            android:text=""
+            android:textColor="@color/black_main"
+            android:textSize="@dimen/font_mid"></com.prettyyes.user.app.view.app.TypefaceTextView>
+
+
+        <com.prettyyes.user.app.view.app.TypefaceTextView
+            android:layout_column="1"
+
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/kol_list_triangle"
+            android:text=""
+            android:textColor="@color/black_main"
+            android:textSize="@dimen/font_mid"></com.prettyyes.user.app.view.app.TypefaceTextView>
+    </TableRow>
+
+    <TableRow>
+
+        <com.prettyyes.user.app.view.app.TypefaceTextView
+            android:layout_column="1"
+
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/kol_list_triangle"
+            android:text=""
+            android:textColor="@color/black_main"
+            android:textSize="@dimen/font_mid"></com.prettyyes.user.app.view.app.TypefaceTextView>
+
+        <com.prettyyes.user.app.view.app.TypefaceTextView
+            android:layout_column="1"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+
+            android:drawableLeft="@mipmap/kol_list_triangle"
+            android:text=""
+            android:textColor="@color/black_main"
+            android:textSize="@dimen/font_mid"></com.prettyyes.user.app.view.app.TypefaceTextView>
+    </TableRow>
+
+</TableLayout>

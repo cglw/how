@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_orderCommentAdp_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_big" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="搭配功力:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_mid" />
+
+
+        <com.prettyyes.user.app.view.progress.StarBar
+            android:id="@+id/starBar_commentOrderAdp_pretty"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            ratingbar:starCount="5"
+            ratingbar:starDistance="5dp"
+            ratingbar:starEmpty="@mipmap/allreply_star_icon"
+            ratingbar:starFill="@mipmap/allreply_highlighted_star_icon"
+            ratingbar:starSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="心愿满足:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_mid" />
+
+
+        <com.prettyyes.user.app.view.progress.StarBar
+            android:id="@+id/starBar_commentOrderAdp_wish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            ratingbar:starCount="5"
+            ratingbar:starDistance="5dp"
+            ratingbar:starEmpty="@mipmap/allreply_star_icon"
+            ratingbar:starFill="@mipmap/allreply_highlighted_star_icon"
+            ratingbar:starSize="25dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="服务态度:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_mid" />
+
+        <com.prettyyes.user.app.view.progress.StarBar
+            android:id="@+id/starBar_commentOrderAdp_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            ratingbar:starCount="5"
+            ratingbar:starDistance="5dp"
+            ratingbar:starEmpty="@mipmap/allreply_star_icon"
+            ratingbar:starFill="@mipmap/allreply_highlighted_star_icon"
+            ratingbar:starSize="25dp" />
+
+
+    </LinearLayout>
+
+    <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+        android:id="@+id/edit_commentOrderAdp_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_commen_order"
+        android:gravity="left|top"
+        android:hint="添加评论"
+        android:padding="5dp" />
+</LinearLayout>

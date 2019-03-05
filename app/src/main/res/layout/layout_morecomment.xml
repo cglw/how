@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="19dp"
+    android:layout_marginRight="19dp"
+    android:background="@drawable/bg_question"
+
+    >
+<!--tools:showIn="@layout/item_lv_morecmet"-->
+    <include
+        layout="@layout/layout_bottom_dosomething" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="53dp"
+        android:paddingTop="35dp">
+
+        <include layout="@layout/layout_kolsimpleinfo" />
+
+        <include layout="@layout/layout_etv_reply" />
+
+        <LinearLayout
+            android:id="@+id/lin_moreCommentAdp_empty"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/card_bg"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="占位布局"
+                android:textColor="@color/grey_txt" />
+        </LinearLayout>
+
+        <include layout="@layout/item_mianlayout_typeimgs"/>
+
+        <include layout="@layout/item_mianlayout_typeoneimg"/>
+
+        <com.prettyyes.user.app.ui.appview.PaperView
+            android:id="@+id/paperView"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/img_moreCommentAdp_more"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_more_point"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right|top"
+        android:layout_marginTop="50dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_moreCommentAdp_rank"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:scaleType="centerCrop"
+            android:tint="@color/theme_yellow">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_moreCommentAdp_rank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7.5dp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_big" />
+    </RelativeLayout>
+
+</RelativeLayout>

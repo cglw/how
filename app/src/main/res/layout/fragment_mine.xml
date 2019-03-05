@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical"
+    tools:context="com.prettyyes.user.app.fragments.mianpage.MineFragment">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_title"
+        android:background="#FDF0A6"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="top"
+            android:text="我的"
+            android:textStyle="bold"
+            android:textColor="@color/title_app"
+            android:textSize="@dimen/font_big_more" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/title"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.prettyyes.user.app.view.app.BgView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        app:bgcolor="@color/yellow_dark"
+        app:triangelcolor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_marginBottom="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_minefmt_myinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <ImageView
+                        android:id="@+id/img_minefmt_head"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:src="@mipmap/myhead" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="15dp">
+
+                        <TextView
+                            android:id="@+id/tv_minefmt_nickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我"
+                            android:textColor="@color/main_black"
+                            android:textSize="@dimen/font_big_more"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_mineItem_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="查看或编辑个人资料"
+                            android:textColor="@color/theme_lightgray"
+                            android:textSize="@dimen/font_big" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.prettyyes.user.app.view.app.MineItemView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/mineItem_minefmt_kol"
+                    android:layout_width="match_parent"
+                    app:itemicon="@mipmap/myinfo_kol_icon"
+                    android:layout_height="wrap_content"
+                    app:itemdesc="@string/mine_kol_desc"
+                    app:itemHeight="55dp"
+                    app:itemtitle="@string/mine_kol_title">
+
+                </com.prettyyes.user.app.view.app.MineItemView>
+
+                <!--<com.prettyyes.user.app.view.app.MineItemView-->
+                    <!--android:id="@+id/mineItem_minefmt_wishlist"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:itembg="@drawable/bg_mine_center"-->
+                    <!--app:itemdesc="@string/mine_wishlist_desc"-->
+                    <!--app:itemicon="@mipmap/myinfo_wishlist_icon"-->
+                    <!--app:itemtitle="@string/mine_wishlist_title"></com.prettyyes.user.app.view.app.MineItemView>-->
+
+                <!--<com.prettyyes.user.app.view.app.MineItemView-->
+                    <!--android:id="@+id/mineItem_minefmt_style"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:visibility="gone"-->
+                    <!--app:itemdesc="填写风格档案让我们的KOL更好服务你"-->
+                    <!--app:itemtitle="风格档案"></com.prettyyes.user.app.view.app.MineItemView>-->
+
+                <!--<com.prettyyes.user.app.view.app.MineItemView-->
+                    <!--app:itemicon="@mipmap/myinfo_coupon_icon"-->
+
+                    <!--android:id="@+id/mineItem_minefmt_coupon"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:itembg="@drawable/bg_mine_center"-->
+                    <!--app:itemdesc="@string/mine_coupon_desc"-->
+                    <!--app:itemtitle="@string/mine_coupon_title"></com.prettyyes.user.app.view.app.MineItemView>-->
+
+                <!--<com.prettyyes.user.app.view.app.MineItemView-->
+                    <!--app:itemicon="@mipmap/myinfo_order_icon"-->
+
+                    <!--android:id="@+id/mineItem_minefmt_order"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:itembg="@drawable/bg_mine_center"-->
+                    <!--app:itemdesc="@string/mine_order_desc"-->
+                    <!--app:itemtitle="@string/mine_order_title"></com.prettyyes.user.app.view.app.MineItemView>-->
+
+                <!--<com.prettyyes.user.app.view.app.MineItemView-->
+                    <!--app:itemicon="@mipmap/myinfo_tobe_icon"-->
+
+                    <!--android:id="@+id/mineItem_minefmt_tobekol"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:visibility="visible"-->
+                    <!--app:itembg="@drawable/bg_mine_bottom"-->
+                    <!--app:itemdesc="@string/mine_tobe_desc"-->
+                    <!--app:itemHeight="55dp"-->
+                    <!--app:itemtitle="@string/mine_tobe_title"></com.prettyyes.user.app.view.app.MineItemView>-->
+
+                <!--<com.prettyyes.user.app.view.app.MineItemView-->
+                    <!--app:itemicon="@mipmap/myinfo_setting_icon"-->
+                    <!--android:id="@+id/mineItem_minefmt_setting"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="30dp"-->
+                    <!--app:itemDescVisiable="gone"-->
+                    <!--app:itemtitle="设置"></com.prettyyes.user.app.view.app.MineItemView>-->
+
+                <!--<com.prettyyes.user.app.view.app.MineItemView-->
+                    <!--app:itemicon="@mipmap/myinfo_support_icon"-->
+                    <!--android:id="@+id/mineItem_minefmt_kefu"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--app:itemDescVisiable="gone"-->
+                    <!--app:itembg="@drawable/bg_mine_bottom"-->
+                    <!--app:itemtitle="联系客服"></com.prettyyes.user.app.view.app.MineItemView>-->
+
+                <com.prettyyes.user.app.view.app.MineItemView
+                    android:id="@+id/mineItem_minefmt_shareApp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginTop="0.5dp"
+                    android:visibility="gone"
+                    app:itemDescVisiable="gone"
+                    app:itemtitle="推荐我们的APP"></com.prettyyes.user.app.view.app.MineItemView>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

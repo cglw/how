@@ -1,0 +1,202 @@
+apply plugin: 'com.android.application'
+apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-code-push/android/codepush.gradle"
+apply plugin: 'walle'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        applicationId "com.prettyyes.user"
+        minSdkVersion 17
+        targetSdkVersion 25
+        versionCode 301
+        versionName "2.9.91"
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        ndk {
+            abiFilters "x86"
+            abiFilters "armeabi"
+            abiFilters "armeabi-v7a"
+            abiFilters "armeabi-v8a"
+        }
+
+    }
+    signingConfigs {
+
+        release {
+            storeFile file('/Users/chengang/keystore/user.jks')
+            storePassword 'zhangguiv5'
+            keyAlias 'user'
+            keyPassword 'zhangguiv5'
+        }
+        debug {
+            storeFile file('/Users/chengang/keystore/user.jks')
+            storePassword 'zhangguiv5'
+            keyAlias 'user'
+            keyPassword 'zhangguiv5'
+        }
+
+    }
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : "O0YovGe6Vy9TnC7nO4UbH4",
+                    GETUI_APP_KEY   : "c0X8DKmu4r933GfGM4vV77",
+                    GETUI_APP_SECRET: "Wq7f5aRvm594B4srAM4sg2",
+
+            ]
+
+        }
+        debug {
+            //开启代码混淆
+            minifyEnabled false
+            // 移除无用的resource文件
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+
+            manifestPlaceholders = [
+                    GETUI_APP_ID    : "j4ebPW3fki6JxmOTvpVi5A",
+                    GETUI_APP_KEY   : "PAhuenqPaH9XKlV5CExCv1",
+                    GETUI_APP_SECRET: "VbokbAYOq593JYnm0QGPM1",
+            ]
+        }
+
+
+    }
+    productFlavors {
+
+        pugongying {}
+        samsung {}
+        lenovomm {}
+        yingyongbao {}
+        sogou {}
+        xiaomi {}
+        huawei {}
+        baidu {}
+        c360 {}
+        vivo {}
+        oppo {}
+        meizu {}
+        anzhi {}
+        prettyys {}
+        qunmeng {}
+        daodao {}
+        quanmeng {}
+        ubk {}
+        jishua {}
+
+
+    }
+
+    productFlavors.all { flavor ->
+        flavor.manifestPlaceholders = [CHANNEL_VALUE: name]
+    }
+    applicationVariants.all {
+        variant ->
+            variant.outputs.each {
+                output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = outputFile.name.replace(".apk", "-${defaultConfig.versionName}.apk")
+                        if (fileName.contains('jiecaovideoplayer-')) {
+                            fileName = fileName.replace("jiecaovideoplayer-", "")
+                        }
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+            }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    //ADD THESE LINES:
+    packagingOptions {
+        exclude 'LICENSE.txt'
+    }
+
+
+
+    android {
+        lintOptions {
+            checkReleaseBuilds false
+            // Or, if you prefer, you can continue to check for errors in release builds,
+            // but continue the build even when errors are found:
+            abortOnError false
+        }
+    }
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:3.0.0'
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':libhornen')
+    compile project(':library')
+    compile project(':libzxing')
+    compile project(':alertview')
+    compile project(':IMKit')
+    compile project(':richeditor')
+    compile project(':loadinglib')
+    compile project(':react-native-code-push')
+    compile project(':pulltorefreshlibrary')
+    compile files('libs/json_simple-1.1.jar')
+    configurations.all {
+        resolutionStrategy.force 'com.android.support:support-annotations:23.+'
+    }
+    compile project(':guideview')
+    //    compile 'io.reactivex:rxandroid:1.2.0'
+    //    compile 'io.reactivex:rxjava:1.1.5'
+    compile 'cc.linkedme.deeplinks:link-page:1.0.10'
+    compile 'org.xutils:xutils:3.5.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.android.support:design:25.+'
+    compile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    compile 'com.android.support:cardview-v7:25.+'
+    compile 'com.android.support:support-v4:25.+'
+    compile 'com.daasuu:BubbleLayout:1.0.0'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'org.java-websocket:Java-WebSocket:1.3.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.facebook.react:react-native:+'
+    compile 'com.androidadvance:topsnackbar:1.1.1'
+    compile 'com.meituan.android.walle:library:1.1.6'
+    compile 'com.getui:sdk:2.11.1.0'
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.1.7'
+    compile 'com.shuyu:GSYVideoPlayer:3.0.0'
+    compile 'com.android.support:multidex:1.0.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
+}
+apply from: '../gradle/maven_push.gradle'
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath "com.meituan.android.walle:plugin:latest.integration"
+    }
+
+}
+walle {
+    // 指定渠道包的输出路径
+    apkOutputFolder = new File("${project.buildDir}/outputs/channels");
+    // 定制渠道包的APK的文件名称
+    apkFileNameFormat = '${appName}-${packageName}-${channel}-${buildType}-v${versionName}-${versionCode}-${buildTime}.apk';
+    // 渠道配置文件
+    channelFile = new File("${project.getProjectDir()}/channel")
+}

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_rv_live_question"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/distance_big"
+        android:layout_marginRight="@dimen/distance_normal"
+        android:clipChildren="false">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/hintBlack"
+            android:textSize="@dimen/font_small"/>
+
+        <ImageView
+            android:id="@+id/img_zan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:layout_marginRight="@dimen/distance_small"
+            android:layout_marginTop="@dimen/distance_normal"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_zan_live_unselect"/>
+
+
+        <LinearLayout
+            android:id="@+id/view_reply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_time"
+            android:layout_marginTop="@dimen/distance_normal"
+            android:layout_toRightOf="@id/img_zan"
+            android:background="@drawable/bg_round_live_reply_10"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/view_spu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="136dp">
+
+                    <com.prettyyes.user.app.view.imageview.RoundImageView
+                        android:id="@+id/img_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="136dp"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_defaultimg"
+                        android:visibility="visible"
+                        app:borderRadius="0dp"
+                        app:bottomLeftRadius="0dp"
+                        app:bottomRightRadius="0dp"
+                        app:topLeftRadius="10dp"
+                        app:topRightRadius="10dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/view_goods"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_round_translate_top_10"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_goods_name"
+                            style="@style/tv_title"
+                            android:layout_marginLeft="@dimen/distance_small"
+                            android:layout_marginRight="@dimen/distance_small"
+                            android:layout_marginTop="@dimen/distance_normal"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="几何吊坠手链"
+                            android:textColor="@color/white"/>
+
+                        <View
+                            android:layout_width="50dp"
+                            android:layout_height="0.5dp"
+                            android:layout_marginTop="@dimen/distance_small"
+                            android:background="@color/white"/>
+
+                        <TextView
+                            android:id="@+id/tv_goods_price"
+                            style="@style/tv_content"
+                            android:layout_marginTop="@dimen/distance_small"
+                            android:text="¥100"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="69dp"
+                            android:layout_height="23dp"
+                            android:layout_marginTop="@dimen/distance_small"
+                            android:background="@drawable/bg_round_white_2"
+                            android:gravity="center"
+                            android:text="购买"/>
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/view_paper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_round_translate_top_10"
+                        android:visibility="gone"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="180dp"
+                            android:layout_height="44dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginBottom="30dp"
+                            android:layout_marginLeft="-2dp"
+                            android:layout_marginTop="@dimen/distance_normal"
+                            android:background="@drawable/bg_retange_black"
+                            android:paddingLeft="@dimen/distance_4"
+                            android:paddingRight="@dimen/distance_4"
+                            android:paddingTop="@dimen/distance_4"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_1"
+                                style="@style/tv_content"
+                                android:text="文章"
+                                android:textSize="@dimen/font_hint"
+                                android:textStyle="bold"/>
+
+                            <View
+                                android:id="@+id/view_1"
+                                android:layout_width="1.5dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/distance_4"
+                                android:layout_toRightOf="@id/tv_1"
+                                android:background="@color/black"/>
+
+
+                            <TextView
+                                style="@style/tv_content"
+                                android:layout_marginLeft="@dimen/distance_4"
+                                android:layout_marginTop="@dimen/distance_4"
+                                android:layout_toRightOf="@id/view_1"
+                                android:lines="1"
+                                android:text="如果明天就是世界末日"
+                                android:textSize="@dimen/font_hint"
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:id="@+id/tv_paper_title"
+                                style="@style/tv_content"
+                                android:layout_alignTop="@id/tv_1"
+                                android:layout_marginLeft="@dimen/distance_small"
+                                android:layout_toRightOf="@id/tv_1"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:text="文章wsdhkshdkasjhdfsjahjkfkjshfjksas"
+                                android:textSize="@dimen/font_hint"
+                                android:textStyle="bold"/>
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <include layout="@layout/layout_imgs_live"/>
+
+                <include layout="@layout/layout_vedio_covery_live"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/distance_small"
+                android:background="@drawable/bg_round_pink_bottom_10"
+                android:orientation="vertical"
+                android:padding="@dimen/distance_small">
+
+
+                <TextView
+                    android:id="@+id/tv_reply_que"
+                    style="@style/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="问题：XXXXXX ？"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <com.prettyyes.user.app.view.tvbtnetv.ExpandableTextView
+                    android:id="@+id/tv_tsReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/distance_small"
+                    android:text="示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示例文字示文字示文字示示……剩余200字"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_content"
+                    app:etv_IsCanTouchTxt="false"
+                    app:etv_MaxLinesOnShrink="4"
+                    app:etv_ToExpandHintColor="@color/white"
+                    app:etv_show_left_tv="true"/>
+            </LinearLayout>
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv_look_more_reply"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="28dp"-->
+                <!--android:layout_marginTop="@dimen/distance_small"-->
+                <!--android:background="@drawable/bg_round_live_reply_more_4"-->
+                <!--android:gravity="center"-->
+                <!--android:text="查看完整回复"-->
+                <!--android:textColor="@color/textNormal"-->
+                <!--android:textSize="@dimen/font_hint"-->
+                <!--android:visibility="gone"/>-->
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/view_kol_info"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/view_reply"
+            android:layout_marginTop="@dimen/distance_small">
+
+            <ImageView
+                android:id="@+id/img_head"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/distance_small"
+                android:src="@mipmap/myhead"/>
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                style="@style/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/img_head"
+                android:gravity="right"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/avatar_status"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginLeft="@dimen/distance_normal"
+                android:layout_marginRight="@dimen/distance_normal"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_round_white_8">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:text="每日登录"
+            android:textColor="@color/textNormal"
+            />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            style="@style/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:layout_marginTop="@dimen/distance_2"
+            android:text="大于80分的优质发问"
+            android:textColor="@color/hintBlack"
+            android:textSize="13sp"
+            />
+
+        <ImageView
+            android:id="@+id/img_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/distance_small"
+            android:src="@mipmap/ic_right_arrow"
+            android:tint="@color/textNormal"/>
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_right"
+            android:layout_toRightOf="@id/tv_title"
+            android:gravity="right"
+            android:text="1分"
+            android:textColor="@color/theme_red"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:clickable="true"
+        android:visibility="gone"
+        android:id="@+id/ll_unclock"
+        android:gravity="center"
+        android:background="@drawable/bg_round_translate_8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_marginRight="@dimen/distance_normal"
+            android:src="@mipmap/ic_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="需要成为好手"
+            android:textColor="@color/white"
+            android:textSize="20sp"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

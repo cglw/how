@@ -1,0 +1,516 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_Status_height"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/statusbar_view_height"/>
+
+        <TextView
+            android:id="@+id/tv_otherqueFmt_title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="更多"
+            android:textColor="@color/title_app"
+            android:textSize="@dimen/font_big_more"
+            android:textStyle="bold"/>
+
+        <include layout="@layout/layout_base_head_line"/>
+
+    </LinearLayout>
+
+    <com.weavey.loading.lib.LoadingLayout
+        android:id="@+id/loadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundWhit"
+            android:orientation="vertical"
+            tools:context="com.prettyyes.user.app.fragments.mianpage.MineFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_go_info_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/select_layout_white"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/distance_normal"
+                    android:paddingLeft="@dimen/distance_small"
+                    android:paddingTop="@dimen/distance_normal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="10dp"
+                            android:background="@color/theme_red"/>
+
+                        <TextView
+                            style="@style/tv_content"
+                            android:layout_marginLeft="@dimen/distance_4"
+                            android:text="个人信息"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_rang_grey_radius_head">
+
+                            <ImageView
+                                android:id="@+id/img_head"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:layout_centerInParent="true"
+                                android:src="@mipmap/myhead"
+                                />
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/distance_big"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_nickname"
+                                style="@style/tv_content"
+                                android:text=""
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/distance_small"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/tv_money"
+                                    style="@style/tv_content"
+                                    android:text=""
+                                    android:textColor="@color/theme_red"
+                                    android:textSize="@dimen/font_small"
+                                    android:textStyle="bold"/>
+
+                                <Button
+                                    android:id="@+id/btn_withdraw"
+                                    style="@style/tv_content"
+                                    android:layout_width="60dp"
+                                    android:layout_height="18dp"
+                                    android:layout_marginLeft="@dimen/distance_small"
+                                    android:background="@drawable/bg_round_red_round100"
+                                    android:gravity="center"
+                                    android:text="@string/mine_item_info_withdraw"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/ll_aply_kol"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:textSize="@dimen/font_small"
+                                    android:textColor="@color/theme_red"
+                                    style="@style/tv_content"
+                                    android:text="你也有好物想推荐？\n欢迎申请成为好手"/>
+
+                                <Button
+                                    android:clickable="false"
+                                    android:layout_marginLeft="@dimen/distance_small"
+                                    style="@style/tv_content"
+                                    android:layout_width="60dp"
+                                    android:layout_height="18dp"
+                                    android:layout_marginTop="@dimen/distance_small"
+                                    android:background="@drawable/bg_round_red_round100"
+                                    android:gravity="center"
+                                    android:text="@string/mine_item_info_apply_kol"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/font_small"
+                                    android:visibility="visible"/>
+                            </LinearLayout>
+
+                            <TextView
+                                style="@style/tv_content"
+                                android:layout_marginTop="@dimen/distance_small"
+                                android:text="@string/mine_item_info_lookdetail"
+                                android:textColor="@color/secondaryTextBlack"
+                                android:textSize="@dimen/font_small_1"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_go_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="@dimen/distance_normal"
+                    android:background="@drawable/select_layout_white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/distance_small">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        >
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="10dp"
+                            android:background="@color/green_pale"/>
+
+                        <TextView
+                            style="@style/tv_content"
+                            android:layout_marginLeft="@dimen/distance_4"
+                            android:text="@string/mine_item_title_score"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/distance_small"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/tv_content"
+                                android:layout_marginBottom="@dimen/distance_small"
+                                android:text="@string/mine_item_score_type"
+                                android:textColor="@color/secondaryTextBlack"
+                                android:textSize="@dimen/font_small_1"/>
+
+                            <TextView
+                                android:id="@+id/tv_type"
+                                style="@style/tv_title"
+                                android:text="特别用户"
+                                android:textColor="@color/yellow_add_cart"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/distance_big"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/tv_content"
+                                android:layout_marginBottom="@dimen/distance_small"
+                                android:text="@string/mine_item_score_how"
+                                android:textColor="@color/secondaryTextBlack"
+                                android:textSize="@dimen/font_small_1"/>
+
+                            <TextView
+                                android:id="@+id/tv_how"
+                                style="@style/tv_title"
+                                android:text="200"
+                                android:textColor="@color/theme_red"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_marginLeft="@dimen/distance_small"
+                            android:src="@mipmap/how_question"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/distance_big"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/tv_content"
+                                android:layout_marginBottom="@dimen/distance_small"
+                                android:text="@string/mine_item_score"
+                                android:textColor="@color/secondaryTextBlack"
+                                android:textSize="@dimen/font_small_1"/>
+
+                            <TextView
+                                android:id="@+id/tv_score"
+                                style="@style/tv_title"
+                                android:text="100"
+                                android:textColor="@color/tv_kolact_greenpoint"
+                                android:textStyle="bold"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/distance_small"
+                android:layout_marginLeft="@dimen/distance_small"
+                android:layout_marginTop="@dimen/distance_normal"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="10dp"
+                    android:background="@color/tv_kolact_greenpoint"/>
+
+                <TextView
+                    style="@style/tv_content"
+                    android:layout_marginLeft="@dimen/distance_4"
+                    android:text="@string/mine_item_title_order"/>
+            </LinearLayout>
+
+                <include
+                    layout="@layout/layout_mine_order"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/distance_normal"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="@dimen/distance_small">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="10dp"
+                            android:background="@color/yellow_add_cart"/>
+
+                        <TextView
+                            style="@style/tv_content"
+                            android:layout_marginLeft="@dimen/distance_4"
+                            android:text="@string/mine_item_title_goods"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_imgs"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="@dimen/distance_small"
+                        android:orientation="horizontal">
+
+                        <com.prettyyes.user.app.view.imageview.RoundImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_defaultimg"
+                            app:borderRadius="@dimen/distance_4"/>
+
+                        <com.prettyyes.user.app.view.imageview.RoundImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/distance_small"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_defaultimg"
+                            app:borderRadius="@dimen/distance_4"/>
+
+                        <com.prettyyes.user.app.view.imageview.RoundImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/distance_small"
+                            android:layout_weight="1"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_defaultimg"
+                            app:borderRadius="@dimen/distance_4"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_go_spulist"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/distance_small"
+                            android:layout_weight="1"
+                            android:background="@drawable/bg_gradient_pink"
+                            android:gravity="bottom"
+                            android:orientation="vertical"
+                            android:padding="@dimen/distance_small"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_goods_num"
+                                style="@style/tv_content"
+                                android:text="100+"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_hint"/>
+
+                            <TextView
+                                style="@style/tv_content"
+                                android:layout_marginTop="@dimen/distance_4"
+                                android:text="@string/mine_item_goods_manager"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/font_hint"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/distance_small"
+                    android:layout_marginTop="@dimen/distance_normal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="10dp"
+                        android:background="@color/withdraw_enable"/>
+
+                    <TextView
+                        style="@style/tv_content"
+                        android:layout_marginLeft="@dimen/distance_4"
+                        android:text="@string/mine_item_title_content"/>
+                </LinearLayout>
+
+                <com.prettyyes.user.app.view.app.SettingItemView
+                    android:layout_marginTop="@dimen/distance_small"
+                    android:id="@+id/settingItem_coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftTitle="@string/mine_item_coupon"/>
+
+
+                <include layout="@layout/layout_base_head_line"/>
+
+                <com.prettyyes.user.app.view.app.SettingItemView
+                    android:id="@+id/settingItem_go_ask"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftTitle="@string/mine_item_ask"/>
+                <include layout="@layout/layout_base_head_line"/>
+
+                <com.prettyyes.user.app.view.app.SettingItemView
+                    android:id="@+id/settingItem_go_reply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftTitle="@string/mine_item_reply"/>
+
+                <include layout="@layout/layout_base_head_line"/>
+
+                <com.prettyyes.user.app.view.app.SettingItemView
+                    android:id="@+id/settingItem_go_collect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftTitle="@string/mine_item_collect"/>
+
+                <include layout="@layout/layout_base_head_line"/>
+
+                <com.prettyyes.user.app.view.app.SettingItemView
+                    android:id="@+id/settingItem_go_invate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftTitle="@string/mine_item_invate"/>
+
+
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/distance_small"
+                    android:layout_marginTop="@dimen/distance_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="10dp"
+                        android:background="@color/black"/>
+
+                    <TextView
+                        style="@style/tv_content"
+                        android:layout_marginLeft="@dimen/distance_4"
+                        android:text="@string/mine_item_title_other"/>
+                </LinearLayout>
+
+                <com.prettyyes.user.app.view.app.SettingItemView
+                    android:layout_marginTop="@dimen/distance_small"
+                    android:id="@+id/settingItem_go_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:leftTitle="@string/mine_item_setting"/>
+
+                <include layout="@layout/layout_base_head_line"/>
+
+                <com.prettyyes.user.app.view.app.SettingItemView
+                    android:id="@+id/settingItem_go_chatkf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/distance_big_1"
+                    android:onClick="chatKf"
+                    app:leftTitle="@string/mine_item_chatkf"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </com.weavey.loading.lib.LoadingLayout>
+</LinearLayout>

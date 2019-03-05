@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_toast"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.prettyyes.user.app.ui.ToastActivity">
+
+    <View
+        android:id="@+id/rel_Status_height"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/statusbar_view_height"
+        ></View>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_round_darkgreen_6"
+        android:clickable="true"
+        android:gravity="center"
+        android:maxLines="2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="xxx回答了你的问题"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+</LinearLayout>

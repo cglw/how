@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--102-->
+    <com.prettyyes.user.app.ui.appview.ViewimgBynum
+        android:id="@+id/view_unit"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:visibility="gone"/>
+    <!--164-->
+    <com.prettyyes.user.app.ui.appview.NewPaperView
+        android:id="@+id/view_paper"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:visibility="gone"/>
+
+    <com.prettyyes.user.app.ui.appview.NewSuitView
+        android:id="@+id/view_suit"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:visibility="visible"/>
+
+    <com.prettyyes.user.app.ui.appview.NewTaobaoView
+        android:id="@+id/view_taobao"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:visibility="gone"/>
+
+    <!--<TextView-->
+        <!--style="@style/tv_title"-->
+        <!--android:textStyle="bold"-->
+        <!--android:gravity="center"-->
+        <!--android:id="@+id/view_no_answer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:text="没有套系"-->
+        <!--android:visibility="gone"/>-->
+
+</merge>

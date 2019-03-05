@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleIndicator="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/vp_vpActivity_showimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/textBlack" />
+
+      <TextView
+    android:id="@+id/tv_vp_index"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="30dp"
+    android:text="0/0"
+    android:textColor="@color/white"
+    android:textSize="18sp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_vp_addcart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:tint="@color/white"
+        android:src="@mipmap/myinfo_wishlist_icon"
+       />
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:padding="10dp"
+        android:id="@+id/rel_vp_desc"
+        android:background="@color/transparent_grey">
+
+        <TextView
+            android:id="@+id/tv_bigimgAdp_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="4"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_mid" />
+
+    </RelativeLayout>
+</RelativeLayout>

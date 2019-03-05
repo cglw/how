@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical"
+    tools:context="com.prettyyes.user.app.ui.ChangeAddressActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="联系人"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_big" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_round_white_10"
+        android:orientation="vertical">
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+            android:maxLength="20"
+            android:id="@+id/edit_changeaddress_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:hint="收货人姓名"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColorHint="@color/grey_txt"
+            android:textSize="18sp" />
+        <View
+            android:background="@color/grey_bg"
+            style="@style/line_grey"></View>
+
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+            android:maxLength="20"
+            android:inputType="phone"
+            android:id="@+id/edit_changeaddress_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:hint="手机号码"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColorHint="@color/grey_txt"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="收货地址"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_big" />
+    <LinearLayout
+        android:background="@drawable/bg_round_white_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/tv_changeaddress_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:hint="省、市、区"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColorHint="@color/grey_txt"
+            android:textSize="18sp" />
+
+        <View
+            android:background="@color/grey_bg"
+
+            style="@style/line_grey"></View>
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+            android:maxEms="100"
+            android:id="@+id/edit_changeaddress_detailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="left|top"
+            android:hint="详细地址"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/grey_txt"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_changeaddress_confirm"
+        style="@style/btn_select_black"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:text="保存" />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line_top"
+        style="@style/line_grey"
+        android:layout_marginLeft="41dp"></View>
+
+    <RelativeLayout
+        android:id="@+id/rel_commentInfoAdp_morereply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            style="@style/line_donate"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:src="@mipmap/expand_comment"
+            android:layout_centerInParent="true"
+           android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+            android:id="@+id/KolSimpleInfoView_commentInfoAdp"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"/>
+
+
+        <TextView
+            android:paddingLeft="53dp"
+            android:id="@+id/tv_commentInfoAdp_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="这个问题其实我觉得有些难度。但是完全不影响其他的进度因为总归很难说服他"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>

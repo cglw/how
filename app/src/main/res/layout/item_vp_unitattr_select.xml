@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="300dp"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:padding="@dimen/distance_normal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_covery"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="@dimen/distance_normal"
+            android:src="@mipmap/ic_defaultimg"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/tv_title"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/img_covery"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingRight="@dimen/distance_big_1"
+            android:text="商品名称"
+            android:textSize="@dimen/font_big"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tv_price"
+            style="@style/tv_content"
+            android:layout_below="@id/tv_name"
+            android:layout_toRightOf="@id/img_covery"
+            android:text="￥25"
+            android:textColor="@color/theme_red"/>
+
+        <TextView
+            android:id="@+id/tv_express_price"
+            style="@style/tv_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="@dimen/distance_normal"
+            android:layout_toRightOf="@id/tv_price"
+            android:text="运费：￥3"
+            android:textColor="@color/secondaryTextBlack"/>
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:src="@mipmap/ic_close"
+            android:tint="@color/black"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+
+            android:scaleType="centerCrop"
+            android:id="@+id/img_left"
+            android:layout_width="8dp"
+            android:layout_height="11dp"
+            android:src="@mipmap/left_item_button"
+            android:tint="@color/black"/>
+
+        <ImageView
+            android:layout_marginLeft="@dimen/distance_small"
+            android:scaleType="centerCrop"
+            android:id="@+id/img_right"
+            android:layout_width="8dp"
+            android:layout_height="11dp"
+            android:src="@mipmap/right_item_button"
+            android:tint="@color/black"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/distance_small"
+        android:layout_weight="1"
+        >
+
+        <com.prettyyes.user.app.ui.appview.GoodsAttrListView
+            android:id="@+id/GoodsAttrListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.prettyyes.user.app.ui.appview.GoodsAttrListView>
+    </ScrollView>
+
+    <TextView
+        style="@style/tv_content"
+        android:layout_marginBottom="@dimen/distance_small"
+        android:text="数量"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lin_select_num"
+
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@id/img_uintimg"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bg_retange_grey_2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_layout"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_mid"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_small"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/select_layout"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_mid"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add"
+            style="@style/btn_select_red_round"
+            android:layout_height="@dimen/btn_height_small"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/confirm"/>
+    </RelativeLayout>
+</LinearLayout>

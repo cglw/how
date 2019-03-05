@@ -1,0 +1,34 @@
+package com.prettyyes.user.app.adapter.detail;
+
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+
+import io.rong.imkit.model.UIConversation;
+import io.rong.imkit.widget.adapter.ConversationListAdapter;
+import io.rong.imlib.model.Conversation;
+
+/**
+ * Project Name: user
+ * Package Name: com.prettyyes.user.app.adapter.del
+ * Author: SmileChen
+ * Created on: 2016/10/31
+ * Description: Nothing
+ */
+public class ConversationListAdapterEx extends ConversationListAdapter {
+    public ConversationListAdapterEx(Context context) {
+        super(context);
+    }
+
+    @Override
+    protected View newView(Context context, int position, ViewGroup group) {
+        return super.newView(context, position, group);
+    }
+
+    @Override
+    protected void bindView(View v, int position, UIConversation data) {
+        if(data.getConversationType().equals(Conversation.ConversationType.PRIVATE))
+            data.setUnreadType(UIConversation.UnreadRemindType.REMIND_ONLY);
+        super.bindView(v, position, data);
+    }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_layout"
+                android:clickable="true"
+                android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_click"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_big_more"/>
+
+    <com.prettyyes.user.app.view.app.RoundView
+        android:visibility="gone"
+        android:id="@+id/roundview_unread"
+        android:layout_toRightOf="@id/tv_click"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:bg_color="@color/theme_red"
+        android:layout_marginLeft="@dimen/distance_normal"
+        android:layout_centerVertical="true"
+        android:layout_width="10dp"
+        android:layout_height="10dp"/>
+
+
+</RelativeLayout>

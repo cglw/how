@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_layout_white"
+
+    >
+    <!--    android:layout_height=""
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_serach_seller"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/distance_normal"
+        android:paddingLeft="@dimen/distance_normal"
+        >
+
+        <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+            android:id="@+id/kolSimpleInfoView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btn_collect"
+            style="@style/btn_select_red_oval_round"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/height_serach_collect"
+            android:layout_marginLeft="@dimen/distance_small"
+            android:text="+关注"/>
+
+    </LinearLayout>
+</LinearLayout>

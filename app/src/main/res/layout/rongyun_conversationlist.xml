@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.prettyyes.user.app.view.app.SegmentControlView
+        android:id="@+id/segment_conversationList"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="22dp"
+        app:scv_BackgroundNormalColor="@color/white"
+        app:scv_BackgroundSelectedColor="@color/theme_darkgreen"
+        app:scv_FrameColor="@color/theme_darkgreen"
+        app:scv_FrameCornerRadius="3dp"
+        app:scv_FrameWidth="1dp"
+        app:scv_Gradient="true"
+        app:scv_SegmentPaddingVertical="5dp"
+        app:scv_TextArray="@array/segment_control_arrays_message"
+        app:scv_TextNormalColor="@color/black"
+        app:scv_TextSelectedColor="@color/white" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_conversationList_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

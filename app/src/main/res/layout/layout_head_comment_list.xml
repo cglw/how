@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/item_lv_header_morecommet"></include>
+
+    <LinearLayout
+        android:id="@+id/lin_mocmtAdp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@mipmap/reply_bottom_container1"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <com.prettyyes.user.app.ui.appview.KolSimpleInfoView
+            android:id="@+id/kolinfoView_mocmtAdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+        </com.prettyyes.user.app.ui.appview.KolSimpleInfoView>
+
+        <com.prettyyes.user.app.view.tvbtnetv.ExpandableTextView
+            android:id="@+id/tv_mocmtAdp_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint=""
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/theme_darkgreen"
+            android:textSize="@dimen/font_mid"
+            app:etv_IsCanTouchTxt="false"
+            app:etv_MaxLinesOnShrink="3"
+            app:etv_ToExpandHint="「展开」"
+            app:etv_ToExpandHintColor="@color/theme_lightgray"
+            app:etv_ToShrinkHint="「收起」"
+            app:etv_ToShrinkHintColor="@color/theme_lightgray"
+
+            />
+
+        <com.prettyyes.user.app.ui.appview.MutiSpuView
+            android:id="@+id/mutispuview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

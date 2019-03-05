@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.prettyyes.user.app.view.imageview.RoundImageView
+        android:id="@+id/img_viewimg_src"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_defaultimg"
+        app:borderRadius="4dp"/>
+
+    <RelativeLayout
+        android:id="@+id/view_viewimg_translate"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:background="@drawable/bg_round_translate_5">
+
+
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_viewimg_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="￥0.00"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <TextView
+
+            android:id="@+id/tv_viewimg_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_viewimg_price"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="sdsad"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:paddingRight="10dp"
+            android:gravity="center"
+            style="@style/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_round_red_4_bottom"
+            android:text="去购买"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+</merge>
+

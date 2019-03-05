@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/line_grey"
+    android:layout_height="@dimen/height_common_header_line"
+    android:layout_alignParentBottom="true"
+    tools:showIn="@layout/activity_header_prettyyes"/>

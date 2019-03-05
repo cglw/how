@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lin_muittypeview_base"
+    android:orientation="vertical">
+
+    <com.prettyyes.user.app.ui.appview.ImageOneView
+        android:id="@+id/imageone_muittypeview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.prettyyes.user.app.ui.appview.ImageFourView
+        android:id="@+id/imagefour_muittypeview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.prettyyes.user.app.ui.appview.AudioView
+        android:id="@+id/audioview_muittypeview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.prettyyes.user.app.ui.appview.VedioView
+        android:id="@+id/vedioview_muittypeview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.prettyyes.user.app.ui.appview.PaperView
+        android:id="@+id/pagerView_muittypeview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/emptyview_muittypeview"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="空视图" />
+    </LinearLayout>
+
+</LinearLayout>

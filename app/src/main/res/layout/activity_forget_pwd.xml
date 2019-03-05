@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical"
+    tools:context="com.prettyyes.user.app.ui.ForgetPwdActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+            android:id="@+id/edit_forgetPwd_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:hint="@string/telephone_hint"
+            android:inputType="phone"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:textColorHint="@color/grey_txt" />
+
+
+        <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+            android:id="@+id/edit_forgetPwd_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:paddingLeft="30dp"
+            android:paddingRight="10dp"
+            android:textColorHint="@color/grey_txt" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:paddingRight="10dp">
+
+            <TextView
+
+                android:id="@+id/btn_forgetPwd_getVerifyCode"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@drawable/bg_getcode_grey"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/verify_getcode"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <com.prettyyes.user.app.view.tvbtnetv.EditTextDel
+                android:id="@+id/edit_forgetPwd_verify"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/btn_forgetPwd_getVerifyCode"
+                android:layout_weight="3"
+                android:background="@color/white"
+                android:hint="@string/verify_hint"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="30dp"
+                android:textColorHint="@color/grey_txt" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/select_btn_thremdrakgreen"
+            android:id="@+id/btn_forgetPwd_reset"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/forgetPwd_reset"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
